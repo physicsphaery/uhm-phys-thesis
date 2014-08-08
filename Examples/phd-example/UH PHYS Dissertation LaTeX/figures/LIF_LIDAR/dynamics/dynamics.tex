@@ -1,0 +1,15 @@
+%----------------------------------------------------------------------------
+%bb defines the bounding box for the pdf
+%viewport defines the area of the pdf used
+%in sidewaysfigure the last entry in bb moves the caption toward/away the pic
+%in sidewaysfigure the second entry in bb moves the pic toward/away the caption
+%----------------------------------------------------------------------------
+\begin{figure}
+\scalebox{0.8}[0.8]{
+\includegraphics[bb=40 400 489 652]
+{dynamics/dynamics.pdf}
+}
+\caption[Semi-classical behavior of a randomly oriented ensemble]{Semi--classical behavior of a randomly oriented ensemble. Equation \ref{2 level dynamics} is shown as the ``ideal'' behavior while the semi--classical result, Equation \ref{initial eom}, is called ``orientation averaged''.}
+\label{dynamics}
+\end{figure}
+%----------------------------------------------------------------------------

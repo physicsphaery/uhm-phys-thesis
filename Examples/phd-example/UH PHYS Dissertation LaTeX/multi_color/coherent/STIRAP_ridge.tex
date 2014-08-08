@@ -1,0 +1,25 @@
+%----------------------------------------------------------------------------
+\label{STIRAP ridge section}
+%----------------------------------------------------------------------------
+\input{figures/multi_color/ridge/ridge.tex}
+\input{figures/multi_color/ridge_fit/ridge_fit.tex}
+%----------------------------------------------------------------------------
+The STIRAP process has a unique ``detuning'' feature very different from the corresponding feature for two sequential $\pi$--pulses. The single $\pi$--pulse detuning curve is a sinusoid modulated by a relatively wide Lorentzian (see Section \ref{doppler section}) . The FWHM of this Lorentzian is half the Rabi frequency or, in order to beat the relaxation effects in atmospheric conditions, about one half GHz. This is on the order of the Doppler broadening, so for this discussion, the overall Lorentzian width of a single $\pi$--pulse is near 0.03 inverse cm. To obtain the two $\pi$--pulse detuning line shape we plot the surface formed by the inversion probability as a function of the first pulse (Stokes) detuning and the second pulse (pump) detuning and we get a Lorentzian ``mountain'' with a rough FWHM of 0.03 inverse cm (see Figure \ref{sp_detuning} for the definition of the Stokes pulse and the pump pulse).
+%----------------------------------------------------------------------------
+\input{figures/multi_color/sp_detuning/sp_detuning.tex}
+%----------------------------------------------------------------------------
+
+To obtain a similar detuning feature for the STIRAP process we start with Equation \ref{dim eom}, obtain equations similar to Equations \ref{doppler eom}, apply the STIRAP pulse sequence, and numerically calculate the inversion probability for various detunings. It is found that (see Figure \ref{ridge}) the detuning feature is a ridge with a long extent along the ridge (roughly fits a Lorentzian with a FWHM of 21.2 inverse cm) and a sharp fall-off along the anti-ridge (roughly fits a Gaussian with a FWHM of 0.424 inverse cm).
+%----------------------------------------------------------------------------
+\input{figures/multi_color/PI_79/PI_79.tex}
+\input{figures/multi_color/PI_77/PI_77.tex}
+%----------------------------------------------------------------------------
+
+To model the effects of this detuning feature of the STIRAP process on the fluorescence spectrum we fit the ridge to an analytic function and use this fit in the computer model described in Section \ref{approx section}. The Lorentzian in Equation \ref{main approx} is replaced with the ridge fit (see Figure \ref{ridge_fit}) and a resulting fluorescence spectrum is calculated.
+
+To compare the STIRAP + $\pi$--pulse (scheme 1) to the three $\pi$--pulse (scheme 2) scheme, we generate plots similar to Figure \ref{target_3}; however, instead of attaching Lorentzian line shapes to each LIF transition we simply plot each transition. See Figure \ref{STIRAP_79} for a plot of the LIF transition supported by scheme 1 for the target molecule, Figure \ref{STIRAP_77} for scheme 1 on the non-target molecule. Compare these plots with Figures \ref{PI_79} and \ref{PI_77} and one sees that scheme 1 ``pulls'' more transitions through the three color pathway than scheme 2. This is one drawback of the robustness of the STIRAP process; however, it does not adversely affect the selectivity of the process since the Lorentzian tail of the fluorescence still dominates (see Figure \ref{target_3} and \ref{non-target_1}).
+%----------------------------------------------------------------------------
+\input{figures/multi_color/STIRAP_79/STIRAP_79.tex}
+\input{figures/multi_color/STIRAP_77/STIRAP_77.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------

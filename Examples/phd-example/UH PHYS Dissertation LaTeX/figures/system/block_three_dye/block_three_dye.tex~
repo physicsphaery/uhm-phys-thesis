@@ -1,0 +1,15 @@
+% block_three_dye.tex
+% by Troy Hix, May 2005
+%----------------------------------------------------------------------------
+\begin{figure}
+\center
+\includegraphics[width=4.00in]
+{block_three_dye/block_three_dye.png}\\
+\caption{Three conditioned and synchronized dye lasers - block diagram}
+\label{block_three_dye}
+\end{figure} 
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+
+

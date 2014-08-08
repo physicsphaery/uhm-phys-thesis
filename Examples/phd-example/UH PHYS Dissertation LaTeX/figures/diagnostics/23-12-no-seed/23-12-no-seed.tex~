@@ -1,0 +1,15 @@
+%----------------------------------------------------------------------------
+%bb defines the bounding box for the pdf
+%viewport defines the area of the pdf used
+%in sidewaysfigure the last entry in bb moves the caption toward/away the pic
+%in sidewaysfigure the second entry in bb moves the pic toward/away the caption
+%----------------------------------------------------------------------------
+\begin{sidewaysfigure}
+\scalebox{1.15}[1.15]{
+\includegraphics[viewport=150 200 300 450, bb=85 160 300 550]
+{procedure-resluts/figures/23-12-no-seed/23-12-no-seed.pdf}
+}
+\caption{delete me?}
+\label{23-12-no-seed}
+\end{sidewaysfigure}
+%----------------------------------------------------------------------------

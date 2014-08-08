@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0048)http://www.math.aau.dk/~dethlef/Tips/tuning.html -->
+<HTML><HEAD><TITLE>LaTeX, Emacs etc. for your PC - Tuning</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1"><LINK 
+href="LaTeX, Emacs etc_ for your PC - Tuning_files/claus.css" type=text/css 
+rel=stylesheet>
+<STYLE type=text/css>TABLE {
+	BACKGROUND: #e6e6e6
+}
+TR {
+	BACKGROUND: #c0e0f0
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY vLink=#800080 link=#0000ff bgColor=#ffffff><!-- MENU -->
+<TABLE>
+  <TBODY>
+  <TR>
+    <TH bgColor=yellow><A href="http://www.math.auc.dk/~dethlef/" 
+      target=_top><IMG alt="Homepage of Claus Dethlefsen" 
+      src="LaTeX, Emacs etc_ for your PC - Tuning_files/home_ikon.gif" 
+      border=0></A></TH>
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/introduction.html">Intro</A></TH>
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/preparation.html">Prepare</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/download.html">Download</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/install.html">Install</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/tuning.html">Tune</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/test.html">Test</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/uninstall.html">Uninstall</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/information.html">Info</A> 
+  </TR></TR></TBODY></TABLE><!-- END MENU --><!--   MAIN PAGE -->
+<H1>Tuning</H1>The following is not neccesary for getting a running system. It 
+should not be carried out if your system cannot go through the <A 
+href="http://www.math.aau.dk/~dethlef/Tips/test.html">test</A> after the <A 
+href="http://www.math.aau.dk/~dethlef/Tips/install.html">installation</A>. It is 
+a more experimental section, and is is biased towards my preferences, so you 
+should pick the steps you like. I have not documented the intructions in great 
+detail, so you will need to be an advanced user of windows. If you think I can 
+improve then instructions, feel free to contact me. 
+<P>The <A 
+href="http://www.math.aau.dk/~dethlef/Tips/uninstall.html">uninstall</A> 
+instructions do not cover all of the additions described here. 
+<H2>Adding packages to Miktex</H2>The intention is that the localtexmf directory 
+be the root of the place where all local files (e.g., .sty and .bib files) (as 
+opposed to Miktex package distributions) live. So local <PRE>.bib files go in localtexmf\bibtex
+.sty files go in localtexmf\tex\latex
+</PRE>Each time you add a file to one of those directories, you must run Miktex 
+Options and select "Refresh Now" under file name database on the general tab. 
+<H2>An example .emacs</H2>This assumes that you have installed everything to c:\ 
+as described and have gone through most of the steps below. I have tried to 
+write explanations to most of the content, so you should be able to edit it to 
+your own needs. If you copy it, you will not need to do the 'insert the 
+following lines into your c:\.emacs' instructions below. Since emacs will not 
+startup properly with this .emacs until all the packages are installed, some of 
+the tests will fail. 
+<UL>
+  <LI>Unzip startup2.zip to c:\ (the value of HOME) 
+  <LI>Insert the commands you wish from the created file ".emacs.advanced" into 
+  your .emacs file. </LI></UL>
+<H2><A href="http://www.math.aau.dk/~dethlef/Tips/gnuserv.txt">Gnuserv</A></H2>
+<UL>
+  <LI><A href="http://www.math.aau.dk/~dethlef/Tips/basics.html#unzip">Unzip</A> 
+  gnuserv.zip to c:\program files\emacs\site-lisp\ 
+  <LI>Move c:\program files\emacs\site-lisp\gnuserv\*.exe to c:\program 
+  files\emacs\bin (4 files) 
+  <LI>Insert the following lines in your c:\.emacs <PRE>(require 'gnuserv)
+(gnuserv-start)
+(setq gnuserv-frame (selected-frame))
+      </PRE></LI></UL>
+<H3>Emacs shortcut (gnuserv)</H3>
+<UL>
+  <LI>Create a shortcut to c:\program files\emacs\bin\gnuclientw.exe 
+  <LI>Edit the shortcut properties to be <PRE>Target:    "C:\program files\emacs\bin\gnuclientw.exe" -F
+Start in:  c:\
+</PRE>
+  <LI>Copy the shortcut to your profiles "Send to" folder (eg. located in 
+  c:\winnt\profiles\administrator\send to). </LI></UL>The "Start in" sets the 
+initial directory for Emacs. You can have several shortcuts to Emacs with 
+different "Start in" directories. Note that ~/ will always be HOME. <BR>The 
+"Send to" enables rightclicking on any file and choosing "send to" Emacs, which 
+will cause the file to be opened by emacs. 
+<H3>File Associations (gnuserv)</H3>
+<UL>
+  <LI>In explorer in the Tools menu, go to Folder Options. 
+  <LI>On the "File Types" tab, create a new file type called TeX. 
+  <LI>Click the advanced tab 
+  <LI>You can change the icon (There are a few icons in c:\emacs\etc\icons) 
+  <LI>Create a new Action called Edit and defined by <PRE>"C:\program files\emacs\bin\gnuclientw.exe" "%1"
+</PRE></LI></UL>Define or edit associations/actions for other file types, e.g. 
+.bib, .txt. The Edit action for the existing file type .html (called "Microsoft 
+HTML document 5.0" on my system) can be used by Internet Explorer, so that when 
+you choose "edit" from within IE, the file opens in Emacs. After creating the 
+edit action, open Internet explorer, click Tools/Internet options. Choose the 
+Programs tab and gnuclientw should be in the list of HTML editors. 
+<H3>Inverse search in YAP</H3>
+<UL>
+  <LI>In Yap, choose View/Options/Inverse Search, and in the Program field, 
+  choose "GNU Emacs (single instance)". </LI></UL>
+<H3>Letter paper</H3>To get dvips to use letter-paper instead of A4, insert the 
+following line in the file c:\program files\texmf\dvips\config\config.ps <PRE>t letter
+</PRE><!-- 
+<H2><A
+HREF="http://www.strw.leidenuniv.nl/~dominik/Tools/reftex/index.html">
+Reftex 4.16</A></H2>
+<ul>
+  <li><A HREF="basics.html#unzip">Unzip</A> reftex.tar.gz to
+      c:\program files\emacs\lisp
+  <li>Rename c:\program files\emacs\lisp\reftex-4.16 to c:\program files\emacs\lisp\reftex
+  <li>Insert the following lines in your c:\.emacs
+      <PRE>
+;(add-to-list 'Info-default-directory-list "c:/program files/emacs/lisp/reftex/")
+;(setq load-path (cons "c:/program files/emacs/lisp/reftex/" load-path))
+(autoload 'reftex-mode     "reftex" "RefTeX Minor Mode" t)
+(autoload 'turn-on-reftex  "reftex" "RefTeX Minor Mode" nil)
+(autoload 'reftex-citation "reftex-cite" "Make citation" nil)
+(autoload 'reftex-index-phrase-mode "reftex-index" "Phrase mode" t)
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; with AUCTeX LaTeX mode
+(add-hook 'latex-mode-hook 'turn-on-reftex)   ; with Emacs latex mode
+      </PRE>
+</ul>
+<strong>Test:</strong> (Re)Start Emacs. In Emacs, call M-x
+latex-mode. You should see the "Ref" menu along with the "Command"
+and "LaTeX" menus. 
+
+-->
+<H2><A 
+href="http://hpux.tn.tudelft.nl/hppd/hpux/Text/lacheck-1.20/man.html">Lacheck 
+1.20</A></H2>
+<UL>
+  <LI>Move lacheck.exe to c:\program files\texmf\miktex\bin 
+</LI></UL><STRONG>Test:</STRONG> At a DOS prompt, run "lacheck file.tex", where 
+file.tex is a latex-file. It should spit out some suggestions. In Emacs in 
+latex-mode, choose the "Check" command from the Command menu. 
+<H2><A href="http://www.nongnu.org/baol-hth/">Html-helper-mode</A></H2>
+<UL>
+  <LI>Unzip html-helper-mode.tar.gz into c:\program 
+  files\emacs\site-lisp\html-helper 
+  <LI>Insert the following in your c:\.emacs <PRE>(autoload 'html-helper-mode "html-helper-mode" "Yay HTML" t)
+(setq auto-mode-alist (cons '("\\.html$" . html-helper-mode)
+			    auto-mode-alist))
+(setq html-helper-mode-uses-JDE nil)
+(setq html-helper-mode-uses-visual-basic nil)
+</PRE></LI></UL>
+<H2>Header</H2>
+<UL>
+  <LI>Unzip header.zip to c:\program files\emacs\site-lisp\header 
+  <LI>Put the following line in c:\.emacs <PRE>(load "header")
+</PRE></LI></UL><!--
+<H2>Latex packages</H2>
+<ul>
+  <li>Create the directory c:\localtexmf\tex\latex
+  <li>Put the packages in sub-directories of
+      c:\localtexmf\tex\latex. That is: natbib, psfrag, caption,
+      fancyhdr, fancybox, fncychap, pstricks, thumbpdf and subfigure
+  <li>For each of the packages caption, natbib, subfigure
+      and psfrag
+      <ul>
+	<li>At a dos prompt, go to the directory, eg. "cd
+	    c:\localtexmf\tex\latex\caption"
+	<li>Run latex on the .ins file, eg. "latex caption.ins"
+	<li>Create documentation by latexing the .dtx file,
+	    eg. "texify caption.dtx"
+      </ul>
+  <li>From the natbib package, move the *.bst files to
+      c:\localtexmf\bibtex (create this directory).
+  <li>Run initexmf -u    (always do that when you install new packages!)
+</ul>
+<strong>Test: </strong> Test pstricks by running latex on
+c:\localtexmf\tex\latex\pstricks\doc\test-pst.tex. Run dvips and view
+it with Ghostview, since Yap has some trouble displaying it properly.
+<BR>Also, try running "Latex PDF" on lshort.tex (from <a
+href="test.html" >test</a>) to produce lshort.pdf.
+
+--><!-- <H2>Keep Yap open (no longer necessary with auctex 9.10t)</H2>
+<ul>
+  <li>Edit the "view"-command in the file c:\elisp\auctex\tex-mik.el
+      to say
+      <PRE>
+(list "View" "%v" 'TeX-run-discard t nil)
+</PRE>
+</ul>
+-->
+<H2>Info manuals for AUCTeX and Ispell</H2>
+<UL>
+  <LI>Add the following lines to the file c:\program files\emacs\info\dir <PRE>* AUCTeX: (auctex).     A much enhanced LaTeX mode for GNU Emacs.
+* Ispell: (spell).      Spell checking.
+</PRE></LI></UL>When running 'info'-mode (C-h i) the entry 'AUCTeX' appears with 
+the AUCTeX manual. 
+<H2>Speeding up lisp</H2>
+<UL>
+  <LI>Open Emacs and call <A 
+  href="http://www.math.aau.dk/~dethlef/Tips/basics.html#emacscommands">M-x 
+  load-file c:\program files\emacs\site-lisp\auctex\lpath.el</A> 
+  <LI><A 
+  href="http://www.math.aau.dk/~dethlef/Tips/basics.html#emacscommands">C-u 0 
+  M-x byte-recompile-directory c:\program files\emacs\site-lisp\auctex</A> <!--  <li><a href="basics.html#emacscommands">C-u 0 M-x
+  byte-recompile-directory  c:\program files\emacs\lisp\reftex</a>  
+-->
+  <LI><A 
+  href="http://www.math.aau.dk/~dethlef/Tips/basics.html#emacscommands">C-u 0 
+  M-x byte-recompile-directory c:\program files\emacs\site-lisp\gnuserv</A> 
+</LI></UL>
+<H2>BIBINPUTS</H2>
+<UL>
+  <LI>In your Autoexec.bat or System/environment, define the variable BIBINPUTS 
+  pointing to the directory where you keep your .bib files. </LI></UL>The 
+BIBINPUTS is used by bib-cite which comes with auctex. Reftex also uses it. 
+However, Bibtex does not use it, so check the miktex local guide for setting the 
+searchpath for bibtex. (In a personal miktex.ini file). 
+<HR>
+
+<H1>Math stuff</H1>
+<H3>ESS (<A href="http://stat.ethz.ch/ESS/">Emacs Speaks Statistics</A>)</H3>
+<UL>
+  <LI>Unzip <A 
+  href="http://www.math.aau.dk/~dethlef/Tips/local/ess-5.2.2.zip">ess-5.2.2.zip</A> 
+  to c:\program files\emacs\site-lisp 
+  <LI>Rename c:\program files\emacs\site-lisp\ess-5.2.2 to c:\program 
+  files\emacs\site-lisp\ess 
+  <LI>Add the following lines to your .emacs file <PRE>(add-to-list 'load-path "c:/program files/emacs/site-lisp/ess/lisp")
+(require 'ess-site)
+</PRE><!--   <li>Edit c:\program files\emacs\site-lisp\ess\lisp\ess-site.el, line
+  254 delete the two semicolons, so that the line reads:
+  <pre>
+(setq-default inferior-R-program-name "Rterm")  ; msdos systems
+</pre>
+  -->
+  <LI>Be sure to have your R\bin directory in your path, e.g. c:\program 
+  files\r\rw1091\bin (or whatever statistics program you use - put the 
+  bin-directory in your path) </LI></UL>(to speed up ess, in Emacs, call C-u 0 M-x 
+byte-recompile-directory and choose c:\program files\emacs\site-lisp\ess\lisp). 
+<H2>Matlab mode</H2>
+<UL>
+  <LI>Put <A 
+  href="http://www.math.aau.dk/~dethlef/Tips/local/matlab.el">matlab.el</A> into 
+  c:\program files\emacs\site-lisp\matlab 
+  <LI>Add the following lines to your .emacs <PRE>(autoload 'matlab-mode "matlab" "Enter Matlab mode." t)
+(setq auto-mode-alist (cons '("\\.m\\'" . matlab-mode) auto-mode-alist))
+(autoload 'matlab-shell "matlab" "Interactive Matlab mode." t)
+</PRE></LI></UL>
+<HR>
+
+<H1>Support for Danish</H1>
+<H3>Hyphenation</H3>
+<UL>
+  <LI>In the Start menu, choose Programs/Miktex/Miktex options 
+  <LI>In the Languages tab, tick danish. 
+  <LI>Choose 'Refresh' and 'Update' from the Miktex Options menu. </LI></UL><!-- (If this does not work, edit the file c:\program
+files\texmf\tex\generic\config\language.dat - simply delete the % in
+front of danish. Then choose 'Refresh' and 'Update' from the Miktex
+Options menu.) -->
+<H3>Danish characters</H3>
+<UL>
+  <LI>Unzip dk-support.zip to c:\localtexmf\tex\latex\dk-support 
+  <LI>Choose 'Refresh' and 'Update' from the Miktex Options menu. 
+  <LI>In your .tex files, use \usepackage{dk} </LI></UL>
+<H3>Aalborg University Logo</H3>
+<UL>
+  <LI>Unzip auclogo.zip to c:\localtexmf\metafont (create the directory, if it 
+  does not exist) 
+  <LI>Choose 'Refresh' from the Miktex Options menu. 
+  <LI>In your .tex files, use \font\auc = auclogo in the preamble and then {\auc 
+  a}, {\auc b}, etc. </LI></UL>
+<H3>Danish dictionary for ispell</H3>
+<UL>
+  <LI>Unzip ispell-da-1.4.45.zip to c:\temp 
+  <LI>At a dos prompt, go to c:\temp\ispell-da-1.4.45\ and call <PRE>buildhash words-da.ispell dansk.aff dansk.hash
+</PRE>
+  <LI>Move dansk.aff and dansk.hash to c:\usr\local\lib 
+  <LI>Delete c:\temp\ispell-da-1.4.45\ </LI></UL><STRONG>Test:</STRONG> In Emacs 
+choose Edit/Spell/Select Dansk, and then Edit/spell/check buffer. <!--   END MAIN PAGE --><!--   SIGNATURE -->
+<HR>
+Copyright (C) 2003-2004, Claus Dethlefsen <BR><!-- hhmts start -->Last modified: 
+Mon Oct 04 19:44:56 Romance Daylight Time 2004 <!-- hhmts end --><!--   END SIGNATURE --></BODY></HTML>

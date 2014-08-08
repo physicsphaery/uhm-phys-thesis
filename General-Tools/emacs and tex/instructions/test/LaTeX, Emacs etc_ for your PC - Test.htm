@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0046)http://www.math.aau.dk/~dethlef/Tips/test.html -->
+<HTML><HEAD><TITLE>LaTeX, Emacs etc. for your PC - Test</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1"><LINK 
+href="LaTeX, Emacs etc_ for your PC - Test_files/claus.css" type=text/css 
+rel=stylesheet>
+<STYLE type=text/css>TABLE {
+	BACKGROUND: #e6e6e6
+}
+TR {
+	BACKGROUND: #c0e0f0
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY vLink=#800080 link=#0000ff bgColor=#ffffff><!-- MENU -->
+<TABLE>
+  <TBODY>
+  <TR>
+    <TH bgColor=yellow><A href="http://www.math.auc.dk/~dethlef/" 
+      target=_top><IMG alt="Homepage of Claus Dethlefsen" 
+      src="LaTeX, Emacs etc_ for your PC - Test_files/home_ikon.gif" 
+      border=0></A></TH>
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/introduction.html">Intro</A></TH>
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/preparation.html">Prepare</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/download.html">Download</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/install.html">Install</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/tuning.html">Tune</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/test.html">Test</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/uninstall.html">Uninstall</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/information.html">Info</A> 
+  </TR></TR></TBODY></TABLE><!-- END MENU --><!--   MAIN PAGE -->
+<H1>Test</H1>Try to compile the file (see the itemize further down if you do not 
+know how to use Emacs/LaTeX together): <PRE>c:\Program Files\texmf\doc\miktex\samples\hypertex\hyperdemo.tex
+</PRE>
+<P>A common error message is: <PRE>'latex' is not recognized as an internal or external command, operable program or batch file.
+
+LaTeX exited abnormally with code 1 at Mon Jun 28 11:30:30
+</PRE>This happens when your PATH is not set correctly, see the <A 
+href="http://www.math.aau.dk/~dethlef/Tips/preparation.html">preparation 
+page</A>. It should include c:\program files\texmf\miktex\bin for miktex to work 
+with emacs/auctex. 
+<P>Ispell might break down with the message: <PRE>Can't open c:\usr\local\lib /english.hash
+</PRE>This is likely because a space slipped into your definition of the 
+environment variable DICTDIR (see the preparation page). DICTDIR must be defined 
+as "c:\usr\local\lib" rather than "c:\usr\local\lib ". Please, doublecheck this 
+before writing to me! 
+<HR>
+
+<P>For an excellent introduction to LaTeX, you should consult the lshort guide, 
+but it can be hard to compile... 
+<P><FONT color=red>IMPORTANT:</FONT><I> The lshort guide is not guaranteed to 
+compile on your system, since the needed packages are not necesarily included in 
+the Miktex version you have downloaded... you might get a successful compilation 
+if you put a %-sign in front of the following lines in lshort.sty:</I>
+<P><PRE>%\RequirePackage{type1cm}% remove size restrictions
+...
+%\RequirePackage{textcomp}
+...
+%\RequirePackage{eurosans}
+...
+</PRE><I>I will see if I can find a better test, or description... Please be 
+patient.</I> 
+<UL>
+  <LI>Some versions of Miktex contains c:\program 
+  files\texmf\doc\guides\lshort-english\src. If you have this directory, open 
+  the file lshort.tex in Emacs and jump to "Press C-c C-c" below. Else, proceed. 
+
+  <LI>If it does not exist, create the directory c:\localtexmf\tex\latex 
+  <LI>Unzip lshort-4.14.src.tar.gz to c:\localtexmf\tex\latex (See the <A 
+  href="http://www.math.aau.dk/~dethlef/Tips/download.html">download page</A> 
+  for the CTAN location of this file) 
+  <LI>Open Emacs and choose Files/Open file and get the file 
+  c:\localtexmf\tex\latex\lshort-4.14\src\lshort.tex 
+  <LI>Press <A 
+  href="http://www.math.aau.dk/~dethlef/Tips/basics.html#emacscommands">C-c 
+  C-c</A> &lt;Return&gt; to run latex 
+  <LI>Press <A 
+  href="http://www.math.aau.dk/~dethlef/Tips/basics.html#emacscommands">C-c 
+  C-l</A> to view results of the compilation 
+  <LI>Press <A 
+  href="http://www.math.aau.dk/~dethlef/Tips/basics.html#emacscommands">C-c 
+  C-c</A> &lt;Return&gt; to run latex again 
+  <LI>Press <A 
+  href="http://www.math.aau.dk/~dethlef/Tips/basics.html#emacscommands">C-c 
+  C-c</A> &lt;Return&gt; to run latex again, again 
+  <LI>Press <A 
+  href="http://www.math.aau.dk/~dethlef/Tips/basics.html#emacscommands">C-c 
+  C-c</A> &lt;Return&gt; to run View 
+  <LI>Press <A 
+  href="http://www.math.aau.dk/~dethlef/Tips/basics.html#emacscommands">C-c 
+  C-c</A> FILE &lt;Return&gt; &lt;Return&gt; to run dvips (Note that the command 
+  is FILE and not Dvips as one might expect) 
+  <LI>Press <A 
+  href="http://www.math.aau.dk/~dethlef/Tips/basics.html#emacscommands">C-c 
+  C-c</A> Print &lt;Return&gt; &lt;Return&gt; to run GSview (Also somewhat 
+  misleading name) 
+  <LI>If you want to print the document, do it from GSview. </LI></UL><!--   END MAIN PAGE --><!--   SIGNATURE -->
+<HR>
+Copyright (C) 2003-2004, Claus Dethlefsen <BR><!-- hhmts start -->Last modified: 
+Tue Sep 14 10:12:43 Romance Daylight Time 2004 <!-- hhmts end --><!--   END SIGNATURE --></BODY></HTML>

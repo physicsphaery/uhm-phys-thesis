@@ -1,0 +1,22 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -*- Mode: Latex -*- %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% >>body.tex<<
+%% Author          : [Your Name]
+%% Created On      : 
+%% Last Modified On: 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Introduction}
+\label{c:intro}
+\input{introduction/intro.tex}
+%
+\chapter{Dogs}
+\label{c:nuAstro}
+\input{science/science.tex}
+%
+\chapter{Cats}
+\label{c:anita}
+\input{instrument/instrument.tex}
+%
+\chapter{Conclusion}
+\label{c:concl}
+\input{conclusion/conclusion.tex}
+

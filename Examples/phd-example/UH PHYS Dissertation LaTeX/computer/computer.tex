@@ -1,0 +1,68 @@
+%----------------------------------------------------------------------------
+\label{computer chapter}
+%----------------------------------------------------------------------------
+\input{computer/intro/intro.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\section{Transform limited pulse sequences}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\subsection{One color}
+%----------------------------------------------------------------------------
+\input{computer/one_color/formalism.tex}
+%----------------------------------------------------------------------------
+\input{computer/one_color/optimization.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\subsection{Two color}
+%----------------------------------------------------------------------------
+\input{computer/two_color/formalism.tex}
+%----------------------------------------------------------------------------
+\input{computer/two_color/optimization.tex}
+%----------------------------------------------------------------------------
+\input{computer/two_color/residue_surface_features.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\subsection{Three color}
+%----------------------------------------------------------------------------
+\input{computer/three_color/formalism.tex}
+%----------------------------------------------------------------------------
+\input{computer/three_color/optimization.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\section{Random excitation amplitude simulations}
+It was observed in the laboratory that the dye lasers, intended for use in a demonstration experiment of these processes, exhibit relatively large ($\sim20\%$) intensity fluctuations. Here we estimate the effect of these fluctuations on the population transfer efficiency of various three color transfer schemes.
+%----------------------------------------------------------------------------
+\label{random sims}
+%----------------------------------------------------------------------------
+\subsection{Three $\pi$ pulse sequence}
+\input{computer/stochastic_simulations/three_pi.tex}
+%----------------------------------------------------------------------------
+\subsection{STIRAP sequence followed by a $\pi$ pulse}
+\input{computer/stochastic_simulations/STIRAP_pi.tex}
+%----------------------------------------------------------------------------
+\subsection{Three color optimal sequence}
+\input{computer/stochastic_simulations/three_STIRAP.tex}
+%----------------------------------------------------------------------------
+\subsection{Histogram comparison}
+\input{computer/stochastic_simulations/histogram.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\section{Stochastic collision model and density matrix methods}
+First, we examine the effect of collision using a ``state vector'' approach assuming that the effect of collisions is to simply randomize the ``phase'' of the atom. Then we try to merge this idea with density matrix methods using a computer fit to the free parameters in a ``relaxation'' matrix. Modeling the effects of collisions in a stochastic manner (as in Section \ref{model} is computationally intensive and slow. The density matrix method is computational simple and would be preferred for further investigation into collisional effects.
+\label{density section}
+%----------------------------------------------------------------------------
+\subsection{Collision model}
+\input{computer/density/model.tex}
+%----------------------------------------------------------------------------
+\subsection{Density matrix formalism}
+\input{computer/density/density.tex}
+%----------------------------------------------------------------------------
+\subsection{Collision model parametric fit}
+\input{computer/density/fit.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\section{Conclusion}
+\input{computer/conclusion/conclusion.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------

@@ -1,0 +1,15 @@
+%----------------------------------------------------------------------------
+%bb defines the bounding box for the pdf
+%viewport defines the area of the pdf used
+%in sidewaysfigure the last entry in bb moves the caption toward/away the pic
+%in sidewaysfigure the second entry in bb moves the pic toward/away the caption
+%----------------------------------------------------------------------------
+\begin{figure}
+\scalebox{0.6}[0.6]{
+\includegraphics[bb=35 125 489 450]
+{pathways_N/pathways_N.pdf}
+}
+\caption[``N'' pathway diagram]{``N'' pathway diagram.}
+\label{pathways_N}
+\end{figure}
+%----------------------------------------------------------------------------

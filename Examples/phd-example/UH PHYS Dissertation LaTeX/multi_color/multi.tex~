@@ -1,0 +1,45 @@
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\input{multi_color/intro/intro.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\section{Molecular iodine}
+The iodine molecule has been extensively studied \cite{Martin:1986a},\cite{Wei:1974a},\cite{Tellinghuisen:1978a},\cite{Gerstenkorn:1981a},\cite{Gerstenkorn:1991a},\cite{Lamrini:1993a},\cite{Lewis:1994a}; we seek to exploit this knowledge base in both our numerical studies and experimental efforts. In the visible region, the absorption spectrum of molecular iodine is dominated by transitions between the ground ``X'' electronic state and an upper excited electronic state called ``B'' \cite{Lewis:1993a}. Here we estimate the required beam parameters for coherent control and introduce the energy level structure.
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\subsection{Required (single color) beam properties to control iodine}
+\input{multi_color/iodine/iodine.tex}
+%----------------------------------------------------------------------------
+\subsection{Energy level model}
+\input{multi_color/iodine/levels.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\section{Multi-color LIF simulation}
+An estimate of the target/non--target discrimination ratio is calculated in this section. The iodine molecule is selected as the non--target and isotopic iodine 127--129 is used at the target; this is considered a worst case scenario since both molecules will have similar transitions. The key advantage of the three color LIF detection methods presented here is the fact that the fluorescence response of the target can be moved to higher frequencies \emph{without} significant non--target ``following''. The unique blue shifted fluorescence spectrum is found to dominate the non-target's fluorescence in certain spectral windows.
+%----------------------------------------------------------------------------
+\subsection{The Lorentzian tail}
+\input{multi_color/multi_color/tail.tex}
+%----------------------------------------------------------------------------
+\subsection{Dynamics approximation}
+\input{multi_color/multi_color/approx.tex}
+%----------------------------------------------------------------------------
+\subsection{Single vs. three color LIF}
+\input{multi_color/multi_color/compare.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\section{Coherent population transfer}
+In this section we describe the unique advantages to the coherent control process under investigation. Evidence for an increase in potential LIDAR sensitivity is revealed when one considers the robust population inversion properties of these coherent process. The detuning properties are shown to not have an adverse affect on discrimination and allow near--unity population transfer efficiencies even with non-uniform spatial intensity distributions and shot-to-shot pulse height variations (we re-visit and re-analyze some of the results from Section \ref{random sims}).
+%----------------------------------------------------------------------------
+\subsection{STIRAP pulse height insensitivity}
+\input{multi_color/coherent/amplitude.tex}
+\input{multi_color/coherent/polarization.tex}
+\input{multi_color/coherent/spatial.tex}
+%----------------------------------------------------------------------------
+\subsection{The STIRAP detuning ridge}
+\input{multi_color/coherent/STIRAP_ridge.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\section{Conclusion}
+\input{multi_color/conclusion/conclusion.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------

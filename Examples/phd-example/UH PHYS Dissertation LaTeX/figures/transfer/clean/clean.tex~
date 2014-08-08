@@ -1,0 +1,15 @@
+%----------------------------------------------------------------------------
+%bb defines the bounding box for the pdf
+%viewport defines the area of the pdf used
+%in sidewaysfigure the last entry in bb moves the caption toward/away the pic
+%in sidewaysfigure the second entry in bb moves the pic toward/away the caption
+%----------------------------------------------------------------------------
+\begin{figure}
+\scalebox{0.8}[0.8]{
+\includegraphics[bb=30 455 489 652]
+{clean/clean.pdf}
+}
+\caption[Collisionless evolution of a three state system]{Collisionless evolution of a three state system. For this (and the following simulations) $\alpha=\beta=1$ and the time scale is the two state Rabi period associated with $\alpha$ (or $\beta$).}
+\label{clean}
+\end{figure}
+%----------------------------------------------------------------------------

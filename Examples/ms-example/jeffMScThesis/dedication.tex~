@@ -1,0 +1,16 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -*- Mode: Latex -*- %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% dedication.tex -- 
+%% Author          : R. Jeffrey Kowalski
+%% Created On      : Fri Nov 3 22:08:51 2006
+%% Last Modified By:
+%% Last Modified On:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{dedication}
+\null\vfil
+{\large
+\begin{center}
+To Mom and Dad,\\\vspace{12pt}
+Debbie and Rick Kowalski\\\vspace{12pt}
+\end{center}}
+\vfil\null
+\end{dedication}

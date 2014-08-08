@@ -1,0 +1,11 @@
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+Measurements of LIF from molecular iodine illuminated with red and green HeNe can be found in the literature and are performed in undergraduate labs. We repeat some of these experiments to verify the calibration procedures to acquire spectral data and the numerical model use to analyze these data. See Figures \ref{iodine_potato} \ref{iodine_clean} for scans of a crudely prepared iodine cell and a scan from a commercially prepared cell. Different geometries are compared (side--view and backscatter) with the side--view geometry producing the best data mainly due to a significantly reduced signal from the fundamental illumination wavelength.
+%----------------------------------------------------------------------------
+\input{figures/experiments/iodine_potato/iodine_potato.tex}
+\input{figures/experiments/iodine_clean/iodine_clean.tex}
+%----------------------------------------------------------------------------
+
+The high voltage fast rise time relay mentioned in Section \ref{Hg pulser and fast PD section} will be used to provide the fast voltage pulse that will drive the Pockels cell in the final dye laser system. The simple beam line used for the LIF measurement mentioned above is exploited to test a recently acquired Pockels cell (Cleveland Crystals Inc., Impact 8 KD*P Pockels Cell with a 532 nm AR coating). A crude Pockels cell mount is quickly constructed and the red HeNe output is sent through two crossed polarizers with the Pockels cell mounted in between. Alignment proved difficult (this knowledge prompted the design and construction of a new Pockels cell mount); however, once setup properly, the Pockels cell/Hg pulser system worked well (see UH notebook UH--015 page 59).
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------

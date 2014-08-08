@@ -1,0 +1,23 @@
+% 1_color_ladder.tex
+% by Troy Hix, April 2005
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\begin{figure}[h]
+\setlength{\unitlength}{2cm}
+\begin{center}
+\begin{picture}(3.3,2.2)
+\linethickness{1mm}
+\put(0,1.2){\line(1,0){3}}
+\put(0,0.0){\line(1,0){3}}
+\put(3.1,1.2){$\ket{1}$}
+\put(3.1,0.0){$\ket{0}$}
+\thinlines
+\put(1.0,0.0){\vector(0,1){1.18}}
+\put(1.2,0.6){$\alpha$}
+\end{picture}
+\end{center}
+\caption[Two level, single field diagram]{Two level, single field diagram - Ground state $\ket{0}$ and first excited state $\ket{1}$ are coupled by field $\alpha$ so that population transfers from the ground state to the first excited state}
+\label{1 color ladder}
+\end{figure}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------

@@ -1,0 +1,11 @@
+% delay_amp.tex
+% by Troy Hix, March 2005
+%----------------------------------------------------------------------------
+\begin{figure}
+\centering
+\includegraphics[width=4.00in]
+{delay_amp/delay_amp.png}\\
+\caption{$\log\left(\Phi_{residue}\right)$ dependence on scaling $\Delta_{\alpha}$ and $A$. There are many local optima arranged in a repeating crescent shape. In general the local optima and the average height of the nearby surface decreases as $\Delta_{\alpha}$ and $A$ increase. There are $41^2$ evenly spaced points here.}
+\label{delay amp}
+\end{figure} 
+%----------------------------------------------------------------------------

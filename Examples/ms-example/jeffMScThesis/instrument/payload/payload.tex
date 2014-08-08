@@ -1,0 +1,82 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -*- Mode: Latex -*- %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% >>instrument/payload/payload.tex<<
+%% Author          : R. Jeffrey Kowalski
+%% Created On      : Tue Apr 10 19:40:36 HST 2007
+%% Last Modified On: Thu Aug  2 10:54:56 HST 2007
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Overview of ANITA Payload}
+\label{s:payload}
+Figure~\ref{fig:payload} identifies the features of the ANITA payload.  The bulk of the $\sim$1905 kg payload is composed mainly of 3 enclosures that contain the following:
+
+\begin{enumerate}
+\item \emph{ANITA Instrument} \par Data acquisition system, GPS navigation, power system, calibration pulser, discussed in section~\ref{s:DACsystem}.
+\item \emph{CSBF Support Instrumentation Package (SIP)} \par Controls data transfer pipeline via TDRSS and Iridium antennas, balloon control (adjusting weight of payload during flight by dumping ballast).
+\item \emph{Pb-acid Batteries} \par Used for back-up power and are a required load by the charge controller.
+\end{enumerate}
+
+\noindent The remainder of the payload contains various antenna discussed in sections~\ref{ss:Antenna}, and ~\ref{s:DACsystem}.  Specifics of the CSBF instrumentation will not be discussed.
+
+\begin{figure}[htbp]
+\centering
+\epsfxsize=4.0in\epsfbox{figures/instrument/payloadOverview.eps}
+\caption{The ANITA Payload:  32 Seavey dual-polarized, quad-ridge horn antennas, 8 monitor antennas, 2 GPS systems, instrument enclosures, and 2 PV arrays for ANITA and CSBF electronics respectively.}
+\label{fig:payload}
+\end{figure}
+
+\subsection{Antenna}
+\label{ss:Antenna}
+There are 3 types of antennas used on the ANITA payload for radio detection of Askaryan pulses.  The first of these are the Seavey dual-polarization (\textbf{H}orizontal \& \textbf{V}ertical), quad-ridge horn antennas which have excellent frequency and temporal response over 200-1200 MHz.  These antennas are mounted with a $\sim$ 10$^{\circ}$ tilt from the +z-axis defined to be the vertical axis of the payload.  Sixteen are mounted on the top (2 octagons of 8) and bottom (1 octagon of 16) of the gondola, totalling 32 horn antennas.  Figure~\ref{fig:RFsystem} illustrates the front-end RF receiver system.
+
+\begin{figure}[htbp]
+\centering
+\epsfxsize=4.0in\epsfbox{figures/instrument/RFsystemDiagram.eps}
+\caption{RF Receiver System:  Schematic view of the front end RF system.  Incoming radio waves are captured with Seavey quad-ridge horns.  Signals from 2 antennas are fed through an RFCM where the signal is bandpass filtered and amplified by 80 dB (40 dB + 40 dB).  The outgoing signal is then sent to the ANITA instrument.}
+\label{fig:RFsystem}
+\end{figure}
+
+\par The second and third group of antennas are custom designed bicone and discone's. These serve as monitor antennas that compliment the 32 horn antennas due to their vertically polarized broadband frequency response.  There are 4 antennas in each group which are mounted at deck level of the gondola.  The bicones also serve as calibration pulsing antennas since they are capable of both transmitting and receiving RF signals.
+
+\subsection{Gondola}
+\label{ss:Gondola}
+The ANITA gondola was designed for quick recovery using the twin-otter recovery plane in Antarctica.  The skeleton on the gondola was built with aluminum tubing, chords, radials, and trusses.  Most of the mechanical assembly is done with drift pins, and 1/4-turn fasteners with a small compliment of nuts, bolts and tools.  Typically, a top-down approach is used during assembly, constructing the tier 1-2 and tier 2-3 levels on the ground first.  The additional column tiers (3-4 \& 4-5) and deck level (tier 5-6) are added afterwards while the payload is suspended on a crane hoist.
+
+\par Once assembled, the payload is divided into 16 $\phi$-sectors to identify the pointing direction of each antenna~\cite{ANITAnote72}.  This is noted in table~\ref{tab:phiSector}.  An explanation for this configuration is discussed in section~\ref{ss:surfNturf}.
+
+\begin{table}
+\caption{$\phi$-sector assignments for the ANITA payload}
+{\footnotesize
+\begin{minipage}[b]{0.3\columnwidth}
+\begin{tabular}{| c | c | c |}\hline
+$\phi$-sector & Top Ant. \# & Bottom Ant. \# \\
+\hline \hline
+1 & A08, A09, A01 & A32, A17, A18 \\
+2 & A09, A01, A10 & A17, A18, A19 \\
+3 & A01, A10, A02 & A18, A19, A20 \\
+4 & A10, A02, A11 & A19, A20, A21 \\
+5 & A02, A11, A03 & A20, A21, A22 \\
+6 & A11, A03, A12 & A21, A22, A23 \\
+7 & A03, A12, A04 & A22, A23, A24 \\
+8 & A12, A04, A13 & A23, A24, A25 \\
+\hline
+\end{tabular}
+\end{minipage}
+\hspace{3.0cm}
+\begin{minipage}[b]{0.3\columnwidth}
+\begin{tabular}{| c | c | c |}\hline
+$\phi$-sector & Top Ant. \# & Bottom Ant. \# \\
+\hline \hline
+9 & A04, A13, A05 & A24, A25, A26 \\
+10 & A13, A05, A14 & A25, A26, A27 \\
+11 & A05, A14, A06 & A26, A27, A28 \\
+12 & A14, A06, A15 & A27, A28, A29 \\
+13 & A06, A15, A07 & A28, A29, A30 \\
+14 & A15, A07, A16 & A29, A30, A31 \\
+15 & A07, A16, A08 & A30, A31, A32 \\
+16 & A16, A08, A09 & A31, A32, A17 \\
+\hline
+\end{tabular}
+\end{minipage}
+\label{tab:phiSector}
+}
+%
+\end{table}

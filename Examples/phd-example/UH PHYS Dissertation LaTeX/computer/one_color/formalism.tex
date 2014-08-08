@@ -1,0 +1,48 @@
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+Suppose the dynamics of some two level quantum system is given by
+%----------------------------------------------------------------------------
+\begin{equation}
+i\frac{\partial}{\partial t} \ket{\Psi}
+=
+i\left(
+\begin{array}{cc}
+0 & \alpha \\
+-\alpha & 0 \\
+\end{array}
+\right)
+\ket{\Psi},
+\label{one dynamics}
+\end{equation}
+%----------------------------------------------------------------------------
+where the square of the nth element in $\ket{\Psi}$ is the probability of finding the system in the nth state, $\alpha$ is the coupling field between the zeroth (ground) and first excited state. It can be shown (see Section \ref{basic_two_level}) that closed non-degenerate two level quantum systems with a completely resonant coupling field can be described this way in the energy basis (see Figure \ref{1 color ladder}).
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\input{figures/transfer/1_color_ladder/1_color_ladder.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+In general the coupling field is a function of time. Consider solutions where the coupling field is localized temporally as a Gaussian, namely
+%----------------------------------------------------------------------------
+\begin{equation}
+\boxed{
+\alpha(t)
+=
+A
+\exp
+\left(
+-\ln(16)
+\frac
+{(t - t_\alpha)^2}
+{\sigma_\alpha^2}
+\right),
+\label{gaussian}
+}
+\end{equation}
+%----------------------------------------------------------------------------
+where $A$ is the amplitude, $t_\alpha$ is location of the pulse, $\sigma_\alpha$ is the full width half max (FWHM) of the pulse amplitude.
+
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------

@@ -1,0 +1,10 @@
+%------------------------------------------------------------------------------
+\label{absorbtion layout}
+%------------------------------------------------------------------------------
+The output of the dye laser is sent through three attenuation tools before going though a sample cell filled with iodine vapor. The 13 mJ beam from the dye laser [see UH notebook UH-016 pg 62)] is reduced by a factor of $4^3$ after the attenuation tools [see UH notebook UH-015 pg 117)] for an incident energy of 200 uJ in each 8 ns pulse at 20 Hz. The beam which passes through the cell is detected with a photodiode and averaged with a boxcar integrator then tabulated as a function of dye laser wavelength.
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------

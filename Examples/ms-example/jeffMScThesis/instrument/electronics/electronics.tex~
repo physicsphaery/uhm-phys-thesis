@@ -1,0 +1,82 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -*- Mode: Latex -*- %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% >>instrument/electronics/electronics.tex<<
+%% Author          : R. Jeffrey Kowalski
+%% Created On      : Tue Apr 10 19:40:36 HST 2007
+%% Last Modified On: Thu Aug  2 10:54:56 HST 2007
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Data Acquisition System, Subsystems and Integrated Hardware}
+\label{s:DACsystem}
+Once an RF signal is fed through a quad-ridged horn, the two polarizations are guided into an RFCM (RF Conditioning Module) where the signal is bandpass filtered and amplified with a \textit{Miteq} LNA with 40 dB of gain.  A second stage amplifier (\textit{Mini-Circuits}) adds another 40 dB of gain to the outgoing signal that is sent to the instrument enclosure for digitization.  This section outlines ANITA's electronics system.
+
+\subsection{Power Consumption}
+\label{ss:power}
+Without the use of a rotator to keep solar panels positioned toward the Sun, and omni-directional photovoltaic array is necessary.  ANITA uses 8 PV panels with 84 cells per panel located at the bottom of the payload seen in figure~\ref{fig:payload}.  The total power consumption while in flight ranges from 600 W at McMurdo, Antarctica latitudes up to $\sim$800 W at 71$^\circ$ S latitude~\cite{PVs}.
+\par Sixteen lead-acid batteries are also flown in case of PV failure and are required by the charge controller.  The battery enclosure, located at deck level in figure~\ref{fig:payload}, also serves as a counter balance for weight distribution between the ANITA instrument enclosure and the SIP enclosure.
+
+\subsection{SURF, TURF, and TURFIO}
+\label{ss:surfNturf}
+
+From the RFCM, the signal is carried from the upper antennas over 3.76 m of \textit{Andrew} heliax with 50 $\ohm$ N-type termination into instrument enclosure.  The upper cable length differs from the bottom cable length (4.85 m) to ensure that received pulses will arrive at the data acquisition boards within the trigger time windows.  Inside the instrument enclosure, the signal is bandpass filtered and carried over $\sim$7 ft of 50 $\ohm$ SMA terminated RG232 cable to hybrid filters that convert the horizontal and vertically polarized signals to LCP and RCP signals.  Each polarization is then digitally split into 4 discretely filtered frequency bands for triggering (200-400 MHz, 400-600 MHz, 600-800 MHz, \& 800-1200 MHz) by the SHORT (SURF High Occupancy RF Trigger) board and sent to the 20-slot conduction cooled, cPCI crate over $\sim$13 ft of 50 $\ohm$ SMA terminated RG232 cable.
+
+\begin{figure}[htbp]
+\centering
+\epsfxsize=4.0in\epsfbox{figures/instrument/firmware_block.eps}
+\caption{Firmware Flow Diagram:  Control logic for ANITA's data acquisition system.}
+\label{fig:firmware_block}
+\end{figure}
+
+\par The Sampling Unit for Radio Frequencies (SURF)~\cite{SNIC.2006} forms a level-1 (L1) trigger in firmware characterized by 3 of 8 trigger bits being above threshold.  The L1 trigger is then sent to the Trigger Unit for Radio Frequencies (TURF) where the event controller forms a level-2 (L2) trigger when 2-of-3 antennas are hit in the same $\phi$-sector in either the top or bottom antenna cluster.  If there is a coincidence L2 trigger formed for both the top and bottom antenna cluster in the same $\phi$-sector, the TURF event controller issues a global level-3 (L3) trigger.  The TURF board also serves to issue \texttt{hold}, and \texttt{digitize} signals to begin SURF ADC conversion while also monitoring trigger rates.  Meanwhile, the Trigger Unit for Radio Frequencies Input and Output (TURFIO), receives an external 1 PPS trigger from the GPS units (~\ref{ss:gps}) and allows for precision timing of events by the event controller.  Figure~\ref{fig:firmware_block} illustrates the functionality of the ANITA firmware for data acquisition.
+
+\begin{center}
+\begin{table}
+\caption{Triggering and sampling capabilities of the ANITA experiment~\cite{SNIC.2006}.}
+\begin{tabular}{| c | c | c |} \hline
+Parameter & Quantity & Comments \\
+\hline \hline
+\# of RF Channels & 72 & 32 Top; 32 Bottom; 8 VETO \\
+Sampling Rate & 2.6 GSa/s & $>$ Nyquist \\
+Sampling Resolution & $\geq$ 9 bits & 3 bits noise + dynamic range \\
+Samples per window & 260 & 100 ns window \\
+\# of Sample buffers & 4 & Allows multi-hit \\
+Power per Channel & $<$ 1 W & Excluding LNA and triggering \\
+\hline
+\# of Trigger Bands & 4 & 0.2-0.4; 0.4-0.65; 0.65-0.88; 0.88-1.2 GHz \\
+\# of Trigger Channels & 8 & Per Antenna (4 bands from RCP \& LCP) \\
+Trigger Threshold & $\leq$ 2.3$\sigma$ & Operation into thermal noise \\
+Accidental Trigger Rate & $\leq$ 5 Hz & DAQ/processing limit \\
+L3 Coincidence window & $\sim$ 20 ns & Relative delay between upper and lower L2 \\
+\hline
+\end{tabular}
+\label{tab:digitizer}
+\end{table}
+\end{center}
+
+\par The SURF board digitization relies on the LABRADOR ASIC design~\cite{LABRADOR.2007} which has gone through three iterations to achieve the desired sensitivity for ANITA.  With 1 GHz of analog bandwidth, the LAB3 stores 9 channels of 260 deep sampling while supporting 12-bit digitization and readout in under 50 $\micro$s.  Table~\ref{tab:digitizer} summarizes the design properties of the ANITA trigger and digitizer system.
+
+\subsection{GPS}
+\label{ss:gps}
+Two GPS units are flown on the ANITA payload:
+
+\begin{enumerate}
+\item \textit{Thales Navigation} \emph{G12}
+\par The G12 unit provides precision horizontal positioning accuracy of 90.0 cm and 160.0 cm in vertical position using~\cite{G12}.  The PPS output on this until passes through a TTL boost module which forms a trigger on the TURFIO to increase trigger capability from ground pulser events.
+\item \textit{Thales Navigation} \emph{ADU5}
+\par The ADU5 unit provides differential processing of attitude, position, velocity, and time data using 4 independent receivers~\cite{ADU5}.  Further monitoring values such as heading, roll, and pitch can easily be derived from its output.  The PPS output, similarly, passes through a TTL module creating a 1 Hz trigger used to synchronize and calibrate the TURF event time encoding.  The ADU5 PPS is also used to trigger the \textit{Avtech} calibration pulser.
+\end{enumerate}
+
+\par It should also be mentioned that two separate TTL boost units are used to drive the outputs from the GPS units to $\sim$3 V.  Both signals are sent from the TTL boost over 50 $\ohm$ co-axial cable to the TURFIO and \textit{Avtech} external trigger inputs where they are terminated again at 50 $\ohm$.
+
+\subsection{Calibration Pulser}
+\label{ss:calPulser}
+The \textit{Avtech} pulser provides the capability to calibrate the response of the \textit{Seavey} quad-ridge horn antennas while in flight.  Operating on a TTL trigger input, pulses are sent at varying amplitudes via a 4-port RF switch and variable attenuator from the bicone antennas described in ~\ref{ss:Antenna}.  The pulse rate is $\sim$1 Hz is transmitted in a rotating progression starting from bicone 1 $\rightarrow$ bicone 4.
+
+\subsection{External Sensors}
+\label{ss:sensors}
+Several sensors are also flown on the payload to further positioning capabilities.  These include:
+
+\begin{enumerate}
+\item \emph{Sun Sensors} \par 2-axis sensor designed to measure the position of the sun with high precision.  Provides alternate heading and orientation data to compliment the differential GPS system.
+\item \emph{Attitude Sensors (accelerometers, magnetometer)} \par 3-axis magnetometer is used in to determine orientation in case of GPS failure by measuring the Earth's magnetic field in 3 directions.  The 2 flown accelerometers compliment the magnetometer in case of GPS blackout and provide precision orientation data.
+\item \emph{Temperature Sensors} \par Used to monitor the effective temperature of electronics to ensure operation within temperature limits.  Typical range during balloon flights is -60 to +100$^{\circ}$C.  For ANITA, solar panels reached temperatures exceeding 90$^{\circ}$C while electronics remained within the limits of the manufacturer.
+\item \emph{Pressure Sensor} \par Used to monitor and measure the internal pressure of the ANITA instrument enclosure.
+\end{enumerate}

@@ -1,0 +1,353 @@
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2006.10.20)  3 AUG 2007 10:13
+entering extended mode
+**MScTHESIS.tex
+(./MScTHESIS.tex
+LaTeX2e <2003/12/01>
+Babel <v3.8d> and hyphenation patterns for american, french, german, ngerman, b
+ahasa, basque, bulgarian, catalan, croatian, czech, danish, dutch, esperanto, e
+stonian, finnish, greek, icelandic, irish, italian, latin, magyar, norsk, polis
+h, portuges, romanian, russian, serbian, slovak, slovene, spanish, swedish, tur
+kish, ukrainian, nohyphenation, loaded.
+(./uhthesis2e.cls
+Document Class: uhthesis2e 1998/09/25 CAM & RSB's University of Hawaii Thesis C
+lass (a modification of University of California Thesis Class)
+(/usr/share/texmf/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf/tex/latex/psnfss/palatino.sty
+Package: palatino 2004/09/15 PSNFSS-v9.2 (SPQR) 
+) (./uht11.clo)
+\descriptionmargin=\dimen102
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+)
+(/usr/share/texmf/tex/latex/html/url.sty
+Package: url 1999/03/02  ver 1.4  Verb mode for urls, email addresses, and file
+ names
+)
+(/usr/share/texmf/tex/latex/acronym/acronym.sty
+Package: acronym 2004/11/10 v1.17 Support for acronyms (Tobias Oetiker)
+\clearlist=\toks14
+)
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf/tex/latex/graphics/graphics.cfg
+File: graphics.cfg 2005/02/03 v1.3 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 80.
+
+(/usr/share/texmf/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf/tex/latex/rotating/rotating.sty
+Package: rotating 1997/09/26 v2.13 Rotation package
+\c@r@tfl@t=\count88
+\rot@float@box=\box26
+) (./sistyle.sty
+Package: sistyle 2006/07/11 v2.1 SI units and numbers (DNJ Els)
+
+(/usr/share/texmf/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen105
+))
+\ttoks@A=\toks17
+\ttoks@B=\toks18
+)
+(/usr/share/texmf/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(/usr/share/texmf/tex/latex/graphics/color.sty
+Package: color 1999/02/16 v1.0i Standard LaTeX Color (DPC)
+
+(/usr/share/texmf/tex/latex/graphics/color.cfg
+File: color.cfg 2005/02/03 v1.3 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: dvips.def on input line 125.
+
+(/usr/share/texmf/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+(/usr/share/texmf/tex/generic/epsf/epsf.tex
+This is `epsf.tex' v2.7k <10 July 1997>
+\epsffilein=\read1
+\epsfframemargin=\dimen106
+\epsfframethickness=\dimen107
+\epsfrsize=\dimen108
+\epsftmp=\dimen109
+\epsftsize=\dimen110
+\epsfxsize=\dimen111
+\epsfysize=\dimen112
+\pspoints=\dimen113
+\epsfnoopenhelp=\toks19
+)
+\singlespacelength=\skip41
+\doublespacelength=\skip42
+
+\@input{units.aux}
+\openout2 = `units.aux'.
+
+(./units.tex) (./MScTHESIS.aux (./dedication.aux) (./acknowledgements.aux)
+(./abstract.aux) (./body.aux) (./appendix/appendix.aux))
+\openout1 = `MScTHESIS.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 115.
+
+
+(/usr/share/texmf/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 115.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 115.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 115.
+ [1
+
+
+
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 157.
+ [2] [3]
+\openout2 = `dedication.aux'.
+
+ (./dedication.tex
+[4
+
+])
+\openout2 = `acknowledgements.aux'.
+
+ (./acknowledgements.tex
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 7.
+ [5
+
+
+] [6])
+\openout2 = `abstract.aux'.
+
+ (./abstract.tex
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 8.
+ [7
+
+
+])
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 162.
+ (./MScTHESIS.toc
+[8
+
+
+])
+\tf@toc=\write3
+\openout3 = `MScTHESIS.toc'.
+
+ [9] (./MScTHESIS.lot)
+\tf@lot=\write4
+\openout4 = `MScTHESIS.lot'.
+
+ [10
+
+] (./MScTHESIS.lof [11
+
+])
+\tf@lof=\write5
+\openout5 = `MScTHESIS.lof'.
+
+ (./acronyms.tex [12]
+[13] [14
+
+] [15]) [16]
+\openout2 = `body.aux'.
+
+ (./body.tex
+Chapter 1.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 7.
+(./introduction/intro.tex (./introduction/motivation/motivation.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 7.
+)
+(./introduction/radio/radio.tex) (./introduction/thesis/thesis.tex [1
+
+
+]))
+[2]
+Chapter 2.
+(./science/science.tex (./science/intro.tex [3
+
+]) (./science/gzk/gzk.tex
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 7.
+
+[4] [5]) (./science/history/history.tex [6]) (./science/askaryan/askaryan.tex
+[7] [8] [9])) [10]
+Chapter 3.
+(./instrument/instrument.tex (./instrument/intro.tex)
+(./instrument/concept/concept.tex) (./instrument/payload/payload.tex [11
+
+]
+Overfull \hbox (0.37756pt too wide) in paragraph at lines 12--13
+[]\OT1/ppl/m/n/10.95 Data ac-qui-si-tion sys-tem, GPS nav-i-ga-tion, power sys-
+tem, cal-i-bra-tion pulser, dis-cussed
+ []
+
+[12] [13]
+Overfull \hbox (83.4199pt too wide) in paragraph at lines 49--62
+[][] 
+ []
+
+
+Overfull \hbox (83.4199pt too wide) in paragraph at lines 65--78
+[][] 
+ []
+
+) (./instrument/electronics/electronics.tex [14] [15]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 28.
+
+(/usr/share/texmf/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [16] [17] [18])) [19]
+Chapter 4.
+(./slacT486/slacT486.tex (./slacT486/intro.tex)
+(./slacT486/experiment/experiment.tex [20
+
+] [21] [22] [23] [24])
+(./slacT486/analysis/dataAcq.tex [25] [26]
+Overfull \hbox (14.45378pt too wide) in paragraph at lines 44--46
+ [][] 
+ []
+
+) (./slacT486/analysis/dipoleCal.tex [27] [28])
+(./slacT486/analysis/hornCal.tex [29] [30] [31] [32])
+(./slacT486/analysis/finalResults.tex [33] [34] [35] [36])) [37]
+Chapter 5.
+(./conclusion/conclusion.tex)) [38
+
+]
+\openout2 = `appendix/appendix.aux'.
+
+ (./appendix/appendix.tex
+Appendix A.
+(./appendix/ice/ice.tex [39
+
+
+
+] [40
+
+] [41] [42])
+Appendix B.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 31.
+(/usr/share/texmf/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+(./appendix/antarctica/prettyCode.tex [43
+
+
+] [44]
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 24.
+)
+(./appendix/antarctica/antarctica.tex
+Underfull \hbox (badness 10000) in paragraph at lines 18--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--7
+
+ []
+
+[45]
+
+LaTeX Warning: Float too large for page by 13.04735pt on input line 14.
+
+[46])) (./MScTHESIS.bbl [47
+
+
+
+
+] [48]) [49] (./MScTHESIS.aux (./dedication.aux)
+(./acknowledgements.aux) (./abstract.aux) (./body.aux) (./appendix/appendix.aux
+)) ) 
+Here is how much of TeX's memory you used:
+ 1824 strings out of 94501
+ 22832 string characters out of 1176788
+ 92017 words of memory out of 1000000
+ 4800 multiletter control sequences out of 10000+50000
+ 20267 words of font info for 65 fonts, out of 500000 for 2000
+ 583 hyphenation exceptions out of 1000
+ 31i,11n,21p,1833b,310s stack positions out of 1500i,500n,5000p,200000b,5000s
+
+Output written on MScTHESIS.dvi (65 pages, 168244 bytes).

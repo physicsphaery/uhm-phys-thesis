@@ -1,0 +1,25 @@
+%----------------------------------------------------------------------------
+%------------------------------Broad objectives------------------------------
+%----------------------------------------------------------------------------
+In this chapter the iodine molecule is introduced, the iodine energy level system is described, two basic three color schemes are proposed, the perceived advantages are described (though computer simulation), and the rationale behind each scheme design is explained. The central idea is to selectively control a target molecule such that it fluoresces in a ``dark'' spectral region free from collateral noise induced by the excitation pulses. This technique is the spectral analog of the \emph{temporal} ``dark--field'' detection method reported in reference \cite{Szarmes:2000a}.
+%----------------------------------------------------------------------------
+%-------------------------concepts/results presented-------------------------
+%----------------------------------------------------------------------------
+
+We use the energy structure of the well studied molecular iodine system \cite{Lewis:1993a} as a numerical testing ground for some coherent population transfer methods. The beam requirements for coherent control are calculated, and the theoretical discrimination ratio of a proposed scheme is quantified. The recently demonstrated ``STIRAP'' process is introduced and its impact on the discrimination ratio is assessed.
+
+%----------------------------------------------------------------------------
+%------------------relevant concepts/results NOT presented-------------------
+%----------------------------------------------------------------------------
+
+The computer analysis is aided by making some simplifying assumptions. The exact Schr\"{o}dinger dynamics are ignored; this allows approximate knowledge concerning the intricate and detailed molecular behavior to be gained using a modern desktop PC. The multi-color LIF process itself is under investigation here; no attempt is made to solve the traditional LIDAR problems. We do not investigate the effects of scattering, turbulence, absorption, etc.
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+
+The analysis described in this chapter relies heavily on \cite{Herzberg:1950a} and \cite{Gerstenkorn:1991a}; these resources give us detailed knowledge of the energy structure of molecular iodine and its isotopes though the use of a double power series expansion \cite{Dunham:1932a}. Reference \cite{Tellinghuisen:1978a} tabulates the Frack--Condon Factor (FCF) for various transitions in molecular iodine. This information is combined here to provide a rough model of the dynamic response of molecular iodine to a three color coherent pulse train.
+
+Efficient population transfer schemes were found experimentally \cite{Gaubatza:1988a} then explained theoretically \cite{Kuklinski:1989a}. Under names like ``coherent population trapping'' and ``STIRAP'' \cite{Romanenko:1997a} these coherent process continued to be studied with analytic and computer techniques \cite{Choe:1997a} \cite{Bargatin:1999a} \cite{Kis:2002a} and realized in molecular systems \cite{Schiemann:1993a} \cite{Halfmann:1996a}. In the following analysis, the impact of STIRAP on ``orientation damping'' (see Section \ref{polarization damping}) and the spatial distribution of inverted molecules are examined. The STIRAP detuning ridge is fit and its effect on isotope discrimination is modeled.
+
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------

@@ -1,0 +1,15 @@
+%----------------------------------------------------------------------------
+%bb defines the bounding box for the pdf
+%viewport defines the area of the pdf used
+%in sidewaysfigure the last entry in bb moves the caption toward/away the pic
+%in sidewaysfigure the second entry in bb moves the pic toward/away the caption
+%----------------------------------------------------------------------------
+\begin{figure}
+\scalebox{0.8}[0.8]{
+\includegraphics[bb=20 494 481 690]
+{spectral_profiles/spectral_profiles.pdf}
+}
+\caption[Pockels cell minimum pulse length (spectral profiles)]{Pockels cell minimum pulse length (spectral profiles). The power spectrum of the pulses in Figure \ref{temporal profiles} are show here. The leaking results in significant distortion from the optimal Gaussian profile.}
+\label{spectral profiles}
+\end{figure}
+%----------------------------------------------------------------------------

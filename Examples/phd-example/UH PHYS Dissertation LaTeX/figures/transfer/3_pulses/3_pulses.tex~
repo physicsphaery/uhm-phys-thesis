@@ -1,0 +1,11 @@
+% 3_pulses.tex
+% by Troy Hix, March 2005
+%----------------------------------------------------------------------------
+\begin{figure}
+\centering
+\includegraphics[width=5.00in]
+{3_pulses/3_pulses.png}\\
+\caption{In addition to arbitrary In general the pulses $\alpha$, $\beta$, and $\gamma$ have arbitrary widths $\sigma_\alpha$, $\sigma_\beta$, and $\sigma_\gamma$ as well as arbitrary amplitudes $A$, $B$, and $C$.}
+\label{three pulses}
+\end{figure} 
+%----------------------------------------------------------------------------

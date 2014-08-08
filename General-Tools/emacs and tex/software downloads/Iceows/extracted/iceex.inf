@@ -1,0 +1,449 @@
+; IceEx.INF entries
+;
+; Copyright 1997-2002 Raphael Mounier
+;
+
+[version]
+signature="$Chicago$"
+SetupClass=BASE
+AdvancedINF=2.5, "%ERROR_WRONG_ADVPACK_VERSION%"
+
+
+; Install ICEOWS
+[DefaultInstall]
+RequiredEngine	= Setupapi,%ERROR_ENGINE_NOTFOUND%
+CopyFiles	= ThisDll.shellext.install,ThisDll.shellnew.install,ThisDll.ice.install,ThisDll.res.install,ThisDll.sfx.install
+DelFiles	= ThisDll.arjf.uninstall
+AddReg		= ThisDll.Add.Reg,ThisDll.Opt.Reg,ThisDll.Uninst.Reg
+UpdateInis	= ThisDll.Links
+CustomDestination=DestinationInstall
+;Reboot      	= 1
+
+; Uninstall
+[DefaultUninstall]
+DelFiles	= ThisDll.shellext.install,ThisDll.shellnew.install,ThisDll.ice.install,ThisDll.res.install,ThisDll.sfx.install
+DelReg		= ThisDll.Add.Reg,ThisDll.Uninst.Reg,ThisDll.Del.Reg
+UpdateInis	= ThisDll.Links.Remove
+BeginPrompt    	= Remove.BeginPrompt
+EndPrompt      	= Remove.EndPrompt
+CustomDestination = DestinationUninstall
+;Reboot      	= 1
+;DelDirs	= DelIceDir
+
+
+[ThisDll.Add.Reg]
+HKCR,CLSID\{FEB7DAE0-E111-11D0-BFD7-444553540000},,,%TYPEFOLDER%
+HKCR,CLSID\{FEB7DAE0-E111-11D0-BFD7-444553540000}\InProcServer32,,,"%11%\%ShellExtPath%\%ThisDll%"
+HKCR,CLSID\{FEB7DAE0-E111-11D0-BFD7-444553540000}\InProcServer32,ThreadingModel,,"Apartment"
+HKCR,CLSID\{FEB7DAE0-E111-11D0-BFD7-444553540000}\DefaultIcon,,,"%11%\%ShellExtPath%\%ThisDll%,0"
+;HKCR,CLSID\{FEB7DAE0-E111-11D0-BFD7-444553540000}\ProgID,,,"ICEOWSDoc"
+HKCR,CLSID\{FEB7DAE0-E111-11D0-BFD7-444553540000}\ShellFolder,Attributes,1,A0,01,00,20
+HKCR,CLSID\{FEB7DAE0-E111-11D0-BFD7-444553540000}\ShellEx\PropertySheetHandlers\{FEB7DAE0-E111-11D0-BFD7-444553540000},,,""
+HKCR,CLSID\{FEB7DAE0-E111-11D0-BFD7-444553540000}\ShellEx\ContextMenuHandlers\{FEB7DAE0-E111-11D0-BFD7-444553540000},,,""
+HKCR,CLSID\{FEB7DAE0-E111-11D0-BFD7-444553540000}\ShellEx\{00021500-0000-0000-C000-000000000046},,,"{FEB7DAE0-E111-11D0-BFD7-444553540000}"
+
+HKCR,ICEOWSDoc\,,,%TYPEDOC%
+HKCR,ICEOWSDoc\CLSID,,,"{FEB7DAE0-E111-11D0-BFD7-444553540000}"
+HKCR,ICEOWSDoc\DefaultIcon,,,"%11%\%ShellExtPath%\%ThisDll%,-4"
+HKCR,ICEOWSDoc\Shell\Open,,,""
+HKCR,ICEOWSDoc\Shell\Open\Command,,,"rundll32 %11%\%ShellExtPath%\%ThisDll%,RouteTheCall %L"
+HKCR,ICEOWSDoc\Shell\Explore,,,""
+HKCR,ICEOWSDoc\Shell\Explore\Command,,,"explorer /e,/root,{FEB7DAE0-E111-11D0-BFD7-444553540000}, %1"
+HKCR,ICEOWSDoc\ShellEx\ContextMenuHandlers\{FEB7DAE0-E111-11D0-BFD7-444553540000},,,""
+HKCR,ICEOWSDoc\ShellEx\PropertySheetHandlers\{FEB7DAE0-E111-11D0-BFD7-444553540000},,,""
+HKCR,ICEOWSDoc\ShellEx\{00021500-0000-0000-C000-000000000046},,,"{FEB7DAE0-E111-11D0-BFD7-444553540000}"
+HKCR,ICEOWSDoc,EditFlags,1,0,0,0,0
+
+HKCR,ICEOWSDocZIP\,,,%TYPEDOCZIP%
+HKCR,ICEOWSDocZIP\CLSID,,,"{FEB7DAE0-E111-11D0-BFD7-444553540000}"
+HKCR,ICEOWSDocZIP\DefaultIcon,,,"%11%\%ShellExtPath%\%ThisDll%,-4"
+HKCR,ICEOWSDocZIP\Shell\Open,,,""
+HKCR,ICEOWSDocZIP\Shell\Open\Command,,,"rundll32 %11%\%ShellExtPath%\%ThisDll%,RouteTheCall %L"
+HKCR,ICEOWSDocZIP\Shell\Explore,,,""
+HKCR,ICEOWSDocZIP\Shell\Explore\Command,,,"explorer /e,/root,{FEB7DAE0-E111-11D0-BFD7-444553540000}, %1"
+HKCR,ICEOWSDocZIP\ShellEx\ContextMenuHandlers\{FEB7DAE0-E111-11D0-BFD7-444553540000},,,""
+HKCR,ICEOWSDocZIP\ShellEx\PropertySheetHandlers\{FEB7DAE0-E111-11D0-BFD7-444553540000},,,""
+HKCR,ICEOWSDocZIP\ShellEx\DropHandler,,,"{FEB7DAE0-E111-11D0-BFD7-444553540000}"
+HKCR,ICEOWSDocZIP\ShellEx\{00021500-0000-0000-C000-000000000046},,,"{FEB7DAE0-E111-11D0-BFD7-444553540000}"
+HKCR,ICEOWSDocZIP,EditFlags,1,0,0,0,0
+
+HKCR,ICEOWSDocICE\,,,%TYPEDOCICE%
+HKCR,ICEOWSDocICE\CLSID,,,"{FEB7DAE0-E111-11D0-BFD7-444553540000}"
+HKCR,ICEOWSDocICE\DefaultIcon,,,"%11%\%ShellExtPath%\%ThisDll%,-4"
+HKCR,ICEOWSDocICE\Shell\Open,,,""
+HKCR,ICEOWSDocICE\Shell\Open\Command,,,"rundll32 %11%\%ShellExtPath%\%ThisDll%,RouteTheCall %L"
+HKCR,ICEOWSDocICE\Shell\Explore,,,""
+HKCR,ICEOWSDocICE\Shell\Explore\Command,,,"explorer /e,/root,{FEB7DAE0-E111-11D0-BFD7-444553540000}, %1"
+HKCR,ICEOWSDocICE\ShellEx\ContextMenuHandlers\{FEB7DAE0-E111-11D0-BFD7-444553540000},,,""
+HKCR,ICEOWSDocICE\ShellEx\PropertySheetHandlers\{FEB7DAE0-E111-11D0-BFD7-444553540000},,,""
+HKCR,ICEOWSDocICE\ShellEx\DropHandler,,,"{FEB7DAE0-E111-11D0-BFD7-444553540000}"
+HKCR,ICEOWSDocICE\ShellEx\{00021500-0000-0000-C000-000000000046},,,"{FEB7DAE0-E111-11D0-BFD7-444553540000}"
+HKCR,ICEOWSDocICE,EditFlags,1,0,0,0,0
+
+HKCR,ICEOWSDocARJ\,,,%TYPEDOCARJ%
+HKCR,ICEOWSDocARJ\CLSID,,,"{FEB7DAE0-E111-11D0-BFD7-444553540000}"
+HKCR,ICEOWSDocARJ\DefaultIcon,,,"%11%\%ShellExtPath%\%ThisDll%,-4"
+HKCR,ICEOWSDocARJ\Shell\Open,,,""
+HKCR,ICEOWSDocARJ\Shell\Open\Command,,,"rundll32 %11%\%ShellExtPath%\%ThisDll%,RouteTheCall %L"
+HKCR,ICEOWSDocARJ\Shell\Explore,,,""
+HKCR,ICEOWSDocARJ\Shell\Explore\Command,,,"explorer /e,/root,{FEB7DAE0-E111-11D0-BFD7-444553540000}, %1"
+HKCR,ICEOWSDocARJ\ShellEx\ContextMenuHandlers\{FEB7DAE0-E111-11D0-BFD7-444553540000},,,""
+HKCR,ICEOWSDocARJ\ShellEx\PropertySheetHandlers\{FEB7DAE0-E111-11D0-BFD7-444553540000},,,""
+HKCR,ICEOWSDocARJ\ShellEx\DropHandler,,,"{FEB7DAE0-E111-11D0-BFD7-444553540000}"
+HKCR,ICEOWSDocARJ\ShellEx\{00021500-0000-0000-C000-000000000046},,,"{FEB7DAE0-E111-11D0-BFD7-444553540000}"
+HKCR,ICEOWSDocARJ,EditFlags,1,0,0,0,0
+
+HKCR,ICEOWSDocSFV\,,,%TYPEDOCSFV%
+HKCR,ICEOWSDocSFV\CLSID,,,"{FEB7DAE0-E111-11D0-BFD7-444553540000}"
+HKCR,ICEOWSDocSFV\DefaultIcon,,,"%11%\%ShellExtPath%\%ThisDll%,-4"
+HKCR,ICEOWSDocSFV\Shell,,,"Check"
+HKCR,ICEOWSDocSFV\Shell\Check,,,"%CHECK%"
+HKCR,ICEOWSDocSFV\Shell\Check\Command,,,"rundll32 %11%\%ShellExtPath%\%ThisDll%,CheckFile %L"
+HKCR,ICEOWSDocSFV\Shell\Open,,,""
+HKCR,ICEOWSDocSFV\Shell\Open\Command,,,"rundll32 %11%\%ShellExtPath%\%ThisDll%,RouteTheCall %L"
+HKCR,ICEOWSDocSFV\Shell\Explore,,,""
+HKCR,ICEOWSDocSFV\Shell\Explore\Command,,,"explorer /e,/root,{FEB7DAE0-E111-11D0-BFD7-444553540000}, %1"
+HKCR,ICEOWSDocSFV\ShellEx\ContextMenuHandlers\{FEB7DAE0-E111-11D0-BFD7-444553540000},,,""
+HKCR,ICEOWSDocSFV\ShellEx\PropertySheetHandlers\{FEB7DAE0-E111-11D0-BFD7-444553540000},,,""
+HKCR,ICEOWSDocSFV\ShellEx\{00021500-0000-0000-C000-000000000046},,,"{FEB7DAE0-E111-11D0-BFD7-444553540000}"
+HKCR,ICEOWSDocSFV,EditFlags,1,0,0,0,0
+
+HKCR,ICEOWSSendTo\,,,%TYPEDOC%
+HKCR,ICEOWSSendTo,"NeverShowExt",,""
+HKCR,ICEOWSSendTo\CLSID,,,"{FEB7DAE0-E111-11D0-BFD7-444553540000}"
+HKCR,ICEOWSSendTo\DefaultIcon,,,"%11%\%ShellExtPath%\%ThisDll%,-4"
+HKCR,ICEOWSSendTo\ShellEx\DropHandler,,,"{FEB7DAE0-E111-11D0-BFD7-444553540000}"
+
+; Association des fichiers
+HKCR,.arj,,,"ICEOWSDocARJ"
+HKCR,.zip,,,"ICEOWSDocZIP"
+HKCR,.ice,,,"ICEOWSDocICE"
+HKCR,.sfv,,,"ICEOWSDocSFV"
+HKCR,.gz,,,"ICEOWSDoc"
+HKCR,.tgz,,,"ICEOWSDoc"
+HKCR,.taz,,,"ICEOWSDoc"
+HKCR,.jar,,,"ICEOWSDoc"
+HKCR,.ear,,,"ICEOWSDoc"
+HKCR,.war,,,"ICEOWSDoc"
+HKCR,.tar,,,"ICEOWSDoc"
+HKCR,.cab,,,"ICEOWSDoc"
+HKCR,.rar,,,"ICEOWSDoc"
+HKCR,.ace,,,"ICEOWSDoc"
+HKCR,.pk3,,,"ICEOWSDoc"
+HKCR,.mim,,,"ICEOWSDoc"
+HKCR,.mime,,,"ICEOWSDoc"
+HKCR,.xxe,,,"ICEOWSDoc"
+HKCR,.b64,,,"ICEOWSDoc"
+HKCR,.uue,,,"ICEOWSDoc"
+HKCR,.uu,,,"ICEOWSDoc"
+HKCR,.hqx,,,"ICEOWSDoc"
+HKCR,.lha,,,"ICEOWSDoc"
+HKCR,.lzs,,,"ICEOWSDoc"
+HKCR,.lzh,,,"ICEOWSDoc"
+HKCR,.bfl,,,"ICEOWSDoc"
+HKCR,.imp,,,"ICEOWSDoc"
+HKCR,.bz2,,,"ICEOWSDoc"
+HKCR,.tbz,,,"ICEOWSDoc"
+HKCR,.tbz2,,,"ICEOWSDoc"
+
+HKCR,.zip\ShellNew
+HKCR,.zip\ShellNew,"FileName",,"Iceows.zip"
+HKCR,.ice\ShellNew
+HKCR,.ice\ShellNew,"FileName",,"Iceows.ice"
+
+
+; {098f2470-bae0-11cd-b579-08002b30bfeb} Null handler pour la recherche sous XP
+; {5e941d80-bf96-11cd-b579-08002b30bfeb} handler texte
+HKCR,.arj\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.zip\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.ice\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.sfv\PersistentHandler,,,"{5e941d80-bf96-11cd-b579-08002b30bfeb}"
+HKCR,.gz\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.tgz\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.taz\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.jar\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.ear\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.war\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.tar\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.cab\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.rar\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.ace\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.pk3\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.mim\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.mime\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.xxe\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.b64\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.uue\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.uu\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.hqx\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.lha\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.lzs\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.lzh\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.bfl\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.imp\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.bz2\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.tbz\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+HKCR,.tbz2\PersistentHandler,,,"{098f2470-bae0-11cd-b579-08002b30bfeb}"
+
+; Info tips
+HKCR,.arj,"InfoTip",,%ICEOWSTIPS%
+HKCR,.zip,"InfoTip",,%ICEOWSTIPS%
+HKCR,.ice,"InfoTip",,%ICEOWSTIPS%
+HKCR,.gz,"InfoTip",,%ICEOWSTIPS%
+HKCR,.tgz,"InfoTip",,%ICEOWSTIPS%
+HKCR,.taz,"InfoTip",,%ICEOWSTIPS%
+HKCR,.jar,"InfoTip",,%ICEOWSTIPS%
+HKCR,.ear,"InfoTip",,%ICEOWSTIPS%
+HKCR,.war,"InfoTip",,%ICEOWSTIPS%
+HKCR,.tar,"InfoTip",,%ICEOWSTIPS%
+HKCR,.cab,"InfoTip",,%ICEOWSTIPS%
+HKCR,.rar,"InfoTip",,%ICEOWSTIPS%
+HKCR,.ace,"InfoTip",,%ICEOWSTIPS%
+HKCR,.pk3,"InfoTip",,%ICEOWSTIPS%
+HKCR,.mim,"InfoTip",,%ICEOWSTIPS%
+HKCR,.mime,"InfoTip",,%ICEOWSTIPS%
+HKCR,.xxe,"InfoTip",,%ICEOWSTIPS%
+HKCR,.b64,"InfoTip",,%ICEOWSTIPS%
+HKCR,.uue,"InfoTip",,%ICEOWSTIPS%
+HKCR,.uu,"InfoTip",,%ICEOWSTIPS%
+HKCR,.hqx,"InfoTip",,%ICEOWSTIPS%
+HKCR,.lha,"InfoTip",,%ICEOWSTIPS%
+HKCR,.lzs,"InfoTip",,%ICEOWSTIPS%
+HKCR,.lzh,"InfoTip",,%ICEOWSTIPS%
+HKCR,.bfl,"InfoTip",,%ICEOWSTIPS%
+HKCR,.imp,"InfoTip",,%ICEOWSTIPS%
+HKCR,.bz2,"InfoTip",,%ICEOWSTIPS%
+HKCR,.tbz,"InfoTip",,%ICEOWSTIPS%
+HKCR,.tbz2,"InfoTip",,%ICEOWSTIPS%
+
+
+HKCR,.ICEOWSDocZIP,,,"ICEOWSSendTo"
+HKCR,.ICEOWSDocICE,,,"ICEOWSSendTo"
+
+HKCR,*\Shellex\ContextMenuHandlers\ICEOWS
+HKCR,*\Shellex\ContextMenuHandlers\ICEOWS,,,{FEB7DAE0-E111-11D0-BFD7-444553540000}
+HKCR,Directory\Shellex\ContextMenuHandlers\ICEOWS
+HKCR,Directory\Shellex\ContextMenuHandlers\ICEOWS,,,{FEB7DAE0-E111-11D0-BFD7-444553540000}
+HKCR,Drive\Shellex\ContextMenuHandlers\ICEOWS
+HKCR,Drive\Shellex\ContextMenuHandlers\ICEOWS,,,{FEB7DAE0-E111-11D0-BFD7-444553540000}
+HKCR,Directory\Shellex\DragDropHandlers\{FEB7DAE0-E111-11D0-BFD7-444553540000}
+HKCR,Drive\Shellex\DragDropHandlers\{FEB7DAE0-E111-11D0-BFD7-444553540000}
+HKCR,Folder\Shellex\DragDropHandlers\{FEB7DAE0-E111-11D0-BFD7-444553540000}
+
+HKLM,"SoftWare\Microsoft\Windows\CurrentVersion\Shell Extensions\Approved",{FEB7DAE0-E111-11D0-BFD7-444553540000},,"ICEOWS"
+
+
+[ThisDll.Opt.Reg]
+HKLM,SoftWare\ICEOWS,"InstDir",,"%49100%"
+
+HKLM,SoftWare\ICEOWS\SFXARJ
+HKLM,SoftWare\ICEOWS\SFXARJ,"a",,"Auto Extractible (Win32 - FR)"
+HKLM,SoftWare\ICEOWS\SFXARJ,"a1",,"AWin32FR.sfx"
+HKLM,SoftWare\ICEOWS\SFXARJ,"b",,"Auto Extractible (Win32 - US)"
+HKLM,SoftWare\ICEOWS\SFXARJ,"b1",,"AWin32US.sfx"
+HKLM,SoftWare\ICEOWS\SFXARJ,"c",,"Auto Extractible (Win CE 2.0 x86 - FR)"
+HKLM,SoftWare\ICEOWS\SFXARJ,"c1",,"WCEx86FR.sfx"
+HKLM,SoftWare\ICEOWS\SFXARJ,"d",,"Auto Extractible (Win CE 2.0 Mips - FR)"
+HKLM,SoftWare\ICEOWS\SFXARJ,"d1",,"WCEMpsFR.sfx"
+HKLM,SoftWare\ICEOWS\SFXARJ,"e",,"Auto Extractible (Win CE 2.0 SH - FR)"
+HKLM,SoftWare\ICEOWS\SFXARJ,"e1",,"WCESHFR.sfx"
+HKLM,SoftWare\ICEOWS\SFXARJ,"f",,"Auto Extractible (Win CE 2.0 x86 - US)"
+HKLM,SoftWare\ICEOWS\SFXARJ,"f1",,"WCEx86US.sfx"
+HKLM,SoftWare\ICEOWS\SFXARJ,"g",,"Auto Extractible (Win CE 2.0 Mips - US)"
+HKLM,SoftWare\ICEOWS\SFXARJ,"g1",,"WCEMpsUS.sfx"
+HKLM,SoftWare\ICEOWS\SFXARJ,"h",,"Auto Extractible (Win CE 2.0 SH - US)"
+HKLM,SoftWare\ICEOWS\SFXARJ,"h1",,"WCESHUS.sfx"
+
+HKLM,SoftWare\ICEOWS\SFXICE,"a",,"Auto Extractible (Win32 - FR)"
+HKLM,SoftWare\ICEOWS\SFXICE,"a1",,"IWin32FR.sfx"
+HKLM,SoftWare\ICEOWS\SFXICE,"b",,"Auto Extractible (Win32 - US)"
+HKLM,SoftWare\ICEOWS\SFXICE,"b1",,"IWin32US.sfx"
+
+
+[ThisDll.Uninst.Reg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\ICEOWS,,,
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\ICEOWS,"DisplayName",,%ICEOWSVERSION%
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\ICEOWS,"UninstallString",,"%49100%\Setup.exe /uninstall" 
+
+[ThisDll.Del.Reg]
+HKCR,CLSID\{FEB7DAE0-E111-11D0-BFD7-444553540000}
+HKCR,ICEOWSDoc
+HKCR,ICEOWSDocEx
+HKCR,ICEOWSSendTo
+HKCR,ICEOWSSFV
+HKCR,.ICEOWSSendTo
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\ICEOWS
+
+
+[ThisDll.Links]
+setup.ini, progman.groups,,"GroupICEOWS=ICEOWS"
+setup.ini, GroupICEOWS,,"""%README%"", """"""%49100%\IceInfo.txt"""""",,,,""%49100%\"""
+setup.ini, GroupICEOWS,,"""%PROGCONF%"", """"""%49100%\IceConf.exe"""""",,,,""%49100%\"""
+setup.ini, GroupICEOWS,,"""%HELPTITLE%"", """"""%49100%\%IceResPath%\%HELPFILE%"""""",,,,""%49100%\%IceResPath%\"""
+
+[ThisDll.Links.Remove]
+setup.ini, progman.groups,,"GroupICEOWS=ICEOWS"
+setup.ini, GroupICEOWS,,"""%README%""
+setup.ini, GroupICEOWS,,"""%PROGCONF%""
+setup.ini, GroupICEOWS,,"""%HELPTITLE%""
+
+
+[ThisDll.shellext.install]
+IceGUI.dll
+
+[ThisDll.shellnew.install]
+Iceows.zip
+Iceows.ice
+
+[ThisDll.ice.install]
+IceInfo.txt
+IceConf.exe
+IceEx.inf
+Setup.exe
+
+[ThisDll.res.install]
+Ice409.hlp
+Ice409.cnt
+Icer409.dll
+
+[ThisDll.sfx.install]
+AWin32FR.sfx
+AWin32US.sfx
+IWin32FR.sfx
+IWin32US.sfx
+WCEMpsFR.sfx
+WCEx86FR.sfx
+WCESHFR.sfx
+WCEMpsUS.sfx
+WCEx86US.sfx
+WCESHUS.sfx
+
+[ThisDll.arjf.uninstall]
+ArjFolde.dll
+
+[SourceDisksNames]
+1="ICEOWS","",0
+
+[SourceDisksFiles]
+IceGUI.dll=1
+IceInfo.txt=1
+IceConf.exe=1
+AWin32FR.sfx=1
+AWin32US.sfx=1
+IWin32FR.sfx=1
+IWin32US.sfx=1
+WCEMpsFR.sfx=1
+WCEx86FR.sfx=1
+WCESHFR.sfx=1
+WCEMpsUS.sfx=1
+WCEx86US.sfx=1
+WCESHUS.sfx=1
+IceEx.inf=1
+Setup.exe=1
+Ice409.hlp=1
+Ice409.cnt=1
+Icer409.dll=1
+Iceows.zip=1
+Iceows.ice=1
+
+[DestinationDirs]
+ThisDll.shellext.install=11,%ShellExtPath% ; to Windows\System\%ShellExtPath%
+ThisDll.arjf.uninstall=11,%ShellExtPath% ; to Windows\System\%ShellExtPath%
+ThisDll.shellnew.install=10,%ShellNewPath% ;  to Windows\%ShellNewPath%
+ThisDll.ice.install=49100 ; 
+ThisDll.res.install=49100,%IceResPath%; 
+ThisDll.sfx.install=49100,%IceSfxPath%; 
+
+
+;==============================================================================================
+; These are the Debug sections.
+;==============================================================================================
+;DEBUG!
+;[DebugRegKeys]
+;"HKLM","SOFTWARE\ICEOWS\Debug","InstDir",,"49100 = %49100%"
+
+
+;==============================================================================================
+; These are the directory sections.
+;==============================================================================================
+; Change 5 to 1 below to prompt user for path.  
+[DestinationInstall]
+49000=ProgramFilesDir,5
+49100=CustomInstallDir,5
+
+[DestinationUninstall]
+49000=ProgramFilesDir,5
+49100=CustomInstallDir,5
+
+[DelIceDir]
+%49100%
+
+
+[ProgramFilesDir]
+"HKLM","SOFTWARE\Microsoft\Windows\CurrentVersion","ProgramFilesDir",,"%24%\%PROGRAM%"
+
+[CustomInstallDir]
+"HKLM","SOFTWARE\ICEOWS","InstDir",%INSTALL_DIR_PROMPT%,"%49000%\%ICEOWSInstPath%"
+
+
+;==============================================================================================
+; These are the prompt for install sections.
+;==============================================================================================
+
+;[Remove.BeginPrompt]
+;Prompt="%REMOVE_CONFIRMATION_PROMPT%"
+;ButtonType=OKCANC
+;Title="%ICEOWS_TITLE%"
+
+[Remove.EndPrompt]
+Prompt="%REMOVE_COMPLETION_PROMPT%"
+Title="%ICEOWS_TITLE%"
+
+
+;==============================================================================================
+; These are the localisation string
+;==============================================================================================
+
+[Strings]
+; ICEOWS string
+ThisDll = "IceGUI.dll"
+ShellExtPath = "ShellExt"
+ShellNewPath = "ShellNew"
+IceInstPath = "ICEOWS"
+IceResPath = "RES"
+IceSfxPath = "SFX"
+PROGRAMS = "Progra~1"	; Should be "Program Files", but it fails to create link on NT.
+README="Readme"
+PROGCONF="ICEOWS Settings"
+HELPTITLE="Help on ICEOWS"
+HELPFILE="Ice409.hlp"
+ICEOWSVERSION="Iceows V4.20b"
+
+; ICEOWS Type
+TYPEFOLDER="Iceows Folder"
+TYPEDOC="Iceows Document"
+TYPEDOCARJ="Iceows Document (ARJ)"
+TYPEDOCICE="Iceows Document (ICE)"
+TYPEDOCZIP="Iceows Document (ZIP)"
+TYPEDOCSFV="Iceows Document (SFV)"
+
+
+; ICEOWS Check (label)
+CHECK=Check
+
+; ICEOWS Title
+ICEOWS_TITLE=ICEOWS
+
+; Tips
+ICEOWSTIPS=Contain compress file
+
+; Prompt for uninstall
+REMOVE_CONFIRMATION_PROMPT = "Are you sure you want to remove ICEOWS from your computer?"
+REMOVE_COMPLETION_PROMPT = ICEOWS has been removed."
+
+;Prompt for Destination
+INSTALL_DIR_PROMPT = "Please enter the directory for installation :"
+
+;Error Messages
+ERROR_ENGINE_NOTFOUND = "Unable to find correct setup engine. Cancel..."
+ERROR_WRONG_ADVPACK_VERSION = "New version of Advpack.dll is require !"

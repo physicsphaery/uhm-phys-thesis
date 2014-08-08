@@ -1,0 +1,131 @@
+\documentstyle[hyperref, margin, line]{res}
+\hypersetup{backref, pdfpagemode=FullScreen, colorlinks=true,backref}
+\def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
+% 'st' 'nd' 'rd' 'th' superscripts for numbers
+\def\first{{\raise.5ex\hbox{\small st}}}
+\def\second{{\raise.5ex\hbox{\small nd}}}
+\def\third{{\raise.5ex\hbox{\small rd}}}
+\def\fourth{{\raise.5ex\hbox{\small th}}}
+
+%use most of page
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\voffset}{-0.5in}
+%\addtolength{\textwidth}{1.25in}
+%\addtolength{\textheight}{1in}
+
+%use only a bit more page than default
+\addtolength{\oddsidemargin}{-0.30in}
+\addtolength{\voffset}{-0.50in}
+%was -.30
+\addtolength{\textwidth}{0.90in}
+\addtolength{\textheight}{1.50in}
+%was .60
+
+%my name format
+\renewcommand{\namefont}{\LARGE\emph}
+
+\begin{document}
+\name{Daniel P. Lamblin}
+\address{
+  329 East 94\fourth{} St. Apt. 12,
+  New York NY 10128
+}
+
+\address{
+  \texttt{daniell at slithy.toves.net}\\
+  \small{
+  \href{http://www.syntaxerr.org/~daniell/resume/}{http://www.syntaxerr.org/$\sim$daniell/resume/}
+  }
+}
+
+\begin{resume}
+
+\section{\textsc{Objective}}
+A full-time software development position.\\If you received this r\'esum\'e, it would contain a more job-specific objective or cover letter than this web-r\'esum\'e.  I do contract and internship-style work in addition to my regular job on occasion.  I would be interested in hearing from you if you found my abilities to be a potential fit.
+
+\section{\textsc{Experience}}
+\begin{format}
+  \employer{l}\title{r}\\
+  \location{l}\dates{r}\\
+  \body\\
+\end{format}
+
+\employer{\textbf{Richmond Research}}
+\title{\emph{Programmer}}
+\location{New York, NY.}
+\dates{\textbf{February 2003 -- Present}}
+\begin{position}
+Streamlined report generation and developed web based services
+using Perl, PHP, Visual Basic and Flash MX.
+\end{position}
+
+\employer{\textbf{Mile New York}}
+\title{\emph{Website Programmer}}
+\location{Fort Lee, NJ.}
+\dates{\textbf{October 2002 -- November 2003}}
+\begin{position}
+Established the backend Perl, CGIs, and MySQL database for MileNY's e-commerce site.
+\\
+{\small{See \href{http://www.milenewyork.com/}{http://www.milenewyork.com/}.}}
+\end{position}
+
+\employer{\textbf{EMC Corporation}}
+\title{\emph{Associate Software Engineer}}
+\location{Milford, MA.}
+\dates{\textbf{June 2000 -- October 2001}}
+\begin{position}
+Maintained code-base by tracking defects and feature requests.
+Coordinated with team members and other groups for defect reproduction, analysis and patch testing.
+Made extensive use of C with RPC, threading, signals, and version control software.
+\end{position}
+
+\employer{\textbf{Worcester Area Student ACM Chapter}}
+\title{\emph{Web Master}}
+\location{Worcester, MA.}
+\dates{\textbf{Aug. 1998 -- Aug. 1999}}
+\begin{position}
+Maintained and configured Apache based web server.
+\\
+Conceived and designed web site to be organized, and maintainable.
+\\
+{\small{See \href{http://www.acm.wpi.edu/}{http://www.acm.wpi.edu/}.}}
+\end{position}
+
+
+\section{\textsc{Education}}
+\emph{Bachelor of Science in Computer Science}, May 1999.\\
+Worcester Polytechnic Institute, Worcester, MA.
+
+\emph{Courses}: Introduction to Machine Learning; Video Game Design \& Technology. [2003]\\
+Columbia University, New York, NY.
+
+\section{\textsc{Qualifications}}
+\emph{Training}: Sun course for Sys V Inter-Process Communication and Threading [2000]
+
+\emph{Programming Languages}: C, \Cplusplus, Java, LISP, 80x86 and 68k Assembly, Visual Basic, VHDL
+
+\emph{Tools}: Perl, Unix Shell Scripts (sh, bash), PHP, clearcase, dbx
+
+\emph{Operating Systems}: Solaris, MacOS X, Linux, [Open/Net]BSD, Windows NT
+
+\emph{Language Skills}:
+Spoken and written English; spoken Swiss German and some French
+
+\section{\textsc{Activities}}
+Configure, maintain, and administer NetBSD and Linux servers for email, network storage, web, and sftp services.\\
+December 1999 -- Current
+
+Consulted for the design, construction, programming and testing
+of the embedded component
+of a physical computing installation project with an artist 
+at Parsons School of Design.\\
+January  2002 -- May 2002
+
+Refined a \LaTeX{} based system of formatting and editing r\'esum\'es
+across four common formats through Makefiles and scripts.
+{\small{See \href{http://www.syntaxerr.org/~daniell/resume/}{http://www.syntaxerr.org/$\sim$daniell/resume/}}}\\
+October 2001 -- November 2001 (some revisions made later)
+
+
+\end{resume}
+\end{document}

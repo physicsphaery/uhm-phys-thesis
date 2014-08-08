@@ -1,0 +1,95 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -*- Mode: Latex -*- %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% >>slacT486/analysis/hornCal.tex<<
+%% Author          : R. Jeffrey Kowalski
+%% Created On      : Mon Jul  2 15:35:51 HST 2007
+%% Last Modified On: Fri Aug  3 10:11:48 HST 2007
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Gain Horn Calibration}
+\label{ss:gainHorn}
+The response of the gain horn was simulated using a MATLAB routine that solves for the electric and magnetic fields from the physical dimensions of the pyramidal horn antenna.  Figure~\ref{fig:fieldPattern} shows the \textbf{E}- and \textbf{H}-plane beam patterns for the for the low, mid, and high-bands of the horn antenna.
+
+\begin{figure}[htbp]
+\centering
+\epsfxsize=4.5in\epsfbox{figures/slacT486/gainHornField.eps}
+\caption{\textbf{E} \& \textbf{H} - Fields of low, mid, and high-bands for Standard Gain Horn (\textit{Sci\-ent\-ific-Atlanta, Inc.}).}
+\label{fig:fieldPattern}
+\end{figure}
+
+The boresight gain response of a pyramidal horn antenna is useful for both receiving and transmitting electromagnetic signals and represents the ratio of the intensity of the antennas radiation pattern in the direction of the strongest radiation to that of a reference source.  In the case of transmission, the gain determines how much RF power can be sent in the main lobe or even side lobes.  This quantity is still useful to model since it is directly related to the effective area which is a measure of the area that the antenna would need to occupy to intercept observed source power.  Figure~\ref{fig:gainPattern} shows the results of simulating the pyramidal gain horn in both the \textbf{E}- and \textbf{H}-planes.
+
+\begin{figure}[htbp]
+\centerline{
+\mbox{
+\epsfxsize=4.2in\epsfbox{figures/slacT486/GEallfreq.eps}\hspace{-17mm}
+\epsfxsize=4.2in\epsfbox{figures/slacT486/GHallfreq.eps}
+}}
+\caption{Left: \textbf{E}-plane gain and Right: \textbf{H}-plane gain for low- (green), mid- (blue), and high-bands (orange) of the horn antenna.  The beam pattern narrows significantly with higher frequencies suggesting the gain should increase with frequency.}
+\label{fig:gainPattern}
+\end{figure}
+
+\par In order to calculate the effective height of the horn antenna, several parameters needed to be simulated numerically.  From Krauss~\cite{Kraus.1988}, we define the aperture efficiency as
+
+\begin{equation}
+\varepsilon_{ap} = \frac{A_{e}}{A_{p}},
+\end{equation}
+
+\noindent where A$_{e}$ and A$_{p}$ are the effective area and physical area of the antenna's aperture.  Since the physical area of the antenna aperture is a known quantity, we can determine the effective area with the use of another MATLAB function which determines the aperture efficiency.  The effective area of an antenna is related to the boresight gain, G, and the free-space wavelength, $\lambda$, of the radiation by the formula:
+
+\begin{equation}
+G = \frac{4\pi}{\lambda^{2}}A_{e}.
+\end{equation}
+
+\par The directivity of the gain horn is related to the HPBW (Half-Power-Beam-Width) by
+
+\begin{equation}
+D \approx \frac{4\pi}{\Omega_{A}} \approx \frac{41253^{\circ}}{D_{H}D_{E}},
+\end{equation}
+
+\noindent where $\Omega_{A}$ is the beam solid angle, and D$_{H}$ and D$_{E}$ are the HPBW in the \textbf{H}- and \textbf{E}-plane respectively.  Figure~\ref{fig:HPBWvsFreq} displays the HPBW response as a function of frequency which is consistent with expectation.
+
+\begin{figure}[htbp]
+\centering
+\epsfxsize=4.5in\epsfbox{figures/slacT486/HPBW.eps}
+\caption{Half-power-beam-width as a function of frequency for the Standard Gain Horn showing the main lobe of the beam pattern narrowing at higher frequencies.}
+\label{fig:HPBWvsFreq}
+\end{figure}
+
+\noindent The results of simulating the pyramidal horn's gain and directivity are summarized in figure~\ref{fig:gainDirFreq} showing a gradual rise in the frequency domain.
+
+\begin{figure}[htbp]
+\centering
+\epsfxsize=4.5in\epsfbox{figures/slacT486/Gain.eps}
+\caption{Directivity (top) and gain (bottom) as a function of frequency.}
+\label{fig:gainDirFreq}
+\end{figure}
+
+\par Another parameter related to the antenna aperture is the \emph{effective height}, h$_{eff}$, which is expressed in meters.  This quantity is simply the ratio of the open circuit voltage to the incident electric field:
+
+\begin{equation}
+\label{eq:heff}
+h_{eff} = \frac{V_{OC}}{E}.
+\end{equation}
+
+\noindent Krauss~\cite{Kraus.1988} expresses the effective height in terms of the effective aperture, A$_{e}$, radiation resistance, Z$_r$, and the intrinsic impedance of free space, Z$_0 = 377 \Omega$ which is given by
+
+\begin{equation}
+h_{eff} = 2\sqrt{\frac{Z_{r}A_{e}}{Z_0}}.
+\end{equation}
+
+\noindent Using the conditions previously outlined, the simulated results of the standard gain horn are shown in figure~\ref{fig:effHandArea}.  The results are consistent with expectation and are modest since the effective height data contains no phase information.  A better numerical simulation involves FDTD (Finite-Difference-Time-Domain) analysis~\cite{Marrocco.2005} and is more difficult in principal.  For this analysis, the effective height correction is sufficient and produces an overall scaling factor for the received field strength.
+
+\begin{figure}[htbp]
+\centering
+\epsfxsize=4.5in\epsfbox{figures/slacT486/Heff.eps}
+\caption{Effective area (top) and effective height (bottom) for the Standard Gain Horn as a function of frequency.}
+\label{fig:effHandArea}
+\end{figure}
+
+\par Lastly, I show the coherence of the Cherenkov emission measured by the gain horn (figure~\ref{fig:hornCoh}).  Here a similar procedure was adopted from the dipole calibration which passed 17 runs averaging 1000-2000 events each.
+
+\begin{figure}[htbp]
+\centering
+\epsfxsize=4.5in\epsfbox{figures/slacT486/hornCoh.eps}
+\caption{Detected pulse power as a function of shower energy for the Standard Gain Horn.}
+\label{fig:hornCoh}
+\end{figure}

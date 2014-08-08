@@ -1,0 +1,12 @@
+%----------------------------------------------------------------------------
+%bb defines the bounding box for the pdf
+%----------------------------------------------------------------------------
+\begin{figure}
+\scalebox{0.65}[0.65]{
+\includegraphics*[bb=55 87 640 383]
+{block/block.pdf}
+}
+\caption{Block diagram of the experimental setup - The connection between the computer and the RF receiver (which carries the voltage ramp that scans the receiver) is not shown here.}
+\label{block}
+\end{figure}
+%----------------------------------------------------------------------------

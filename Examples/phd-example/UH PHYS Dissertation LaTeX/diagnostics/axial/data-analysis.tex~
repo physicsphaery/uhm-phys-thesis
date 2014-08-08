@@ -1,0 +1,41 @@
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+First, the raw data sets are calibrated. The computer records the voltage sampled from the SR250 verses the associated voltage level sent to the receiver from the voltage ramp. The relationship between voltage sent to the receiver and the corresponding center frequency of the receiver is obtained by taking pictures of the laptop computer next to the HP 53132A counter. Each picture shows the current voltage on the voltage ramp (displayed on the laptop screen) and the current center frequency of the receiver. Several such pictures are taken during each scan. The relationship is found to be very linear, but shifts a little bit from scan to scan.
+
+Once calibrated, each scan is scaled to compensate for the response curve of the photodiode (see AHI02-DN3300-5-VR08). Only one of the two photodiodes were calibrated (S/N 878) - here we use the one that wasn't calibrated and assume it has a similar response. See Figs. \ref{22-12}
+%----------------------------------------------------------------------------
+\input{figures/diagnostics/22-12/22-12.tex}
+%----------------------------------------------------------------------------
+and \ref{22-14}
+%----------------------------------------------------------------------------
+\input{figures/diagnostics/22-14/22-14.tex}
+%----------------------------------------------------------------------------
+to see the data for dye laser \#22 taken with the 7L12 and 7L14 respectively. See Figs. \ref{23-12}
+%----------------------------------------------------------------------------
+\input{figures/diagnostics/23-12/23-12.tex}
+%----------------------------------------------------------------------------
+and \ref{23-14}
+%----------------------------------------------------------------------------
+\input{figures/diagnostics/23-14/23-14.tex}
+%----------------------------------------------------------------------------
+to see the data for dye laser \#23 taken with the 7L12 and 7L14 respectively. The following overlays are of the raw data - calibrated but not scaled for the photodiode response. Figs. \ref{2X-12}
+%----------------------------------------------------------------------------
+\input{figures/diagnostics/2X-12/2X-12.tex}
+%----------------------------------------------------------------------------
+and \ref{2X-14}
+%----------------------------------------------------------------------------
+\input{figures/diagnostics/2X-14/2X-14.tex}
+%----------------------------------------------------------------------------
+show overlays of the data from the two lasers taken with the 7L12 and 7L14 respectively. Fig. \ref{23-12-seederX}
+%----------------------------------------------------------------------------
+\input{figures/diagnostics/23-12-seederX/23-12-seederX.tex}
+%----------------------------------------------------------------------------
+shows an overlay of the data from dye laser \#23 with the YAG pump in two states: seeder on and seeder off.
+
+Finally, to check the spectral width of the observed features, the peak at 1200 MHz from the 7L12 scan of the \#23 dye laser is fit to a Gaussian (see Fig. \ref{fit}).
+%----------------------------------------------------------------------------
+\input{figures/diagnostics/fit/fit.tex}
+%----------------------------------------------------------------------------
+Using the FWHM from the fit, Eqn. \ref{receiver width} is used to determine the corresponding transform limited temporal width.
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------

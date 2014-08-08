@@ -1,0 +1,32 @@
+%----------------------------------------------------------------------------
+\input{figures/diagnostics/PD_cal_block/PD_cal_block.tex}
+%----------------------------------------------------------------------------
+This calibration procedure was motivated by a need to measure the radio frequency (RF) power spectrum distribution of the intensity profile of a pulsed dye laser's output. When analyzing these data it is desirable to have the spectral response curve for the photodiode used to observe this intensity profile. Given this curve, we could compare power amplitudes observed within spectral windows at various (differing) regions in the operating range of the photodiode. By exposing the photodiode to light with a white RF spectrum, we can directly measure this response curve using an RF receiver. Better yet, we may assume an equivalent circuit for the photodiode and fit the transfer function of this circuit to the RF receiver data; and thus obtain an analytic form for the response curve. This analytic from can be used to scale the raw data from the RF receiver/photodiode when measuring the RF spectrum of the dye laser output.
+
+Suppose light from a hot filament is incident a square law detector. If we assume the incident light originates at a black body source, it follows that the spectral power distribution is relatively flat in the radio frequency (RF) region - say from 100 MHz to 2 GHz. Thus, measuring the power within some small bandwidth across this RF region will reveal the transfer function of the photodiode and coupling circuit.
+
+%----------------------------------------------------------------------------
+\input{figures/diagnostics/PD_fit/PD_fit.tex}
+%----------------------------------------------------------------------------
+The light source in this experiment is a automotive style filament light bulb. The bulb was mounted in a desktop style lamp and plugged into a regular AC outlet. The switch on the lamp had three settings: ``off'' ``low'' and ``high''; the ``high'' setting is used here. The bulb's output is filtered through a yellow gelatin filter sheet (before being focused by a +30 mm lens) to limit the energy spread of the electrons emitted from the photocathode: this will optimize the photodiode bandwidth by reducing transit time effect to a minimum. See Figure \ref{PD_cal_block} for a block diagram of the calibration procedure.
+
+The Hamamatsu R1193U-03 photodiode (S/N 878) is used here. Its key characteristics are its large active surface area (about 2 cm in diameter) and its fast response time. Some specifications from a reseller's site (Sphere Research Corporation) are: ``High performance, bi-planar, ultra-fast phototube (270ps risetime, 100ps fall time) with integral light shield and lab housing (with tripod mount and connectors). UV sensitive, linearized for laser power detection, details coming from Hamamatsu, 2.5KV typical excitation.''
+
+The voltage-gain transfer function for the equivalent circuit of the photodiode and associated coupling circuit is (personal communication, John M. J. Madey, July 2005)
+%----------------------------------------------------------------------------
+\begin{equation}
+\frac{
+V_{out}}{
+V_{in}
+}
+=
+\frac
+{1}
+{1 + i \omega C ( 25 + i \omega L )}
+\label{transfer function}
+\end{equation}
+%----------------------------------------------------------------------------
+where $V_{out}$ is the voltage seen across the 50 $\Omega$ external load resistor, ${V_{in}}$ is the voltage across the capacitor (photodiode gap), C is the capacitance of this ``gap'', and L is the inductance associated to the photodiode. See Figure \ref{PD_fit} for a plot of the data and the fit.
+
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------

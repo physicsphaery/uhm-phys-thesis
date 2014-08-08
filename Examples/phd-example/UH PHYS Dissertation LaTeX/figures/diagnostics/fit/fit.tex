@@ -1,0 +1,15 @@
+%----------------------------------------------------------------------------
+%bb defines the bounding box for the pdf
+%viewport defines the area of the pdf used
+%in sidewaysfigure the last entry in bb moves the caption toward/away the pic
+%in sidewaysfigure the second entry in bb moves the pic toward/away the caption
+%----------------------------------------------------------------------------
+\begin{figure}
+\scalebox{0.7}[0.7]{
+\includegraphics*[bb=75 286 643 540]
+{fit/fit.pdf}
+}
+\caption[Gaussinan fit for a single RF beat spectral feature]{The spectral feature at 1200 MHz fits a Gaussian with a FWHM of 83 MHz. This corresponds to a Gaussian in the time domain with a FWHM of 7.5 ns. This matches the observed pulse width - implying each mode is transform limited.}
+\label{fit}
+\end{figure}
+%----------------------------------------------------------------------------

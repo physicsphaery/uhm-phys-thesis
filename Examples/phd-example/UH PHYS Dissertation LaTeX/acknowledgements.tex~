@@ -1,0 +1,44 @@
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%This is a modified version of the sample UH thesis LaTeX from Robert Brewer
+%Modified by Troy Hix APR-12-06
+%Robert Brewer's original remarks are included below
+%Troy Hix's remarks are in these hyphens: ------------------
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -*- Mode: Latex -*- %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% uhtest-acknowledgements.tex -- 
+%% Author          : Robert Brewer
+%% Created On      : Fri Oct  2 16:29:43 1998
+%% Last Modified By: Robert Brewer
+%% Last Modified On: Fri Oct  2 16:29:52 1998
+%% RCS: $Id: uhtest-acknowledgements.tex,v 1.1 1998/10/06 02:06:54 rbrewer Exp $
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%   Copyright (C) 1998 Robert Brewer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+
+\begin{acknowledgements}
+
+During the course of this research, I have benefited from the support of many individuals and institutions. I would like to express my appreciation to all, and in particular I would like to thank the following:
+
+My thesis advisor, Professor John M.J. Madey, for providing a complete educational experience from administering an excellent electrodynamics class to encouraging self guided laboratory conduct based on a fundamental understanding of the apparatus and of the physics. Under his vision and direction, the management structure maintained and administered in the FEL group has allowed me learn and successfully accomplish my daily tasks in an efficient manner. The weekly meetings (investigator, science, breakout) were excellent forums which provided organized communication channels with the FEL group administration and facilitated productive collaboration with my colleagues. His direct impact on daily laboratory tasks cannot be overstated. The successful fabrication of many of the custom apparatus used in this research significantly (sometimes entirely) depended on Dr. Madey's work. The most significant contributions include the ``Hg pulser'' (fabrication and integration into the YAG/dye laser system) discussed in Chapter 5 and the instrumentation technique (for example, the design of the high pass filter) in Chapter 6. To me, Dr. Madey serves as an exemplar not only as a scientist, but as a person by daily demonstrating an unwavering high level of integrity. To him I owe an enormous debt and offer my deepest gratitude.
+
+Professor Eric B. Szarmes for his professional guidance during my apprenticeship. His lecture and laboratory courses in optics have formed the fundamental core of knowledge which I use in my daily work. He consistently encourages excellence (by example as well as by request) from those around him; working towards his expectations has allowed my work ethic and quality to improve tremendously since my arrival to the University of Hawaii.
+
+Professor Pui K. Lam for his extraordinary patience and broad range of expertise when dealing with my specific questions during the course of this research. His unique ability to identify misconceptions and compose the perfect explanation when confronted with typical (i.e. naive) questions from students was very important to my understanding of the physical principles behind this research. In particular, the calculations in chapter two and the software used in chapters three and four have benefited from his direct influence.
+
+Professor Sandip Pakvasa for being on my committee and clarifying density matrix methods in graduate quantum; Professor Thomas Bopp for joining my committee at the last minute yet still finding the time to complete a thorough review of this dissertation.
+
+There were many UH faculty other than those on my committee who helped me along the way: Professor Fred Harris for his reading course in which I learned to program in C; Professor Shiv Sharma for giving me access to the equipment in his lab -- my very first fluorescence data was acquired using the Argon ion laser and spectrometer in his lab; Professor Peter Crooker for his initial investigation into potential targets for this line of research was very valuable (AHI Design Note 3300-02); Professor Xerxes Tata for serving as my advisor during my first few years at the university -- his continued interest in my education, even after I joined the FEL group, was very much appreciated; Professor Gary Varner for allowing access to his well equipped lab and donating the time of his students and the equipment in his lab -- the fast photodiode used in Chapter 5 was developed through this collaboration; Professor Chester A. Vause for his collaboration when I first joined the FEL group; Dr. Teng Chen for her advice and direct help with the aromatic compound experiments in Chapter 5; Dr. Hugh Hubble for his initial work on procuring the laser sources used in this research; Dr. Barry Lienert for acting a liaison between Dr. Sharma's relatively well equipped research group and the FEL research group when it was first ``gearing up'' -- Dr. Lienert has continued to work with our group and over the years has made many contributions to my research, one of the most valuable was the integration of the CCD array and the CT-103 monochromator.
+
+Over the years, I have had the pleasure of working with some excellent graduate students. My peers provided me with the most tangible support since we were all going through the same difficulties simultaneously. I would like to specifically thank: Peter Grach positive attitude and support while I was composing my dissertation; Sigrid Greene for her help in graduate electrodynamics and for setting an example by graduating on time; Saddia Kemal for her help in the lab during some of the key data acquisition runs for this research -- specifically the RF measurements in Chapter 6; Derrick Kong for his sound advice and dissertation LaTeX folder; Joseph Laszlo for his discussions on general education and dissertation advice (since we were on a parallel course to graduate in August 2006); Huan Ma for his conceptual help when ever I need clarification on spectroscopic principals; Frank Price for all his help over the years (we joined the group at nearly the same time, so he was my closest peer while I was conducting this research) -- specifically his help in any computer related issue from LabView to memory allocation in C, his collaboration on our data acquisition work to support Dr. Teng Chen, his procurement strategies for equipping the FEL laboratories when the labs were new, and his parallel work on the calculations and computer models in Chapter 3 and 4; Gang Sun for his expert advice concerning \emph{any} mathematical difficulties I would have; and Amos Yarom for his contributions during qualifier exam study sessions and numerous conversations on physics.
+
+Through the FEL group, I have had access to an excellent support staff. Henry Follmer, Melvin Matsunaga, Roy Tom, and Lehua Shelly have made valuable contributions to the design and fabrication of the custom hardware associated with the research presented here. I would also like to thank Fred Gladu, Bill Richert, and Gary Ridout from UMA Group Ltd for their lessons in organization and management. It is in this area I need the most help.
+
+The significance financial sponsorship in any research effort cannot be understated -- it is in many ways essential. This research would not have been possible without the support of the U.S. Army Space \& Missile Defense Command under contract \# DASG60-99-C-0057 and DASG60-99-C-0048.
+
+Finally, I would like to thank my family for all the years of support which only family can provide, especially through the last few difficult years. Specifically, I would like to thank by brother, Thomas C. Hix for showing me that with a little kindness and inquisitive curiosity, the world will reveal its wonders.
+
+\end{acknowledgements}
+

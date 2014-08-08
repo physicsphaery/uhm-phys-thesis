@@ -1,0 +1,65 @@
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\input{experiments/intro/intro.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\section{Preliminary tests}
+One of the simplest and fundamental spectroscopy experiments is bulk absorption. Here we describe a basic absorption experiment using light sources which were immediately available and cheap: light emitting diodes (LED). The LEDs response to the high voltage output of a Hg wetted relay was measured. This allowed the development of the Hg pulser system and a fast photodiode. Finally HeNe based LIF measurements are used to vet two different beam line geometries, as well as test the Hg pulser/Pockels cell system.
+%----------------------------------------------------------------------------
+\subsection{Broadband molecular iodine absorption}
+\input{experiments/preliminary/LED.tex}
+%----------------------------------------------------------------------------
+\subsection{Boxcar averager and Hg pulser}
+\input{experiments/preliminary/Hg_fast-PD.tex}
+%----------------------------------------------------------------------------
+\subsection{Red and green HeNe LIF}
+\input{experiments/preliminary/red-green-HeNe_LIF.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\section{Dye laser test}
+This section describes three experiments mainly used to check the performance of the dye laser system. A wavelength scanned absorption experiment reveals some problems with the mechanical systems in the dye laser. Resonant LIF from a quickly prepared cell confirms the trial molecule was a good choice and provides an opportunity to develop an automated computer based data acquisition system. Scanning the dye laser wavelength in a region containing two absorption peaks and observing the resulting fluorescence signal at high resolution reveals a subtle calibration issue and demonstrates one of the key issues in molecular discrimination: the high transition density of these systems.
+%----------------------------------------------------------------------------
+\subsection{Dye laser absorption in molecular iodine}
+The spectral region around a targeted absorption feature is scanned in a stepwise fashion (the wavelength ``scan'' feature of the dye laser has proven unrealizable) using the ``lambdalok'' feature of the dye laser. These scans will be referenced later when we observe LIF from excitation in this region.
+
+\input{experiments/absorption/layout.tex}
+
+\input{experiments/absorption/data.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\subsection{Resonant laser induced fluroescence}
+\input{experiments/sample/layout.tex}
+
+\input{experiments/sample/data.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\subsection{Transition selection}
+The dye laser system maintains enough control of its output spectrum to allow discrimination between a target transition and its nearest strong neighbor. There may be some remaining calibration issues, but the numerical model for iodine LIF does a good job of modeling the observed spectral features in the LIF spectrum. Transition one and two (see Section \ref{absorption data section}) are selected by tuning the dye laser to their respective wavelengths and the resulting fluorescence spectra are observed.
+
+\input{experiments/transition/layout.tex}
+
+\input{experiments/transition/data.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\section{Single fluorescence line decay}
+Decay processes play a major role in this study. The target is assumed to be a relatively unprepared region of atmosphere; thus, in the actual application, we will have little direct control of the parameters that influence the system relaxation. In the experiments leading up to the field demonstration, controlled samples will be used. Here we conduct an initial measurement of the lifetime of a single LIF feature using the ``baked potato'' iodine cell.
+\subsection{Pockels cell system integration}
+\input{experiments/decay/integration.tex}
+\input{experiments/decay/data.tex}
+\subsection{Single fluorescence line decay in molecular iodine}
+
+\input{experiments/decay/decay.tex}
+
+\input{experiments/decay/layout.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\section{Aromatic compound LIF}
+Iodine is the trial system used to form the computational basis of many of the claims made in this dissertation. The scope of this general study and the development of the experimental equipment goes beyond the iodine molecule; this section describes an experiment using naphthalene as a target. Temperature controlled sample cells containing naphthalene have been prepared along with flakes of naphthalene and anthracene. An attempt to observe a multi-photon process in these aromatic samples has led to more equipment development.
+
+\input{experiments/aeromatic/data.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\section{Conclusion}
+\input{experiments/conclusion/conclusion.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------

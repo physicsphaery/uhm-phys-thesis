@@ -1,0 +1,9 @@
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+In this experiment the beam line is similar to the one described in Section \ref{absorbtion layout} except here only one attenuation tool (measured pulse energy after the attenuator: 300 uJ) is used and a +750 mm lens is placed 940 mm from the sample cell (between the sample cell and attenuation tool). The dye laser is tuned to 535.8901 nm and a side view geometry is used with a +100 mm object lens and a +500 mm image lens to collect the fluorescence radiation into a 1 m grating monochromator. A PMT is used to detect the signal at the monochromator output and a boxcar integrator is used to amplify/average the signal.
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------

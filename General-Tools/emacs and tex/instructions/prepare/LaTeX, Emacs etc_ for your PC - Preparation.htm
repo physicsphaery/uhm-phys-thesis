@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0053)http://www.math.aau.dk/~dethlef/Tips/preparation.html -->
+<HTML><HEAD><TITLE>LaTeX, Emacs etc. for your PC - Preparation</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1"><LINK 
+href="LaTeX, Emacs etc_ for your PC - Preparation_files/claus.css" type=text/css 
+rel=stylesheet>
+<STYLE type=text/css>TABLE {
+	BACKGROUND: #e6e6e6
+}
+TR {
+	BACKGROUND: #c0e0f0
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY vLink=#800080 link=#0000ff bgColor=#ffffff><!-- MENU -->
+<TABLE>
+  <TBODY>
+  <TR>
+    <TH bgColor=yellow><A href="http://www.math.auc.dk/~dethlef/" 
+      target=_top><IMG alt="Homepage of Claus Dethlefsen" 
+      src="LaTeX, Emacs etc_ for your PC - Preparation_files/home_ikon.gif" 
+      border=0></A></TH>
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/introduction.html">Intro</A></TH>
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/preparation.html">Prepare</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/download.html">Download</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/install.html">Install</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/tuning.html">Tune</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/test.html">Test</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/uninstall.html">Uninstall</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/information.html">Info</A> 
+  </TR></TR></TBODY></TABLE><!-- END MENU --><!--   MAIN PAGE -->
+<H1>Preparation</H1>
+<H2>System requirements</H2>
+<UL>
+  <LI>A PC with a 486 processor or better 
+  <LI>Windows 95/98, Windows ME, Windows NT 4.0, Windows 2000 or Windows XP (you 
+  need administrator privileges to install MikTeX). 
+  <LI>Plenty of space on your hard-drive (200Mb??) 
+  <LI>Network connection allowing you to download approx. 45Mb </LI></UL>
+<H2>Software requirements</H2>
+<UL>
+  <LI><A href="http://www.softwarecenter.net/easyzip/">PowerArchiver</A>, <A 
+  href="http://www.iceows.com/HomePageUS.html">Iceows</A> or another 
+  zip-utility. 
+  <LI><A href="http://www.adobe.com/">Acrobat Reader</A> if you want to use the 
+  pdf facilities. 
+  <LI>Previous versions of Emacs, Miktex, GSview, Ghostscript should be <A 
+  href="http://www.math.aau.dk/~dethlef/Tips/uninstall.html">removed</A> before 
+  installation. </LI></UL>
+<H2>Temporary Directory</H2>Create a directory called c:\tmp and another called 
+c:\temp (sorry, but both directories seem necessary). 
+<P>
+<H2>Microsoft Visual C++ run-time files</H2>If you have Win95/98/NT, you will 
+need to download and install these if they are not on your system already. You 
+may simply carry on with the installation, and if the Miktex Setup fails with 
+the message "Please download and execute comctl32......." then return here.
+<P><A 
+href="http://www.microsoft.com/msdownload/ieplatform/ie/comctrlx86.asp">50comupd.exe 
+(x86)</A>. See <A 
+href="http://www.tex.ac.uk/tex-archive/systems/win32/miktex/setup/install.html">The 
+Miktex manual</A>. 
+<P><B>NOTE:</B> The link is currently dead. Try to do the installation anyway. 
+If it fails, please report it to the Miktex maintainer (see <A 
+href="http://www.miktex.org/">http://www.miktex.org/</A>). 
+<H2>Environment</H2>
+<P><STRONG>Windows 95/98: </STRONG>
+<UL>
+  <LI>Include the following in your c:\autoexec.bat (eg. using notepad) <PRE>	set TEMP=C:\TEMP
+	set TMP =C:\TEMP
+	set HOME=C:\
+	set DICTDIR=C:\usr\local\lib
+	set PATH=%PATH%;c:\usr\local\bin;
+	set PATH=%PATH%;c:\program files\texmf\miktex\bin;
+	set PATH=%PATH%;c:\program files\emacs\bin;
+	set PATH=%PATH%;c:\program files\ghostgum\ghostview\gsview\;
+       set PATH=%PATH%;c:\program files\ghostgum\gs\gs8.14\lib;
+       set PATH=%PATH%;c:\program files\ghostgum\gs\gs8.14\bin
+      
+	</PRE>
+  <LI>Restart the computer. </LI></UL><STRONG>Test: </STRONG>At a <A 
+href="http://www.math.aau.dk/~dethlef/Tips/basics.html#msdos">dos-prompt</A>, 
+run "set" which shows the environment variables. Path, TMP, TEMP and HOME should 
+be as stated above. (It is, though, not important where TMP and TEMP points to). 
+
+<P><STRONG>Note: </STRONG>Some systems do not like long filenames, so you might 
+need to change the lines eg. as <PRE>	set PATH=%PATH%;c:\progra~1\emacs\bin;c:\program files\texmf\miktex\bin;
+	set PATH=%PATH%;c:\progra~1\ghostgum\ghostview\gsview\;
+</PRE>
+<P><STRONG>Note 2: </STRONG>Some systems do not like if the PATH is longer than 
+256 characters. 
+<P><STRONG>Windows NT/2000/XP: </STRONG>
+<UL>
+  <LI>Right-click on the "My computer" icon and choose Properties. (For Win2000, 
+  click the 'Advanced' tab). Select the "Environment" tab. 
+  <LI>Create a "user variable" called "Path" with the following value in one 
+  line (here I have broken the lines). <PRE>      c:\program files\emacs\bin;c:\program files\texmf\miktex\bin;
+      c:\program files\ghostgum\ghostview\gsview\;c:\usr\local\bin;
+      c:\program files\ghostgum\gs\gs8.14\lib;
+      c:\program files\ghostgum\gs\gs8.14\bin
+</PRE><BR>If the Path variable exists, append the above to it. 
+  <LI>Create a "user variable" called "HOME" with value c:\ 
+  <LI>Create a "user variable" called "DICTDIR" with value c:\usr\local\lib 
+  <LI>Create a "user variable" called "TMP" with value c:\temp (if it is not 
+  there already. The value is not important). 
+  <LI>Create a "user variable" called "TEMP" with value c:\temp (if it is not 
+  there already. The value is not important). 
+  <LI>Restart the computer. (This might not be necessary - try the test below). 
+  </LI></UL><STRONG>Test: </STRONG>At a <A 
+href="http://www.math.aau.dk/~dethlef/Tips/basics.html#msdos">dos-prompt</A>, 
+run "set" which shows the environment variables. Path, TMP, TEMP and HOME should 
+be as stated above. <!--   END MAIN PAGE --><!--   SIGNATURE -->
+<HR>
+Copyright (C) 2003-2004, Claus Dethlefsen <BR><!-- hhmts start -->Last modified: 
+Tue Sep 14 10:03:26 Romance Daylight Time 2004 <!-- hhmts end --><!--   END SIGNATURE --></BODY></HTML>

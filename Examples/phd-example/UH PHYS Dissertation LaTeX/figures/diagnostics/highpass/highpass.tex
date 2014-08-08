@@ -1,0 +1,16 @@
+%----------------------------------------------------------------------------
+%bb defines the bounding box for the pdf
+%viewport defines the area of the pdf used
+%in sidewaysfigure the last entry in bb moves the caption toward/away the pic
+%in sidewaysfigure the second entry in bb moves the pic toward/away the caption
+%----------------------------------------------------------------------------
+\begin{figure}
+\begin{center}
+\leavevmode
+\includegraphics[width=3.5in]
+{highpass/highpass.png}\\
+\end{center}
+\caption[Highpass filter response]{Highpass filter response. The output of the tracking generator was feedback into the RF receiver through the highpass filter while the receiver self-scanned. We see the filter begins to pass significant power at 50 MHz and reaches 100\% transmission at 75 MHz.}
+\label{highpass}
+\end{figure}
+%----------------------------------------------------------------------------

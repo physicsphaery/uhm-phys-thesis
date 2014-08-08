@@ -1,0 +1,211 @@
+%----------------------------------------------------------------------------
+\label{general dynamics}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+Consider an atom which interacts with a multi-mode radiation field. We model the interaction with the minimal-coupling Hamiltonian under the dipole approximation in the radiation gauge \cite{Scully:1997a}:
+%----------------------------------------------------------------------------
+\begin{equation}
+H
+=
+H_{0}
++
+H^{\prime}.
+\end{equation}
+%----------------------------------------------------------------------------
+where $H_0$ is the Hamiltonian of the atomic system, namely
+%----------------------------------------------------------------------------
+\begin{equation}
+H_0 \ket{a}
+=
+\hbar \omega_a \ket{a}
+\end{equation}
+%----------------------------------------------------------------------------
+where $\ket{a}$ is some energy state of the atom, and $\hbar \omega_a$ is the energy of the state $\ket{a}$; the energy eigenbasis $\{\ket{x}\}$ is assumed complete for electrons bound to the nucleus of the atom (ionization and scattering states are not included here). $H^{\prime}$ is the interaction Hamiltonian, namely
+%----------------------------------------------------------------------------
+\begin{equation}
+H^{\prime}
+=
+e \vec{E}_n \cdot \vec{r},
+\end{equation}
+%----------------------------------------------------------------------------
+where $e$ is the charge of an electron, $\vec{E}_n$ is the local electric field at the atom due to the nth radiation mode (assumed uniform over the atom), and $\vec{r}$ is the coordinate of the electron (the atomic nucleus is the origin).
+
+If the modes are linearly polarized in the same direction and coherent then the fields can be written as
+%----------------------------------------------------------------------------
+\begin{equation}
+\vec{E}_n
+=
+\hat{\varepsilon} E_n
+\frac
+{e^{i (\nu_n t + \phi_n)} - e^{-i (\nu_n t + \phi_n)}}
+{2 i}
+\end{equation}
+%----------------------------------------------------------------------------
+where $\hat{\varepsilon}$ is the unit polarization vector for the modes, $E_n$ is the magnitude of the nth mode, $\nu_n$ is the frequency of the nth mode, and $\phi_n$ is the arbitrary phase of the nth mode. Now we can write
+%----------------------------------------------------------------------------
+\begin{equation}
+H^{\prime}
+=
+\sum_{n}
+\frac{1}{2 i}
+E_n M
+e^{i (\nu_n t + \phi_n)}
++
+c.c.
+\label{interaction}
+\end{equation}
+%----------------------------------------------------------------------------
+where
+%----------------------------------------------------------------------------
+\begin{equation}
+M\equiv e \hat{\varepsilon} \cdot \vec{r}
+\end{equation}
+%----------------------------------------------------------------------------
+represents the amplitude of the coupling for the nth mode.
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+
+The system obeys the Schr\"{o}dinger equation
+%----------------------------------------------------------------------------
+\begin{equation}
+i \hbar \dot{\ket{\psi}}
+=
+H \ket{\psi}.
+\label{raw se}
+\end{equation}
+%----------------------------------------------------------------------------
+If we project the general solution $\ket{\psi}$ into $\{\ket{x}\}$, i.e.
+%----------------------------------------------------------------------------
+\begin{equation}
+\ket{\psi}
+=
+\sum_a
+c_a(t) e^{-i \omega_a t}
+\ket{a}
+\label{expansion}
+\end{equation}
+%----------------------------------------------------------------------------
+where $c_a(t)$ is the probability amplitude associated with state $\ket{a}$ for $\ket{\psi}$, then Equation \ref{raw se} can be rewritten as \cite{Bransden:1989a}
+%----------------------------------------------------------------------------
+\begin{equation}
+\dot{c_a}
+=
+\frac{1}{i \hbar}
+\sum_b
+H^{\prime}_{ab}
+e^{(i \omega_{ab} t)}
+c_b
+\label{se}
+\end{equation}
+%----------------------------------------------------------------------------
+where
+%----------------------------------------------------------------------------
+\begin{equation}
+H^{\prime}_{ab}
+=
+\bra{a} H^{\prime} \ket{b},
+\qquad
+\ket{a},\ket{b}
+\in
+\{\ket{x}\}
+\end{equation}
+%----------------------------------------------------------------------------
+and
+%----------------------------------------------------------------------------
+\begin{equation}
+\omega_{ab}
+=
+\omega_a - \omega_b
+\end{equation}
+%----------------------------------------------------------------------------
+is the transition energy. Now we combine Equations \ref{interaction} and \ref{se} to obtain the equation of motion for an atom interacting with a multi-mode radiation field:
+%----------------------------------------------------------------------------
+\begin{equation}
+\boxed{
+\dot{c_a}
+=
+\sum_{b,n}
+\frac{E_n M_{ab}}{2 \hbar}
+(
+e^{-i \nu_n t}
+-
+e^{i \nu_n t}
+)
+e^{i \omega_{ab} t}
+c_b,
+\label{dim eom}
+}
+\end{equation}
+%----------------------------------------------------------------------------
+where $M_{ab}$ (called the dipole matrix element) is defined as
+%----------------------------------------------------------------------------
+\begin{equation}
+M_{ab}
+\equiv
+\bra{a} M \ket{b},
+\qquad
+\ket{a},\ket{b}
+\in
+\{\ket{x}\}.
+\label{matrix element}
+\end{equation}
+%----------------------------------------------------------------------------
+Finally, we introduce
+%----------------------------------------------------------------------------
+\begin{equation}
+\xi
+=
+\frac
+{2 \hbar}
+{e E_{o} a_o}
+\end{equation}
+%----------------------------------------------------------------------------
+where $e$ is the elementary charge, $E_{o}$ is an arbitrary constant with units of the electric field, and $a_o$ is the Bohr radius, so that Equation \ref{dim eom} can be written in the dimensionless form (convenient for computer simulations)
+%----------------------------------------------------------------------------
+\begin{equation}
+\frac
+{dc_a}
+{d\tau}
+=
+\sum_{b,n}
+\Delta_{ab}
+(
+e^{-i \nu_n \xi \tau}
+-
+e^{i \nu_n \xi \tau}
+)
+e^{i \omega_{ab} \xi \tau}
+c_b
+\label{eom}
+\end{equation}
+%----------------------------------------------------------------------------
+where
+%----------------------------------------------------------------------------
+\begin{equation}
+\Delta_{abn}
+=
+\xi \frac{E_n M_{ab}}{2 \hbar}
+\label{Delta}
+\end{equation}
+%----------------------------------------------------------------------------
+and
+%----------------------------------------------------------------------------
+\begin{equation}
+\tau
+=
+\frac{t}{\xi}.
+\label{tau}
+\end{equation}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------

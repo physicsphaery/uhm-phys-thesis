@@ -1,0 +1,45 @@
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+We seek a relationship between the resolution and power transmittance of a etalon type interferometer. Interferometers are subject to the localization property from (spatial) Fourier analysis:
+%----------------------------------------------------------------------------
+\begin{equation}
+\Delta x
+\propto
+\frac{1}{\Delta k}
+\end{equation}
+%----------------------------------------------------------------------------
+where $\Delta x$ is the width of some localized feature in space and $\Delta k$ is the corresponding width in inverse space. In optical interferometers, $\Delta k$ is the ``resolution'' of the resulting interferogram and $\Delta x$ is the largest optical path length difference associated with the interferometer. In the case of a etalon type interferometer $\Delta x$ is equal to the optical path length of the etalon medium times the number of passes the reflection coatings can support; thus, we will assume
+%----------------------------------------------------------------------------
+\begin{equation}
+\Delta x
+\propto
+n
+\equiv
+\frac{1}{1-R}
+\end{equation}
+%----------------------------------------------------------------------------
+where $n$ is the number of passes and $R$ is the reflectance transmission of the etalon coating. This is reasonable when one considers that this implies $\Delta x$ diverges toward infinity as $R$ approaches unity and the fact that if $R=0.9$ then one would expect about ten reflections until the beam would no longer contribute significantly to the etalon's interference effect.
+
+The power transmittance of the etalon is a function of the losses at each mirror and the bulk absorption in the etalon material. Clearly, a reasonable form for the power transmission is
+%----------------------------------------------------------------------------
+\begin{equation}
+T
+\propto
+\gamma^{n}
+=
+\gamma^{1/(1-R)}
+=
+\gamma^{\zeta \Delta x}.
+\end{equation}
+%----------------------------------------------------------------------------
+where $\gamma$ is the transmission of one pass (representing the effects of reflection and bulk losses) and $\zeta$ is a constant with units of inverse length. Moreover, application of the localization property gives
+%----------------------------------------------------------------------------
+\begin{equation}
+T
+\propto
+\gamma^{\zeta/\Delta k}.
+\end{equation}
+%----------------------------------------------------------------------------
+Thus, we see that because $\gamma<1$, any attempt to increase the resolution of the instrument will result in a reduction in power transmission.
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
