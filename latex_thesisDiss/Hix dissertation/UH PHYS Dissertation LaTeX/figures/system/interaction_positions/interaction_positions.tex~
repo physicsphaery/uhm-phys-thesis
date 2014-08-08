@@ -1,0 +1,15 @@
+% interaction_table_positions.tex
+% by Troy Hix, May 2005
+%----------------------------------------------------------------------------
+\begin{sidewaysfigure}
+\center
+\includegraphics[width=7.75in]
+{interaction_positions/interaction_positions.png}
+\caption{Interaction table beam positions - the mixed beams are shown in light pink and dark pink, the green beam is the fluorescence signal.}
+\label{interaction_positions}
+\end{sidewaysfigure} 
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+
+

@@ -1,0 +1,49 @@
+%----------------------------------------------------------------------------
+\label{tail}
+%----------------------------------------------------------------------------
+The exponentially damped fluorescence response of the excited molecules has a Lorentzian spectral line shape:
+%----------------------------------------------------------------------------
+\begin{equation}
+L(\nu)
+=
+\frac{1}{\pi}
+\frac
+{(\Gamma/2)^2}
+{(\nu - \nu_{0})^2 + (\Gamma/2)^2}
+\label{lorentzian}
+\end{equation}
+%----------------------------------------------------------------------------
+where $\Gamma$ is the FWHM ($\Gamma$ is not the decay rate), $\nu_{0}$ is the center frequency of the feature. This is related to the exponential decay by
+%----------------------------------------------------------------------------
+\begin{equation}
+\Gamma=\frac{1}{\pi \tau}
+\end{equation}
+%----------------------------------------------------------------------------
+where $\tau$ is the mean lifetime of the decay. This function is normalized such that
+%----------------------------------------------------------------------------
+\begin{equation}
+\int^{\infty}_{-\infty} L(\nu)d\nu = 1.
+\end{equation}
+%----------------------------------------------------------------------------
+
+With respect to its peak, the Lorentzian’s magnitude decreases by
+%----------------------------------------------------------------------------
+\begin{equation}
+L^{\prime}
+=
+\frac
+{(\Gamma/2)^2}
+{(\nu - \nu_{0})^2 + (\Gamma/2)^2}
+\sim
+\frac{(\Gamma/2)^2}{(\nu - \nu_{0})^2}
+\label{norm lorentzian}
+\end{equation}
+%----------------------------------------------------------------------------
+where the latter case holds for $2(\nu - \nu_{0})/\Gamma>>1$. Thus, if we assume the non-target molecule releases all its fluorescence energy in one narrow band, the spectral distance at which its fluorescence energy decreases by ten orders of magnitude is 1000 inverse cm, assuming $\Gamma$ is about twice the FWHM implied by a 1 ns mean lifetime (about 0.02 inverse cm). If the excitation wavelength is 628 nm then this would imply we would need to center our spectrometer near 591 nm to ensure the non-target's fluorescence response is 10 orders of magnitude below the targets. This turns out to be an upper bound on the spectral distance since molecules typically have a fluorescence response with a spectral extent greater than 1000 inverse cm.
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------

@@ -1,0 +1,15 @@
+
+For the optimal solution, $\Phi_{residue}=9\cross10^{-15}$, we map out the surface this variable defines in solution space using two coordinate systems.
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+The region in solution space near the optimal solution shown in Figure \ref{solution 2 pulses} was mapped out by allowing the magnitude of $\Delta_{\alpha}$ and $A$ to vary by $\pm 50\%$. Figure \ref{delay amp} shows the resulting $\log(\Psi_{residue})$ surface.
+%----------------------------------------------------------------------------
+The region in solution space near the optimal solution shown in Figure \ref{solution 2 pulses} was mapped out by allowing the magnitude of $A$ and $B$ to vary by $\pm 50\%$. Figure \ref{amp amp} shows the resulting $\log(\Psi_{residue})$ surface.
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\input{figures/transfer/delay_amp/delay_amp.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\input{figures/transfer/amp_amp/amp_amp.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------

@@ -1,0 +1,15 @@
+%----------------------------------------------------------------------------
+%bb defines the bounding box for the pdf
+%viewport defines the area of the pdf used
+%in sidewaysfigure the last entry in bb moves the caption toward/away the pic
+%in sidewaysfigure the second entry in bb moves the pic toward/away the caption
+%----------------------------------------------------------------------------
+\begin{figure}
+\scalebox{0.8}[0.8]{
+\includegraphics[bb=0 450 489 700]
+{redLED/redLED.pdf}
+}
+\caption[Red LED absorption in molecular iodine]{Red LED absorption in molecular iodine - The solid trace is about 2 times smaller than the dashed trace}
+\label{redLED}
+\end{figure}
+%----------------------------------------------------------------------------

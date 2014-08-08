@@ -1,0 +1,366 @@
+@STRING(JMS="Journal of Molecular Spectroscopy")
+@STRING(PRA="Physical Review A")
+@STRING(PRL="Physical Review Letters")
+
+@ARTICLE{Goswami:2002a,
+	AUTHOR		= {Debabrata Goswami},
+	TITLE		= {Laser Phase Modulation Approaches towards Ensemble Quantum Computing},
+	YEAR		= {2002},
+	JOURNAL		= PRL,
+		VOLUME	= {88},
+		NUMBER	= {17},
+		MONTH	= {April},
+		PAGES	= {17901}
+}
+
+@ARTICLE{Hansch:1999a,
+	AUTHOR		= {T. W. H\"{a}nsch and H. Walther},
+	TITLE		= {Laser Spectroscopy and Quantum Optics},
+	YEAR		= {1999},
+	JOURNAL		= RMP,
+		VOLUME	= {71},
+		NUMBER	= {2},
+		MONTH	= {},
+		PAGES	= {242--252}
+}
+
+@ARTICLE{Arimondo:1996a,
+	AUTHOR		= {E. Arimondo},
+	TITLE		= {Coherent Population Trapping in Laser Spectroscopy},
+	YEAR		= {1996},
+	JOURNAL		= "Progress in Optics",
+		VOLUME	= {35},
+		NUMBER	= {},
+		MONTH	= {},
+		PAGES	= {257}
+}
+
+@ARTICLE{Rabitz:2000a,
+	AUTHOR		= {Herschel Rabitz and Regina de Vivie-Riedle and Marcus Motzkus and Karl Kompa},
+	TITLE		= {Whither the Future of Controlling Quantum Phenomena},
+	YEAR		= {2000},
+	JOURNAL		= "Science",
+		VOLUME	= {288},
+		NUMBER	= {},
+		MONTH	= {May},
+		PAGES	= {824--828}
+}
+
+@ARTICLE{Harris:1997a,
+	AUTHOR		= {Stephen E. Harris},
+	TITLE		= {Electromagnetically Induced Transparaency},
+	YEAR		= {1997},
+	JOURNAL		= "Physics Today",
+		VOLUME	= {},
+		NUMBER	= {},
+		MONTH	= {July},
+		PAGES	= {36--42}
+}
+
+@ARTICLE{Cohen:1977a,
+	AUTHOR		= {Claude Cohen-Tannoudji and Serge Reynaud},
+	TITLE		= {Dressed-Atom Description of Resonance Fluorescence and Absorption Spectra of a Multi-Level Atom},
+	YEAR		= {1977},
+	JOURNAL		= "J. Phys. B: Atom. Molec. Phys.",
+		VOLUME	= {10},
+		NUMBER	= {3},
+		MONTH	= {},
+		PAGES	= {345--363}
+}
+
+@ARTICLE{Bergmann:1998a,
+	AUTHOR		= {K. Bergmann and H. Theuer and B. W. Shore},
+	TITLE		= {Coherent Population Transfer amoung Quantum States of Atoms and Molecules},
+	YEAR		= {1998},
+	JOURNAL		= RMP,
+		VOLUME	= {70},
+		NUMBER	= {3},
+		MONTH	= {},
+		PAGES	= {1003--1025}
+}
+
+@ARTICLE{Shore:1995a,
+	AUTHOR		= {B. W. Shore and J. Martin and M. P. Fewell and K. Bergmann},
+	TITLE		= {Coherent Population Transfer in Multilevel Systems with Magnetic Sublevels. I. Numerical Studies},
+	YEAR		= {1995},
+	JOURNAL		= PRA,
+		VOLUME	= {52},
+		NUMBER	= {1},
+		MONTH	= {July},
+		PAGES	= {566--582}
+}
+
+@ARTICLE{Romanenko:1997a,
+	AUTHOR		= {V. I. Romanenko and L. P. Yatsenko},
+	TITLE		= {Adiabatic Population Transfer in the Three--Level $\Lambda$--System Two--Photon Lineshape},
+	YEAR		= {1997},
+	JOURNAL		= "Optics Communications",
+		VOLUME	= {140},
+		NUMBER	= {},
+		MONTH	= {},
+		PAGES	= {231--236}
+}
+
+@ARTICLE{Danileiko:1994a,
+	AUTHOR		= {M. V. Danileiko and V. I. Romanenko and L. P. Yatsenko},
+	TITLE		= {Landau--Zener Transitions and Population Transfer in a Three--Level System Driven by Two Delayed Laser Pulses},
+	YEAR		= {1994},
+	JOURNAL		= "Optics Communications",
+		VOLUME	= {109},
+		NUMBER	= {},
+		MONTH	= {},
+		PAGES	= {462--466}
+}
+
+@ARTICLE{Harris:1990a,
+	AUTHOR		= {S. E. Harris and J. E. Field and A. Imamoglu},
+	TITLE		= {Nonlinear Optical Processes Using Electromagnetically Induced Transparency},
+	YEAR		= {1990},
+	JOURNAL		= PRL,
+		VOLUME	= {64},
+		NUMBER	= {10},
+		MONTH	= {},
+		PAGES	= {1107--1110}
+}
+
+@ARTICLE{Cao:1998a,
+	AUTHOR		= {J. Cao and C. J. Bardeen and K. R. Wilson},
+	TITLE		= {Molecular "$\pi$ Pulse" for Total Inversion of Electronic State Population},
+	YEAR		= {1998},
+	JOURNAL		= PRL,
+		VOLUME	= {80},
+		NUMBER	= {7},
+		MONTH	= {February},
+		PAGES	= {1406--1409}
+}
+
+@ARTICLE{Ebery:1977a,
+	AUTHOR		= {Z. Bialynicka-Birula and I. Bialynicka-Birula and J. H. Eberly and B. W. Shore},
+	TITLE		= {Coherent Dynamics of N-Level Atoms and Molecules. II. Analytic Solutions},
+	YEAR		= {1977},
+	JOURNAL		= PRA,
+		VOLUME	= {16},
+		NUMBER	= {5},
+		MONTH	= {November},
+		PAGES	= {2048--2054}
+}
+
+@ARTICLE{Rabitz:1988a,
+	AUTHOR		= {Anthony P. Peirce and Mohammed A. Dahleh and Herschel Rabitz},
+	TITLE		= {Optimal control of quantum-mechanical systems: Existence, numerical approximation, and applications},
+	YEAR		= {1988},
+	JOURNAL		= PRA,
+		VOLUME	= {37},
+		NUMBER	= {},
+		MONTH	= {June},
+		PAGES	= {4950--4964}
+}
+
+@ARTICLE{Rabitz:1992a,
+	AUTHOR		= {Richard S. Judson and Herschel Rabitz},
+	TITLE		= {Teaching lasers to control molecules},
+	YEAR		= {1992},
+	JOURNAL		= PRL,
+		VOLUME	= {68},
+		NUMBER	= {},
+		MONTH	= {March},
+		PAGES	= {1500--1503}
+}
+
+@ARTICLE{Wu:1994a,
+	AUTHOR		= {Q. Wu and D. J. Gauthier and T. W. Mossberg},
+	TITLE		= {Optical Resonance and Coherent Transients in Dressed Atomic Systems},
+	YEAR		= {1994},
+	JOURNAL		= PRA,
+		VOLUME	= {50},
+		NUMBER	= {2},
+		MONTH	= {August},
+		PAGES	= {1474--1478}
+}
+
+@ARTICLE{Weinacht:2001a,
+	AUTHOR		= {T. C. Weinacht and R. Bartels and S.Backus and P. H. Bucksbaum and B. Pearson and J. M. Geremia and H. Rabitz and H. C. Kapteyn and M. M. Murnane},
+	TITLE		= {Coherent learning control of vibrational motion in room temperature molecular gases},
+	YEAR		= {2001},
+	JOURNAL		= "Chemical Physics Letters",
+		VOLUME	= {344},
+		NUMBER	= {3},
+		MONTH	= {August},
+		PAGES	= {333--338}
+}
+
+@ARTICLE{Schiemann:1993a,
+	AUTHOR		= {S. Schiemann and A. Kuhn and S. Steuerwald and K. Bergmann},
+	TITLE		= {Efficient Coherent Population Transfer in NO Molecules Using Pulsed Lasers},
+	YEAR		= {1993},
+	JOURNAL		= PRL,
+		VOLUME	= {71},
+		NUMBER	= {22},
+		MONTH	= {November},
+		PAGES	= {3637--3640}
+}
+
+@ARTICLE{Qi:2002a,
+	AUTHOR		= {J. Qi and F. C. Spano and T. Kirova and A. Lazoudis and J. Magnes and L. Li and L. M. Narducci and R. W. Field and A. M. Lyyra},
+	TITLE		= {Measurement of Transition Dipole Moments in Lithium Dimers Using Electromagnetically Induced Transparency},
+	YEAR		= {2002},
+	JOURNAL		= PRL,
+		VOLUME	= {88},
+		NUMBER	= {17},
+		MONTH	= {April},
+		PAGES	= {173003}
+}
+
+@ARTICLE{Schmitt:1997a,
+	AUTHOR		= {M. Schmitt and G. Knopp and A. Materny and W. Kiefer},
+	TITLE		= {Femtosecond Time--Resolved Four--Wave Mixing Spectroscopy in Iodine Vapour},
+	YEAR		= {1997},
+	JOURNAL		= "Chemical Physics Letters",
+		VOLUME	= {280},
+		NUMBER	= {},
+		MONTH	= {December},
+		PAGES	= {339--347}
+}
+
+@ARTICLE{Scully:1992a,
+	AUTHOR		= {Marlan O. Scully},
+	TITLE		= {From Lasers and Masers to Phaseonium and Phasers},
+	YEAR		= {1992},
+	JOURNAL		= "Physics Reports",
+		VOLUME	= {219},
+		NUMBER	= {},
+		MONTH	= {October},
+		PAGES	= {191--201}
+}
+
+@PROCEEDINGS{Wojcik:1997a,
+	AUTHOR		= {Antoni Wojcik and Ryszard Parzynski},
+	TITLE		= {Phaseonium: Media of Unusual Optical Properties},
+	PUBLISHER	= {Proceedings of SPIE -- Volume 3186},
+	ADDRESS 	= {Washington, D.C.},
+	YEAR		= {1997},
+		MONTH	= {August},
+		PAGES	= {2--10}
+}
+
+@ARTICLE{Halfmann:1996a,
+	AUTHOR		= {T. Halfmann and K. Bergmann},
+	TITLE		= {Coherent Population Transfer and Dark Resonances in SO2},
+	YEAR		= {1996},
+	JOURNAL		= "Journal of Chemical Physics",
+		VOLUME	= {104},
+		NUMBER	= {},
+		MONTH	= {May},
+		PAGES	= {7068--7072}
+}
+
+@ARTICLE{Bargatin:1999a,
+	AUTHOR		= {I. V. Bargatin and B. A. Grishanin},
+	TITLE		= {Fluorescence and Absorption Spectra of the $\Lambda$--System in the Case of Raman Resonance},
+	YEAR		= {1999},
+	JOURNAL		= "Optics and Spectroscopy",
+		VOLUME	= {87},
+		NUMBER	= {3},
+		MONTH	= {},
+		PAGES	= {400--408}
+}
+
+@ARTICLE{Kuklinski:1989a,
+	AUTHOR		= {J. R. Kuklinski and U. Gaubatz and F. T. Hioe and K. Bergmann},
+	TITLE		= {Adiabatic population transfer in a three-level system driven by delayed laser pulses},
+	YEAR		= {1989},
+	JOURNAL		= PRA,
+		VOLUME	= {40},
+		NUMBER	= {},
+		MONTH	= {},
+		PAGES	= {6741--6744}
+}
+
+@ARTICLE{Kis:2002a,
+	AUTHOR		= {Z. Kis and S. Stenholm},
+	TITLE		= {Optimal Control Approach for a Degenerate STIRAP},
+	YEAR		= {2002},
+	JOURNAL		= "Journal of MOdern Optics",
+		VOLUME	= {49},
+		NUMBER	= {},
+		MONTH	= {},
+		PAGES	= {111-124}
+}
+
+@ARTICLE{Gaubatza:1988a,
+	AUTHOR		= {U. Gaubatza and P. Rudecki and M. Becker and S. Schiemann and M. Külz and K. Bergmann},
+	TITLE		= {Population switching between vibrational levels in molecular beams},
+	YEAR		= {1988},
+	JOURNAL		= "Chemical Physics Letters",
+		VOLUME	= {149},
+		NUMBER	= {},
+		MONTH	= {},
+		PAGES	= {451--586}
+}
+
+@ARTICLE{Choe:1997a,
+	AUTHOR		= {A. S. Choe and Jaemin Han and Jongmin Lee},
+	TITLE		= {Nonadiabatic Loss in Coherent Population Transfer due to Optimal Detunings},
+	YEAR		= {1997},
+	JOURNAL		= "Journal of the Korean Physical Society",
+		VOLUME	= {31},
+		NUMBER	= {4},
+		MONTH	= {},
+		PAGES	= {703--707}
+}
+
+@ARTICLE{Khaneja:2003a,
+	AUTHOR		= {Navin Khaneja and Burkhard Luy and Steffen J. Glaser},
+	TITLE		= {Boundary of Quantum Evolution under Decoherence},
+	YEAR		= {2003},
+	JOURNAL		= "Proceedings of the National Academy of Sciences",
+		VOLUME	= {100},
+		NUMBER	= {23},
+		MONTH	= {November},
+		PAGES	= {13162--13166}
+}
+
+@ARTICLE{Schirmer:2000a,
+	AUTHOR		= {S. G. Schirmer},
+	TITLE		= {Laser Cooling of Internal Molecular Degrees of Freedom for Vibrationally Hot Molecules},
+	YEAR		= {2000},
+	JOURNAL		= PRA,
+		VOLUME	= {63},
+		NUMBER	= {},
+		MONTH	= {},
+		PAGES	= {013407}
+}
+
+@ARTICLE{Harris:1990a,
+	AUTHOR		= {K.-J. Boller and A. Imamolu and S. E. Harris},
+	TITLE		= {Observation of Electromagnetically Induced Transparency},
+	YEAR		= {1990},
+	JOURNAL		= PRL,
+		VOLUME	= {66},
+		NUMBER	= {},
+		MONTH	= {},
+		PAGES	= {2593--2596}
+}
+
+@ARTICLE{Corless:1997a,
+	AUTHOR		= {John D. Corless and James A. West and Jake Bromage and C. R. Stroud, Jr.},
+	TITLE		= {Pulsed Single-Mode Dye Laser for Coherent Control Experiments},
+	YEAR		= {1997},
+	JOURNAL		= "Review of Scientific Instruments",
+		VOLUME	= {68},
+		NUMBER	= {6},
+		MONTH	= {June},
+		PAGES	= {2259--2264}
+}
+
+@ARTICLE{Vitanov:2001a,
+	AUTHOR		= {Nikolay V. Vitanov and Thomas Halfmann and Bruce W. Shore and Klaas Bergmann},
+	TITLE		= {Laser Induced Population Transfer by Adiabatic Passage Techniques},
+	YEAR		= {2001},
+	JOURNAL		= "Annu. Rev. Phys. Chem.",
+		VOLUME	= {52},
+		NUMBER	= {},
+		MONTH	= {},
+		PAGES	= {763--809}
+}
+

@@ -1,0 +1,11 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -*- Mode: Latex -*- %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% >>instrument/instrument.tex<<
+%% Author          : R. Jeffrey Kowalski
+%% Created On      : Tue Apr 10 19:40:36 HST 2007
+%% Last Modified On: Tue Apr 10 22:58:24 HST 2007
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+This is where I introduce this chapter.
+\input{instrument/intro.tex}
+\input{instrument/concept/concept.tex}
+\input{instrument/payload/payload.tex}
+\input{instrument/electronics/electronics.tex}

@@ -1,0 +1,25 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -*- Mode: Latex -*- %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% >>slacT486/analysis/dipoleCal.tex<<
+%% Author          : R. Jeffrey Kowalski
+%% Created On      : Mon Jul  2 15:35:51 HST 2007
+%% Last Modified On: Wed Aug  1 16:48:23 HST 2007
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Dipole Calibration}
+\label{ss:dipoleCal}
+To calibrate the transition radiation entering the ice target, 104 runs with typically 1000-2000 events were used to build a correlation between the peak voltages received by the dipole antenna and the generated beam current.  Due to the poor quality of the beam current data set, only 19 runs passed a selection criteria which was motivated by well-behaved dipole peak distributions (figure~\ref{fig:dipHrnDist}), and the beam current tracking the dipole peaks consistently over the entire run.  
+
+\begin{figure}[htbp]
+\centering
+\epsfxsize=4.5in\epsfbox{figures/slacT486/run102Distribution.eps}
+\caption{Run 102 peak voltage distributions for the dipole antenna and gain horn which is normalized to the mean of the dipole peak distribution.  For run 102, the dipole distribution has $\mu$ = 0.2273 and $\sigma$ = 0.0379, which provides a normalized horn distribution with $\mu$ = 5.2602 and $\sigma$ = 0.9537.  All units are in relative volts.}
+\label{fig:dipHrnDist}
+\end{figure}
+
+\par Figure~\ref{fig:dipoleCal} shows the coherence of the detected electromagnetic pulse power as a function of shower energy which is directly proportional to the transition-radiation monitored beam current.  This experimental result yields a slope of 2.07713 $\pm$ 0.07846.  The quadratic dependence of the pulse power of the radiation detected in T486 provides a clear indication of coherence of Cherenkov emission.
+
+\begin{figure}[htbp]
+\centering
+\epsfxsize=4.5in\epsfbox{figures/slacT486/dipoleCoh.eps}
+\caption{Detected pulse power as a function of shower energy for 19 runs during T486.  The dipole antenna, depicted in figure~\ref{fig:dipole}, measured the transition radiation exiting the beam pipe at an angle of 56.5$^\circ$ from the beam axis.  The quadratic rise with beam energy is characteristic of coherent radiation.}
+\label{fig:dipoleCal}
+\end{figure}

@@ -1,0 +1,29 @@
+This is BibTeX, Version 0.99cThe top-level auxiliary file: entire_document.aux
+A level-1 auxiliary file: dedication.aux
+A level-1 auxiliary file: acknowledgements.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: body.aux
+The style file: plain.bst
+Database file #1: bib/physics.bib
+Database file #2: bib/molecules.bib
+Database file #3: bib/optics.bib
+Database file #4: bib/iodine.bib
+Database file #5: bib/LIDAR.bib
+Database file #6: bib/nuclear_mag.bib
+Database file #7: bib/QuantumControl.bib
+Repeated entry---line 214 of file bib/QuantumControl.bib
+ : @article{Schmitt:1997a
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 334 of file bib/QuantumControl.bib
+ : @article{Harris:1990a
+ :                      ,
+I'm skipping whatever remains of this entry
+Database file #8: bib/program.bib
+Warning--to sort, need editor, organization, or key in Harding:2000a
+Warning--to sort, need editor, organization, or key in Hopkinson:2001a
+Warning--to sort, need editor, organization, or key in Wojcik:1997a
+Warning--to sort, need editor, organization, or key in Jeanneret:1998a
+Warning--to sort, need editor, organization, or key in Lienert:2005a
+Warning--to sort, need editor, organization, or key in Siegman:1993a
+(There were 2 error messages)

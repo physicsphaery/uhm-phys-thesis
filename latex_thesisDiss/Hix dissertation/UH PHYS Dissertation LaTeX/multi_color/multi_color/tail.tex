@@ -1,0 +1,50 @@
+%----------------------------------------------------------------------------
+\label{tail}
+%----------------------------------------------------------------------------
+The exponentially damped fluorescence response of the excited molecules has a Lorentzian spectral line shape:
+%----------------------------------------------------------------------------
+\begin{equation}
+L(\nu)
+=
+\frac{1}{\pi}
+\frac
+{(\Gamma/2)^2}
+{(\nu - \nu_{0})^2 + (\Gamma/2)^2}
+\label{lorentzian}
+\end{equation}
+%----------------------------------------------------------------------------
+where $\Gamma$ is the FWHM (not related to the density matrix $\Gamma$'s from Section \ref{density formalism}), $\nu_{0}$ is the frequency associated with the fluorescence transition. This is related to the exponential decay by
+%----------------------------------------------------------------------------
+\begin{equation}
+\Gamma=\frac{1}{\pi \tau}
+\end{equation}
+%----------------------------------------------------------------------------
+where $\tau$ is the mean lifetime of the decay. This function is normalized such that
+%----------------------------------------------------------------------------
+\begin{equation}
+\int^{\infty}_{-\infty} L(\nu)d\nu = 1.
+\end{equation}
+%----------------------------------------------------------------------------
+
+With respect to its peak, the Lorentzian's magnitude decreases by
+%----------------------------------------------------------------------------
+\begin{equation}
+L^{\prime}
+=
+\frac
+{(\Gamma/2)^2}
+{(\nu - \nu_{0})^2 + (\Gamma/2)^2}
+\sim
+\frac{(\Gamma/2)^2}{(\nu - \nu_{0})^2}
+\label{norm lorentzian}
+\end{equation}
+%----------------------------------------------------------------------------
+where the latter case holds for $2(\nu - \nu_{0})/\Gamma>>1$. Thus, assuming $\Gamma$ is about twice the FWHM implied by a 1 ns mean lifetime (about 0.02 inverse cm), if we were able to shift the fluorescence energy of the target (i.e. the signal) to a spectral region 1000 cm$^{-1}$ away ($|\nu - \nu_{0}|=1000$ cm$^{-1}$) from the non--traget's fluorescence energy (i.e. noise), the energy of the non--target would be down by 10 orders of magnitude at that spectral location (SNR of 100 dB). For example, if the excitation wavelength is 628 nm (and the non--target emits it's fluroescence energy at this frequency) then this would imply we would need to center our spectrometer at 591 nm or less to ensure the non-target's fluorescence response is reduced by 10 orders of magnitude. This turns out to be an lower bound on the spectral distance since some of the non-target's fluorescence energy will ``follow'' the target's energy to some extent. We approximate the effect of this ``following'' on the SNR in the following sections.
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+ 

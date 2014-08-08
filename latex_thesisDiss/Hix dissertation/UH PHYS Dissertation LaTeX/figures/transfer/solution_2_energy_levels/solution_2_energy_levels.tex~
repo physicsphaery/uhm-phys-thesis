@@ -1,0 +1,11 @@
+% solution_2_pulses.tex
+% by Troy Hix, March 2005
+%----------------------------------------------------------------------------
+\begin{figure}
+\centering
+\includegraphics[width=5.00in]
+{solution_2_energy_levels/solution_2_energy_levels.png}\\
+\caption[Two color optimal solution]{Two color optimal solution. $\braket{\Psi}{\Psi}$ behavior at the optimum using the pulse sequence from Figure \ref{solution 2 pulses}. Note that $\braket{0}{0}$ and $\braket{2}{2}$ are shown at a different scale than $\braket{1}{1}$. This solution effectively transfers population directly from the ground state to the second excited state without significantly populating the first excited state.}
+\label{solution 2 energy levels}
+\end{figure} 
+%----------------------------------------------------------------------------

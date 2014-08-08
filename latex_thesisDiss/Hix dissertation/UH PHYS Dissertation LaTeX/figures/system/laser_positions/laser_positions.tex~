@@ -1,0 +1,15 @@
+% laser_positions.tex
+% by Troy Hix, May 2005
+%----------------------------------------------------------------------------
+\begin{sidewaysfigure}
+\center
+\includegraphics[width=7.75in]
+{laser_positions/laser_positions.png}\\
+\caption{Laser positions on dye laser table - the outside border of the diagram (i.e., the reference edge for all dimensions) is the line defined by the last column (or row) of 1/4-20 tapped holes on the optical bench (NOT the actual edge of the table).}
+\label{laser_positions}
+\end{sidewaysfigure} 
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+
+

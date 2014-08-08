@@ -1,0 +1,49 @@
+:Base Ice409.hlp>Main
+1 Overview
+2 Introduction=Introduction@Ice409.hlp>Main
+2 ICEOWS functionality=ICEOWSfunctionality@Ice409.hlp>Main
+2 Uninstalling ICEOWS=UninstallingICEOWS@Ice409.hlp>Main
+2 Bugs and comments=Bugsandcomments@Ice409.hlp>Main
+2 Acknowledgments=Acknowledgments@Ice409.hlp>Main
+1 Using ICEOWS
+2 Make archive file (ICE, ARJ, ZIP, EXE) or validator file (SFV)
+3 Make archive file (ICE, ARJ, ZIP, EXE) or validator file (SFV)=Makearchivefile.ICE.ARJ.ZIP.EXE.orvalidatorfile.SFV.@Ice409.hlp>Main
+3 Make archive or validator file using contextual menu=Makearchiveorvalidatorfileusingcontextualmenu@Ice409.hlp>Main
+3 Make archive using Send To menu=MakearchiveusingSendTomenu@Ice409.hlp>Main
+3 Make archive using New menu=MakearchiveusingNewmenu@Ice409.hlp>Main
+2 Extract files
+3 Extract files=Extractfiles@Ice409.hlp>Main
+3 Extract files with drag and drop under ICEOWS explorer=ExtractfileswithdraganddropunderICEOWSexplorer@Ice409.hlp>Main
+3 Extract files with Cut and Copy under ICEOWS explorer=ExtractfileswithCutandCopyunderICEOWSexplorer@Ice409.hlp>Main
+3 Extract files with contextual menu of Windows explorer=ExtractfileswithcontextualmenuofWindowsexplorer@Ice409.hlp>Main
+3 Extract files with contextual menu of ICEOWS explorer=ExtractfileswithcontextualmenuofICEOWSexplorer@Ice409.hlp>Main
+2 Add files to an archive
+3 Add files to an archive=Addfilestoanarchive@Ice409.hlp>Main
+3 Add files with Copy-Cut and Paste under Windows Explorer=AddfileswithCopy.CutandPasteunderWindowsExplorer@Ice409.hlp>Main
+3 Add files with Copy-Cut and Paste under ICEOWS Explorer=AddfileswithCopy.CutandPasteunderICEOWSExplorer@Ice409.hlp>Main
+3 Add files with contextual menu under Windows Explorer=AddfileswithcontextualmenuunderWindowsExplorer@Ice409.hlp>Main
+3 Add files with contextual menu under ICEOWS Explorer=AddfileswithcontextualmenuunderICEOWSExplorer@Ice409.hlp>Main
+2 Others operations
+3 Others operations=Othersoperations@Ice409.hlp>Main
+3 Show properties of an archive=Showpropertiesofanarchive@Ice409.hlp>Main
+3 Check integrity of an archive=Checkintegrityofanarchive@Ice409.hlp>Main
+3 Using file validator=Usingfilevalidator@Ice409.hlp>Main
+3 Delete files from an archive=Deletefilesfromanarchive@Ice409.hlp>Main
+3 Print the list of files from an archive=Printthelistoffilesfromanarchive@Ice409.hlp>Main
+3 Create a self-extracting archive=Createaself.extractingarchive@Ice409.hlp>Main
+1 ICEOWS explorer
+2 ICEOWS explorer=ICEOWSexplorer2@Ice409.hlp>Main
+2 Extract Dialog Box=ExtractDialogBox@Ice409.hlp>Main
+2 Extract options=Extractoptions@Ice409.hlp>Main
+2 Extracting dialog box=Extractingdialogbox@Ice409.hlp>Main
+2 Add dialog box=Adddialogbox@Ice409.hlp>Main
+2 Compress options=Compressoptions@Ice409.hlp>Main
+2 Properties pages=Propertiespages@Ice409.hlp>Main
+2 Properties pages of an archive or validator file=Propertiespagesofanarchiveorvalidatorfile@Ice409.hlp>Main
+2 Properties pages of file contained in archive=Propertiespagesoffilecontainedinarchive@Ice409.hlp>Main
+1 ICEOWS Self-Extractor
+2 Self-extracting module for Windows 32 bits=Self.extractingmoduleforWindows32bits@Ice409.hlp>Main
+2 Self-extracting module for Windows CE=Self.extractingmoduleforWindowsCE@Ice409.hlp>Main
+1 Configurations
+2 Configuration dialog box=Configurationdialogbox@Ice409.hlp>Main
+2 Installing ARJ=InstallingARJ@Ice409.hlp>Main

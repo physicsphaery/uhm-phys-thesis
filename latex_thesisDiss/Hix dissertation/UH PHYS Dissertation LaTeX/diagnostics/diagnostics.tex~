@@ -1,0 +1,49 @@
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\input{diagnostics/intro/intro.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\section{Transverse mode structure of the dye laser output}
+Measurements of the transverse variation in intensity of the dye laser output at various positions along the beam line are used to estimate the spatial mode content of the beam we plan to use in coherent control experiments. A rough decomposition of the observed beam into the Hermite--Gauss modes is presented after an estimate of $M^2$ \cite{Siegman:1993a} is reported.
+%----------------------------------------------------------------------------
+\subsection{Experiment layout}
+\input{diagnostics/transverse/layout.tex}
+%----------------------------------------------------------------------------
+\subsection{$M^2$ estimate}
+\input{diagnostics/transverse/M_squared.tex}
+%----------------------------------------------------------------------------
+\subsection{Hermite-Gauss mode superposition}
+\input{diagnostics/transverse/Hermite-Gauss_modes.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\section{Dye laser output axial mode structure}
+The effects of the multi--mode nature of the dye laser output is observed in the RF intensity fluctuations recorded in the output of a square law detector. A RF receiver is used to spectrally analyze the detector output; and it is seen that many discrete spectral features exist out to the high frequency limit of the receiver. This measurement implies the dye laser runs multi--mode with as many as eight characteristic frequencies.
+%----------------------------------------------------------------------------
+\subsection{Mode beating}
+\input{diagnostics/axial/theory.tex}
+%----------------------------------------------------------------------------
+\subsection{Apparatus}
+%----------------------------------------------------------------------------
+\input{diagnostics/axial/dye-laser.tex}
+\input{diagnostics/axial/photodiode.tex}
+\input{diagnostics/axial/RF-receiver.tex}
+\input{diagnostics/axial/boxcar.tex}
+%----------------------------------------------------------------------------
+\subsection{Photodiode calibration}
+\input{diagnostics/axial/calibration.tex}
+%----------------------------------------------------------------------------
+\subsection{Experiment layout}
+\input{diagnostics/axial/layout.tex}
+%----------------------------------------------------------------------------
+\subsection{Data acquisition}
+\input{diagnostics/axial/data-acquisition.tex}
+%----------------------------------------------------------------------------
+\subsection{Data analysis}
+\input{diagnostics/axial/data-analysis.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\section{Conclusion}
+\input{diagnostics/conclusion/conclusion.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------

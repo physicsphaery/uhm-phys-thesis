@@ -1,0 +1,18 @@
+%----------------------------------------------------------------------------
+%------------------------------Broad objectives------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------So what?----------------------------------
+%----------------------------------------------------------------------------
+
+This chapter covered two significant computer investigations into the dynamics of simple multi-level quantum systems under the action of pulsed control fields. These two studies proved important to the justification of this (coherent quantum control) approach to the LIDAR problem. Both of these studies are simple extensions of the basic formalism introduced in the previous chapter.
+
+Frist, some novel quantum control processes were examined in terms that are important to a LIF type experiment. The two color process called STIRAP (and three color STIRAP like process) are analyzed for their robustness when faced with pulse sequences with randomly varying amplitudes. It is shown that there is an inherent resistance to pulse amplitude flucuations when the excitation pulses are beyond a certain threshold, with the two color STIRAP process being the most robust.
+
+Second, a study of a simple collision model shows that there is a good chance that density matrix methods will be able to parameterize the relaxation effects in the dynamic model.  This will facilitate computer exploration of open systems under quantum control. The hope (motivated, for example, by the quantum zeno effect \cite{Luis:2001a}) is that we may discover special coherent processes which may be able to (selectively) control the temporal effects of relaxation.
+%----------------------------------------------------------------------------
+%---------------------------------Synthesize---------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------

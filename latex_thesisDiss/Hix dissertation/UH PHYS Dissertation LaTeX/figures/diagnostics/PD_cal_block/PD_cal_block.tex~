@@ -1,0 +1,15 @@
+%----------------------------------------------------------------------------
+%bb defines the bounding box for the pdf
+%viewport defines the area of the pdf used
+%in sidewaysfigure the last entry in bb moves the caption toward/away the pic
+%in sidewaysfigure the second entry in bb moves the pic toward/away the caption
+%----------------------------------------------------------------------------
+\begin{figure}
+\scalebox{0.6}[0.6]{
+\includegraphics*[bb=12 67 665 429]
+{procedure-resluts/figures/PD_cal_block/PD_cal_block.pdf}
+}
+\caption{Block diagram.}
+\label{PD_cal_block}
+\end{figure}
+%----------------------------------------------------------------------------

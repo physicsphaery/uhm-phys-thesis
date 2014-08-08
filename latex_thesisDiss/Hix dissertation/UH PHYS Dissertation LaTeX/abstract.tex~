@@ -1,0 +1,30 @@
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%This is a modified version of the sample UH thesis LaTeX from Robert Brewer
+%Modified by Troy Hix APR-12-06
+%Robert Brewer's original remarks are included below
+%Troy Hix's remarks are in these hyphens: ------------------
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -*- Mode: Latex -*- %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% uhtest-abstract.tex -- 
+%% Author          : Robert Brewer
+%% Created On      : Fri Oct  2 16:30:18 1998
+%% Last Modified By: Robert Brewer
+%% Last Modified On: Fri Oct  2 16:30:25 1998
+%% RCS: $Id: uhtest-abstract.tex,v 1.1 1998/10/06 02:06:30 rbrewer Exp $
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%   Copyright (C) 1998 Robert Brewer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+
+\begin{abstract}
+
+Active remote detection methods using laser excitation (a sub-category of the broad field of ``laser based imaging, detection, and ranging'' or LIDAR) are known to be sensitive to relatively small concentrations (compared to atmospheric concentrations) of molecular targets when the excitation region is free of ``contaminating'' molecules. However, when one considers the detection of trace molecular constituents in the atmosphere, the broad non-resonant response of the abundant molecular atmospheric contaminants will overwhelm and mask the resonant response of the targeted molecular species, even when using ideal laser pulses.
+
+This situation can be improved through the application of optical quantum control methods. Highly specialized laser pulse trains containing multi-color pulses with custom tuned properties are designed to control the target molecule and guide it to a particular final state which will fluoresce in a ``dark'' spectral region; a region free from the non-resonant response of the abundant molecular atmospheric contaminants. In this way the masking effects of the atmosphere are attenuated and the ``contaminant free'' sensitivity levels of LIDAR systems may be approached in low altitude remote detection applications.
+
+In this dissertation, the basic equations of motion for molecular control are developed and numerically explored in the LIDAR context: thermal effects, random orientation effects, and collisional effects are considered. The impacts of the ``stimulated Raman adiabatic passage'' (STIRAP) process are numerically simulated given the apparent statistical and spatial properties of the tunable laser sources to which we have access. The fluorescence response of a molecular iodine isotope is compared natural iodine in a simplified numerical simulation resulting in a target signal eight orders of magnitude greater than the non-target in the ``dark'' spectral region.
+
+The development of a three color dye laser apparatus is outlined. It was discovered that the laser output has features which will not allow coherent control of thermal molecular systems: the multi-mode nature of the dye laser output (transverse and axial) is measured and analyzed. The dissertation ends with a discussion of passive filtering techniques which may be implemented to render the dye laser output useable for bench-top demonstrations of the proposed remote detection method.
+\end{abstract}

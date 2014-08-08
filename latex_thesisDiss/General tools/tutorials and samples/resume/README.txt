@@ -1,0 +1,1 @@
+A few simple resume/CV templates gathered from the web.

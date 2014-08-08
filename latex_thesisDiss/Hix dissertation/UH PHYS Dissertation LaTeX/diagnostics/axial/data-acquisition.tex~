@@ -1,0 +1,11 @@
+\subsection{Data Acquisition}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+Four data sets (1 hour each) are taken with the 7L12 receiver. First, dye laser \#22 is scanned; next the beam is blocked for another 1 hour scan; then dye laser \#23 is scanned; finally the YAG seeder is turned off and dye \#23 is scanned again. Before each dye laser scan, the polarizers are adjusted so that the signal from the photodiode has an approximate amplitude of 100 mV. The 7L12 settings are as follows: amplifier set to its 5th notch, attenuator at 0 dB (together the amplifier and attenuator give a reference level of -70 dB), the video filter is active, FREQ SPAN/DIV is MAX (1.8 GHz), bandwidth 3 MHz, scale is linear (not log). The SR250 settings are as follows: gate width 300 ns, sensitivity 5 mV, samples 100. The computer settings are as follows: number of points acquired is set to 4000, the scan length is 3600 seconds, and the voltage ramp range is 0.5 - 10 volts.
+
+Three data sets (1 hour each) are taken with the 7L14 receiver. First, dye laser \#23 is scanned; next the beam is blocked for another 1 hour scan; finally dye laser \#22 is scanned. Before each dye laser scan, the polarizers are adjusted so that the signal from the photodiode has an approximate amplitude of 15 mV (the 7L14 is more sensitive than the 7L12). The 7L14 settings are as follows: amplifier set to its 5th notch, attenuator at 0 dB (together the amplifier and attenuator give a reference level of -70 dB), the video filter is active, FREQ SPAN/DIV is MAX (2.5 GHz), bandwidth 3 MHz, scale is linear (not log). The SR250 settings were not changed. On the computer the voltage ramp was changed to 0.9 - 10 volts.
+
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------

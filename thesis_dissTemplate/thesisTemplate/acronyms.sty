@@ -1,0 +1,102 @@
+\usepackage{acronym}
+%\makeatletter
+\newcounter{@cronyms}
+\newcounter{theacronym}
+\newcounter{acronym}
+\setcounter{@cronyms}{0}
+\setcounter{acronym}{0}
+
+\renewcommand{\acrodef}[2]{%
+\expandafter\ifx\csname fn@#1\endcsname\relax%
+ \expandafter\gdef\csname fn@#1\endcsname{#2}%\newacro{#1}{#2}%
+ \expandafter\gdef\csname fnp@#1\endcsname{#1s}%
+ \expandafter\gdef\csname fnP@#1\endcsname{#2s}%
+ \write\@auxout{\string\newacro{#1}{#2}}%
+ \expandafter\let\csname ac@#1\endcsname\undefined%\newacro{#1}{#2}%
+ \stepcounter{@cronyms}%
+ \expandafter\gdef\csname reacro@#1\endcsname{%
+  \expandafter\let\csname ac@#1\endcsname\undefined%
+ }%
+ \expandafter\gdef\csname reacro\roman{@cronyms}\endcsname{%
+  \expandafter\csname reacro@#1\endcsname%
+ }%
+\else%
+ \PackageWarning{acronym}{Acronym `#1' is already defined}%
+\fi
+}
+
+\newcommand{\acalt}[3]{%
+\expandafter\ifx\csname ac@#1\endcsname\relax%
+ #3\nolinebreak[3] (#2)%
+ \expandafter\gdef\csname ac@#1\endcsname{x}%
+\else%
+ #2%
+\fi}
+
+\let\@c\ac
+\renewcommand\ac[1]{%
+ \ifthenelse{\equal{\value{acronym}}{0}}{\refreshacronyms\stepcounter{acronym}}{}%
+ \@c{#1}}
+
+\renewcommand{\acs}[1]{%
+\expandafter\ifx\csname fn@#1\endcsname\relax%
+ \textbf{#1!}%
+ \PackageWarning{acronym}{Acronym `#1' is not defined}%
+ \expandafter\gdef\csname fn@#1\endcsname{\textbf{#1!}}
+\else%
+ \mbox{#1}%
+\fi}
+
+\newcommand\acronoreset[1]{%
+ \expandafter\gdef\csname reacro@#1\endcsname{}%
+}
+
+\newcommand\nullac[1]{%
+ \expandafter\gdef\csname ac@#1\endcsname{x}%
+}
+
+\newcommand\refreshacronyms{%
+ \setcounter{theacronym}{0}%
+ \recurse@cronyms%
+} 
+
+\newcommand\recurse@cronyms{%
+ \ifthenelse{\equal{\value{theacronym}}{\value{@cronyms}}}{}{%
+ \stepcounter{theacronym}%
+ \expandafter\csname reacro\roman{theacronym}\endcsname{}%
+ \recurse@cronyms%
+}}
+
+\newcommand{\acropdef}[3]{%
+ \expandafter\gdef\csname fnp@#1\endcsname{#2}%
+ \expandafter\gdef\csname fnP@#1\endcsname{#3}%
+}
+\newcommand{\acp}[1]{%
+ \ifthenelse{\equal{\value{acronym}}{0}}{\refreshacronyms\stepcounter{acronym}}{}%
+\expandafter\ifx\csname ac@#1\endcsname\relax%
+ \acpf{#1}%
+ \expandafter\gdef\csname ac@#1\endcsname{x}%
+\else%
+ \acps{#1}%
+\fi}
+\newcommand{\acps}[1]{%
+\expandafter\ifx\csname fn@#1\endcsname\relax%
+ \textbf{#1!}%
+ \PackageWarning{acronym}{Acronym `#1' is not defined}%
+ \expandafter\gdef\csname fn@#1\endcsname{\textbf{#1!}}
+\else%
+ \csname fnp@#1\endcsname{}%
+\fi}
+
+\newcommand{\acpf}[1]{%
+ \csname fnP@#1\endcsname{}\nolinebreak[3] (\acps{#1})}%
+
+\DeclareOption{footnote}{%
+ \renewcommand{\acf}[1]%
+  {\acs{#1}\footnote{\csname fn@#1\endcsname}}%
+ \renewcommand{\acpf}[1]%
+  {\acps{#1}\footnote{\csname fnP@#1\endcsname}}%
+}
+\ProcessOptions
+\@addtoreset{acronym}{chapter}
+%\makeatother

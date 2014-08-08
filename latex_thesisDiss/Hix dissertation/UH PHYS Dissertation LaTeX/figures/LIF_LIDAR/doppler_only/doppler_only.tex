@@ -1,0 +1,15 @@
+%----------------------------------------------------------------------------
+%bb defines the bounding box for the pdf
+%viewport defines the area of the pdf used
+%in sidewaysfigure the last entry in bb moves the caption toward/away the pic
+%in sidewaysfigure the second entry in bb moves the pic toward/away the caption
+%----------------------------------------------------------------------------
+\begin{figure}
+\scalebox{0.8}[0.8]{
+\includegraphics[bb=35 515 550 700]
+{doppler_only/doppler_only.pdf}
+}
+\caption[Simulated thermal (Doppler only) effects on observed fluorescence -- high fluence vs. low fluence]{Simulated thermal (Doppler only) effects on observed fluorescence -- high fluence vs. low fluence. For these two simulations we use a fluence of 1000 J/m$^2$ for the left plot and a fluence of 10 J/m$^2$ for the right plot. The target is thermal molecular iodine gas with dipole matrix element $3.6\cross10^{-32}$ Cm (including FCF), at T = 293 K.}
+\label{doppler_only}
+\end{figure}
+%----------------------------------------------------------------------------

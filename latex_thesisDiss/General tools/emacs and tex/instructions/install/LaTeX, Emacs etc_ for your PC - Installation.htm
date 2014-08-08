@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0049)http://www.math.aau.dk/~dethlef/Tips/install.html -->
+<HTML><HEAD><TITLE>LaTeX, Emacs etc. for your PC - Installation</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1"><LINK 
+href="LaTeX, Emacs etc_ for your PC - Installation_files/claus.css" 
+type=text/css rel=stylesheet>
+<STYLE type=text/css>TABLE {
+	BACKGROUND: #e6e6e6
+}
+TR {
+	BACKGROUND: #c0e0f0
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY vLink=#800080 link=#0000ff bgColor=#ffffff><!-- MENU -->
+<TABLE>
+  <TBODY>
+  <TR>
+    <TH bgColor=yellow><A href="http://www.math.auc.dk/~dethlef/" 
+      target=_top><IMG alt="Homepage of Claus Dethlefsen" 
+      src="LaTeX, Emacs etc_ for your PC - Installation_files/home_ikon.gif" 
+      border=0></A></TH>
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/introduction.html">Intro</A></TH>
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/preparation.html">Prepare</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/download.html">Download</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/install.html">Install</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/tuning.html">Tune</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/test.html">Test</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/uninstall.html">Uninstall</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/information.html">Info</A> 
+  </TR></TR></TBODY></TABLE><!-- END MENU --><!--   MAIN PAGE -->
+<H1>Installation</H1>
+<HR>
+Follow these steps to get a working emacs/latex environment. Choose any drive 
+and directories for installation you want (but you may have to change the <A 
+href="http://www.math.aau.dk/~dethlef/Tips/preparation.html">environment</A> 
+variables). I will assume that you install according to: <PRE>Emacs       -&gt;    c:\program files\emacs
+Miktex      -&gt;    c:\program files\texmf
+localtexmf  -&gt;    c:\localtexmf (local TEXMF tree)
+Ghostscript -&gt;    c:\program files\ghostgum\gs
+Ghostview   -&gt;    c:\program files\ghostgum\ghostview
+Auctex      -&gt;    c:\program files\emacs\site-lisp\auctex
+ispell      -&gt;    c:\usr\local\bin     (This CANNOT be changed)
+.emacs      -&gt;    c:\.emacs            (the value of HOME)
+</PRE>If you install Auctex to a different place, you need to make an obvious 
+change in your .emacs file. 
+<P>Have you done all the <A 
+href="http://www.math.aau.dk/~dethlef/Tips/preparation.html">preparations</A>? 
+<H2>Emacs 21.3</H2>
+<UL>
+  <LI><A href="http://www.math.aau.dk/~dethlef/Tips/basics.html#unzip">Unzip</A> 
+  the emacs-21.3-fullbin-i386.tar.gz file to c:\program files\ <BR>(1876 files) 
+  <LI>Rename the c:\program files\emacs-21.3 directory to c:\program files\emacs 
+
+  <LI><A href="http://www.math.aau.dk/~dethlef/Tips/basics.html#run">Run</A> the 
+  file c:\program files\emacs\bin\addpm.exe </LI></UL><STRONG>Test:</STRONG> Open 
+the <A href="http://www.math.aau.dk/~dethlef/Tips/basics.html#startmenu">Start 
+Menu</A>/Programs/Gnu Emacs/Emacs. Emacs should start up. 
+<H2>AucTeX 11.14</H2>
+<UL>
+  <LI><A href="http://www.math.aau.dk/~dethlef/Tips/basics.html#unzip">Unzip</A> 
+  auctex-11.14.zip to c:\program files\emacs\site-lisp <BR>(89 files) 
+  <LI>Rename c:\program files\emacs\site-lisp\auctex-11.14 to c:\program 
+  files\emacs\site-lisp\auctex 
+  <LI><A href="http://www.math.aau.dk/~dethlef/Tips/basics.html#unzip">Unzip</A> 
+  startup1.zip to c:\ (the value of your HOME variable). This creates the 
+  startup file c:\.emacs. You must edit this file, if you install auctex to a 
+  different place. </LI></UL><STRONG>Test:</STRONG> (Re)Start Emacs. In emacs, 
+call M-x latex-mode. You should see the "Command" and "LaTeX" menus. Also the 
+"Ref" menu is shown (RefTeX is also activated). 
+<P><STRONG>Note for experienced users:</STRONG> A newer version of AucTeX exist 
+(currently 11.53), see <A href="http://www.gnu.org/software/auctex/">AucTeX 
+homepage</A>. To install, you will need the <A 
+href="http://prdownloads.sourceforge.net/mingw/MSYS-1.0.10.exe?download">MSYS 
+tools</A> from <A href="http://www.mingw.org/">MinGW</A>. Then follow the 
+installation instructions in INSTALL.windows that comes with AucTeX. I like the 
+new AucTeX, but perhaps the installation is too hard for the ordinary user. 
+Perhaps I will make instructions in the 'Tuning' page in the next update of the 
+page. 
+<H2>Ispell 3.1.20</H2>
+<P>
+<UL>
+  <LI><A href="http://www.math.aau.dk/~dethlef/Tips/basics.html#unzip">Unzip</A> 
+  ispell-3.2.06-cygwin-1.3-bin.tar.gz to c:\ (the directory cannot be 
+  changed)<BR>(22 files) 
+  <LI>Put cygwin1.dll into c:\usr\local\bin. If you have cygwin installed, skip 
+  this. In addition, you should never have more than one version of cygwin1.dll 
+  in your path. <BR></LI></UL><STRONG>Test:</STRONG> At a Command prompt, type 
+"ispell". Please note that c:\tmp must exist and that the DICTDIR variable 
+should be defined (see the <A 
+href="http://www.math.aau.dk/~dethlef/Tips/preparation.html">preparation 
+page</A>). Also, see the comment regarding ispell on the <A 
+href="http://www.math.aau.dk/~dethlef/Tips/test.html">test page</A>. 
+<H2>Ghostscript 8.14</H2>
+<UL>
+  <LI>Run gs814w32.exe 
+  <LI>Choose c:\program files\ghostgum\gs as installation directory 
+  <LI>Accept everything else </LI></UL>
+<H2>Ghostview 4.6</H2>
+<UL>
+  <LI>Run gsv46w32.exe 
+  <LI>Choose c:\program files\ghostgum\ghostview as installation directory 
+  <LI>Accept everything else </LI></UL>
+<H2>MikTeX 2.4</H2>
+<UL>
+  <LI>Run setup.exe from the directory, where you downloaded Miktex. 
+  <LI>When prompted for "Path to installation folder", choose c:\program 
+  files\texmf 
+  <LI>When prompted for "Create local TEXMF tree", choose c:\localtexmf as "Path 
+  to root folder" 
+  <LI>Accept everything else 
+  <LI>Restart (might not be needed) </LI></UL><STRONG>Test:</STRONG> You should 
+now be able to go through the <A 
+href="http://www.math.aau.dk/~dethlef/Tips/test.html">test</A>. <!-- <br><i><b>Important:</b></i>The Miktex installation sometimes "forgets" to
+include c:\program files\texmf\miktex\bin in your PATH. You might need
+to do this manually.--><!--
+<H2>IMPORTANT:</H2>The latex that comes with Miktex 1.20 has expired, and
+the format files are being refused to be created. Follow the
+instructions at <A
+HREF="http://www.miktex.org/1.20/important.html">Miktex.org/1.20/important</A>
+to fix the problem.
+--><!--   END MAIN PAGE --><!--   SIGNATURE -->
+<HR>
+Copyright (C) 2003-2004, Claus Dethlefsen <BR><!-- hhmts start -->Last modified: 
+Wed Nov 10 15:41:23 Romance Standard Time 2004 <!-- hhmts end --><!--   END SIGNATURE --></BODY></HTML>

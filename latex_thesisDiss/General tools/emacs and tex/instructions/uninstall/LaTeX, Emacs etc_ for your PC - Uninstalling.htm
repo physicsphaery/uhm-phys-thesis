@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0051)http://www.math.aau.dk/~dethlef/Tips/uninstall.html -->
+<HTML><HEAD><TITLE>LaTeX, Emacs etc. for your PC - Uninstalling</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1"><LINK 
+href="LaTeX, Emacs etc_ for your PC - Uninstalling_files/claus.css" 
+type=text/css rel=stylesheet>
+<STYLE type=text/css>TABLE {
+	BACKGROUND: #e6e6e6
+}
+TR {
+	BACKGROUND: #c0e0f0
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY vLink=#800080 link=#0000ff bgColor=#ffffff><!-- MENU -->
+<TABLE>
+  <TBODY>
+  <TR>
+    <TH bgColor=yellow><A href="http://www.math.aau.dk/~dethlef/" 
+      target=_top><IMG alt="Homepage of Claus Dethlefsen" 
+      src="LaTeX, Emacs etc_ for your PC - Uninstalling_files/home_ikon.gif" 
+      border=0></A></TH>
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/introduction.html">Intro</A></TH>
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/preparation.html">Prepare</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/download.html">Download</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/install.html">Install</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/tuning.html">Tune</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/test.html">Test</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/uninstall.html">Uninstall</A> 
+    <TH bgColor=yellow><A 
+      href="http://www.math.aau.dk/~dethlef/Tips/information.html">Info</A> 
+  </TR></TR></TBODY></TABLE><!-- END MENU --><!--   MAIN PAGE -->
+<H1>Uninstalling the TeX-system</H1>Take a printout of this page for your 
+records. It is constantly changing whenever I update the instructions. 
+<P>Messing with the registry can be fatal to your system. If you don't know what 
+you are doing, leave the entries there. You should back up any files you wish to 
+keep. 
+<UL>
+  <LI>In the Control Panel, choose "Add/Remove programs" 
+  <LI>In the menu, remove: Aladdin Ghostscript 8.14, Aladdin Ghostscript Fonts, 
+  GSview 4.6 
+  <LI>Delete c:\program files\ghostgum (if it exists) 
+  <LI>Delete c:\program files\texmf 
+  <LI>Delete c:\localtexmf (unless you have something to retain) 
+  <LI>Delete c:\program files\emacs 
+  <LI>Delete c:\usr 
+  <LI>Delete c:\.emacs 
+  <LI>Delete GNU Emacs from the Start Menu 
+  <LI>Delete MiKTeX from the Start Menu 
+  <LI>Delete GSview from the Start Menu 
+  <LI>Delete Ghostgum from the Start Menu 
+  <LI>Remove environment variables from c:\Autoexec.bat or 
+  "systems/Environment". The variables are listed in <A 
+  href="http://www.math.aau.dk/~dethlef/Tips/preparation.html">Prepare</A>. 
+  (Don't remove the TEMP and TMP variables). 
+  <LI>Run regedit (this is the dangerous part) 
+  <LI>Delete the Software\GNU\Emacs key under HKEY_LOCAL_MACHINE (and/or 
+  HKEY_CURRENT_USER) 
+  <LI>Delete the Software\Mik key under HKEY_LOCAL_MACHINE (and/or 
+  HKEY_CURRENT_USER) 
+  <LI>Restart </LI></UL><!--   END MAIN PAGE --><!--   SIGNATURE -->
+<HR>
+Copyright (C) 2003-2004, Claus Dethlefsen <BR><!-- hhmts start -->Last modified: 
+Thu Aug 26 08:27:32 Romance Daylight Time 2004 <!-- hhmts end --><!--   END SIGNATURE --></BODY></HTML>

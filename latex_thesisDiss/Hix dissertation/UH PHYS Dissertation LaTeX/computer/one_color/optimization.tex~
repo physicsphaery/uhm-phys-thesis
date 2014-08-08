@@ -1,0 +1,28 @@
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+Suppose the solution, $\ket{\Psi}$, to (\ref{one dynamics}) is known at N+1 points from $t_0$ to $t_N$ where $t_i<t_j$ when $i<j$ $\forall$  $i,j \in \{0,1,\cdots,N\}$. Let $\ket{n}_i$ be the value of the nth component ($n \in \{ 0,1 \}$) of the solution, $\ket{\Psi}$, at time $t_i$. Consider the cost function
+%----------------------------------------------------------------------------
+\begin{equation}
+\Phi
+=
+\braket{0}{0}_N.
+\label{one cost}
+\end{equation}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+A MathCAD program is used to minimize (\ref{one cost}) as a function of $A$ for a system initially in the ground state over the time interval $[0,30]$. A fourth-order Runge-Kutta fixed-step method is used to find the solution at 5000 points in the time interval. The MathCAD function ``Minimize'' is used to find the optimal solution. The ``Minimize" function tries the conjugate gradient, quasi-Newton, and Levenberg-Marquardt methods in succession until one converges.
+
+Figure \ref{solution one} shows the pulse and resulting motion in $\braket{\Phi}{\Phi}$ at a local optimum. There are many local optima occurring at even spaced intervals in the variable $A$. The nature of these repeated optima becomes obvious when one considers the analytic solution, Equation \ref{2 level dynamics}); in lieu of such a discussion we present an example (see figure \ref{big solution one}).
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\input{figures/transfer/solution_1/solution_1.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\input{figures/transfer/big_solution_1/big_solution_1.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------

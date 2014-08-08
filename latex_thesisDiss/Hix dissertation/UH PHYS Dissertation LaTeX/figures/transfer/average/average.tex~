@@ -1,0 +1,15 @@
+%----------------------------------------------------------------------------
+%bb defines the bounding box for the pdf
+%viewport defines the area of the pdf used
+%in sidewaysfigure the last entry in bb moves the caption toward/away the pic
+%in sidewaysfigure the second entry in bb moves the pic toward/away the caption
+%----------------------------------------------------------------------------
+\begin{figure}
+\scalebox{0.8}[0.8]{
+\includegraphics[bb=30 455 489 700]
+{average/average.pdf}
+}
+\caption[Average dynamics of one million stochastic runs]{One million runs like those shown in Figure \ref{coll_1} and \ref{coll_2} are averaged to produce the plot shown above. The six parameter fit is so close that the difference is not perceptible at this scale.}
+\label{average}
+\end{figure}
+%----------------------------------------------------------------------------

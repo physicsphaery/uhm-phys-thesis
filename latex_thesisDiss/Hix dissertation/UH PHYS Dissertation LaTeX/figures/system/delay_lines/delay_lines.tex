@@ -1,0 +1,15 @@
+%----------------------------------------------------------------------------
+%bb defines the bounding box for the pdf
+%viewport defines the area of the pdf used
+%in sidewaysfigure the last entry in bb moves the caption toward/away the pic
+%in sidewaysfigure the second entry in bb moves the pic toward/away the caption
+%----------------------------------------------------------------------------
+\begin{figure}
+\scalebox{0.68}[0.68]{
+\includegraphics[bb=10 400 605 550]
+{delay_lines/delay_lines.pdf}
+}
+\caption[Pulse length data/calculation table]{Pulse length data/calculation table. Data resulting from various delay lines are corrected for the limited temporal properties of the data acquisition system. The 1ns delay line is 7 7/8'' long and the 2ns delay line is 15 3/4'' long (from connector tip to connector tip).}
+\label{delay lines}
+\end{figure}
+%----------------------------------------------------------------------------

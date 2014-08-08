@@ -1,0 +1,11 @@
+% big_solution_1.tex
+% by Troy Hix, April 2005
+%----------------------------------------------------------------------------
+\begin{figure}
+\centering
+\includegraphics[width=5.00in]
+{big_solution_1/big_solution_1.png}\\
+\caption[Optimal solution - increased pulse amplitude]{Optimal solution - increased pulse amplitude. This local optimum occurs when $A=3\cross0.737832313319$ (three times the area of the $\pi$--pulse).}
+\label{big solution one}
+\end{figure} 
+%----------------------------------------------------------------------------

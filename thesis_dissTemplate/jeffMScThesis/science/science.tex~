@@ -1,0 +1,10 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -*- Mode: Latex -*- %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% >>science/science.tex<<
+%% Author          : R. Jeffrey Kowalski
+%% Created On      : Thu Apr 12 23:37:21 HST 2007
+%% Last Modified On: Thu Apr 12 23:37:21 HST 2007
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{science/intro.tex}
+\input{science/gzk.tex}
+\input{science/history/history.tex}
+\input{science/askaryan/askaryan.tex}

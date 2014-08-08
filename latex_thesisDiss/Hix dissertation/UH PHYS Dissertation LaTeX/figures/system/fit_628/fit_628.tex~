@@ -1,0 +1,15 @@
+%----------------------------------------------------------------------------
+%bb defines the bounding box for the pdf
+%viewport defines the area of the pdf used
+%in sidewaysfigure the last entry in bb moves the caption toward/away the pic
+%in sidewaysfigure the second entry in bb moves the pic toward/away the caption
+%----------------------------------------------------------------------------
+\begin{figure}
+\scalebox{0.8}[0.8]{
+\includegraphics[bb=30 467 481 706]
+{fit_628/fit_628.pdf}
+}
+\caption[DC test of 628nm coated Pockels cell]{628nm coated Pockels cell - A base line photodiode reading (with the crossed polarizers and Pockels cell removed) was not recorded for these data; however, we expect the efficiency to be better than the green case in Figure \ref{fit_532} since the laser wavelength of 633nm is closer to AR coating wavelength.}
+\label{fit_628}
+\end{figure}
+%----------------------------------------------------------------------------

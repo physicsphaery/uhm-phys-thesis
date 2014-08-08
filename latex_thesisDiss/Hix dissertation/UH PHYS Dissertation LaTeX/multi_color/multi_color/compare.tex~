@@ -1,0 +1,25 @@
+%----------------------------------------------------------------------------
+From these final upper state distributions a fluorescence spectrum is calculated. Each energy level in the calculated upper B state distribution is connected, in a $J=\pm1$ pair, to each X vibrational state. A ``fluorescence line strength'', $S$, is assigned to each possible downward transition and approximated by
+%----------------------------------------------------------------------------
+\begin{equation}
+S(\nu^{\prime\prime},\nu^{\prime})
+=
+P^{\prime}FCF(\nu^{\prime\prime},\nu^{\prime})
+\end{equation}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\input{figures/multi_color/non-target_1/non-target_1.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\input{figures/multi_color/target_1/target_1.tex}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\input{figures/multi_color/target_3/target_3.tex}
+%----------------------------------------------------------------------------
+where $P^{\prime}$ is the initial population of the fluoresceing B level ($\nu^{\prime\prime}$) calculated for each pathway, and $\nu^{\prime}$ is the vibrational number of the lower X vibrational level. The resulting fluorescence signal from each transition is modeled by Equation \ref{lorentzian} by assigning each J-split pair to a Lorentzian scaled by $S$. See Figure \ref{non-target_1}, \ref{target_1}, and \ref{target_3} for a plots of the resulting signal from summing the transitions for a few basic pathways. Note that when one considers the result from Section \ref{side} (only around one thousand of iodine molecules emit into the detector in the benchtop geometry) we see that verification of these high extinction ratios becomes unlikely unless we move to a LIDAR type geometry.
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------

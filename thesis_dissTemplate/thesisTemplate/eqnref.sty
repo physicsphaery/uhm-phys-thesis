@@ -1,0 +1,16 @@
+\newsavebox{\eqnumref}
+\newdimen\mathindent
+\AtEndOfClass{\mathindent\leftmargini}
+\newenvironment{eqnref}[1]{%
+  \sbox{\eqnumref}{\hbox{[\ref{#1}}]}
+  \@beginparpenalty\predisplaypenalty
+  \@endparpenalty\postdisplaypenalty
+  \trivlist \item[]\leavevmode
+    \hb@xt@\linewidth\bgroup \hfil$\m@th% $
+      \displaystyle\hskip\mathindent
+}{%
+    $\hfil % $
+    \displaywidth\linewidth\usebox{\eqnumref}
+    \egroup
+  \endtrivlist
+}

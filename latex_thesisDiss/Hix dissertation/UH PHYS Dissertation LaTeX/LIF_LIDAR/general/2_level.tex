@@ -1,0 +1,100 @@
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\label{basic_two_level}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+If we assume that
+%----------------------------------------------------------------------------
+\begin{equation}
+\omega_b - \omega_a
+\neq
+\omega_c - \omega_a
+\label{condition}
+\end{equation}
+%----------------------------------------------------------------------------
+then pairs of states can be selectively and unambiguously coupled. For real optical beams and real atoms this condition must be generalized to account for laser mode structure/bandwidth and atomic (molecular) transition line widths. Suppose there exists a system in which this is true for at least one transition and consider the simplest example of a single mode field interacting resonantly between the states involved in the transition. Using the rotating wave approximation \cite{Zaheer:1988a} and a single mode with frequency $\nu\equiv\omega_1-\omega_0$, one can show that Equation \ref{eom} reduces to
+%----------------------------------------------------------------------------
+\begin{subequations}
+\begin{eqnarray}
+\dot{c_0}
+=
+-\Delta c_1
+\\
+\dot{c_1}
+=
++\Delta c_0
+\end{eqnarray}
+\label{two level eom}
+\end{subequations}
+%----------------------------------------------------------------------------
+where $\Delta\equiv\Delta_{10}=\Delta_{01}$ and $\ket{0},\ket{1}\in\{\ket{x}\}$. Of the two selectively coupled states, state $\ket{0}$ is the ``ground''  (initially occupied), and state $\ket{1}$ is the targeted excited state (initially unoccupied).
+
+The solution to Equation \ref{two level eom} can be written as
+%----------------------------------------------------------------------------
+\begin{equation}
+P_1(\tau)
+=
+\sin^2(\Delta\cdot\tau)
+\label{2 level dynamics}
+\end{equation}
+%----------------------------------------------------------------------------
+where $P_1(\tau)\equiv|c_1|^2$ is the probability of finding the system in the excited state $\ket{1}$. When $\Delta\cdot\tau=\pi/2$ the probability of finding the system in $\ket{1}$ is unity, thus whatever portion of the ensemble which was in $\ket{0}$ at $\tau=0$ will be in $\ket{1}$ when $\tau$ satisfies $\Delta\cdot\tau=\pi/2$. It is convenient to define a ``Rabi'' frequency associated with the dynamics described by Equation \ref{two level eom}; in the literature the ``Rabi'' frequency is defined as the angular frequency associated with one complete oscillation (twice the angular frequency associated with the argument of the sine function in Equation \ref{2 level dynamics} since it is squared) or
+%----------------------------------------------------------------------------
+\begin{equation}
+\Omega_R
+\equiv
+2\frac{
+\Delta
+}{\xi}
+=
+\frac{
+E_n M_{ab}
+}{
+\hbar}.
+\end{equation}
+%----------------------------------------------------------------------------
+Now Equation \ref{2 level dynamics} becomes
+%----------------------------------------------------------------------------
+\begin{equation}
+\boxed{
+P_1(t)
+=
+\sin^2
+\left(
+\frac{\Omega_R}{2}t
+\right)
+\label{2 level dynamics normal}
+}
+\end{equation}
+%----------------------------------------------------------------------------
+where $t$ is in seconds.
+
+Next we seek to derive a relationship between parameters of a tophat pulse with electric field amplitude $E$ and duration $t$ and the resulting fluence when given a specific value of $\Delta \tau$ (usually $\pi/2$). From Equations \ref{Delta} and \ref{tau} we see that the electric field provided by the pulse satisfies
+%----------------------------------------------------------------------------
+\begin{equation}
+E
+=
+\frac
+{(\Delta\tau) 2 \hbar
+}{
+Mt}
+\end{equation}
+%----------------------------------------------------------------------------
+where $E\equiv E_0$ is the electric field associated with the single mode in this example; thus, the fluence required is
+%----------------------------------------------------------------------------
+\begin{equation}
+\boxed{
+f
+=
+2 c \hbar^2\epsilon_o
+(\Delta\tau)^2
+\frac{1}{M^2 t}
+\label{required fluence}
+}
+\end{equation}
+%----------------------------------------------------------------------------
+where $\epsilon_o$ is the permittivity of free space. When only considering the final state of the two level system, it can be shown \cite{Allen:1987a} that the \emph{area} under the amplitude (not intensity) profile of the pulse determines the final state; thus, for a given desired final state, we may concern ourselves with only the total energy contained in the pulse used to excite the system and ignore the exact shape of the profile. Hence, Equation \ref{required fluence} is valid regardless of the pulse shape (even though it was derived for a tophat).
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
