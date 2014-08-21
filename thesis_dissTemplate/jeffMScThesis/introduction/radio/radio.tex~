@@ -1,7 +1,0 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -*- Mode: Latex -*- %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% >>introduction/radio/radio.tex<<
-%% Author          : R. Jeffrey Kowalski
-%% Created On      : Mon Jul 23 09:55:07 HST 2007
-%% Last Modified On: Mon Jul 23 09:55:07 HST 2007
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\par The progress in capabilities of using coherent radio Cherenkov emission to detect high energy particles has provided a possible alternative for discovering ultra-high energy (UHE) neutrinos.  Since Askaryan's early prediction that electromagnetic showers in dense media would produce an excess charge that generates coherent Cherenkov pulses in radio frequencies~\cite{Askaryan.1962,Askaryan.1965}, many new detectors have arisen to expliot the effect of neutrino induced showers with the Moon~\cite{GLUE.2004}, Greenland ice~\cite{FORTE.2004}, and Antarctic ice~\cite{RICE.2003,AMANDA.2006,ANITA.2006} as the target medium.  The validity of this method was first emphasized in a detailed study combining electrodynamics with electromagnetic shower simulations in ice~\cite{Zas.1992}.  Furthermore, a careful treatment of the detection of radio pulses from high energy showers has been examined under the classic descriptions of Fraunhofer~\cite{Alvarez.2000} and Fresnel~\cite{Buniy.2001} zones.

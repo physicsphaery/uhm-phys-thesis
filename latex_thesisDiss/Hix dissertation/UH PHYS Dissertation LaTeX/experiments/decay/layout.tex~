@@ -1,9 +1,0 @@
-%------------------------------------------------------------------------------
-%------------------------------------------------------------------------------
-The beam line used here is similar to the one described in Section \ref{sample layout} except the attenuators are not used and in its place we use a pair of crossed polarizers (polarizing cube beam splitters) and a Pockels cell. The system has an extinction ratio of about 200:1 (see UH notebook UH-018 page 65) and produces a pulse with a FWHM of about 4 ns. Before the Pockels cell we have about 5.4 mJ, thus after the Pockels cell (heading toward the +750 mm lens) is about 27 uJ. The dye laser is tuned to 535.893 nm (a targeted absorption line) and the monochromator is tuned to capture a single LIF line at 632.9 nm. Again the signal from the PMT at the output of the monochromator is scanned (temporal gate scan) and averaged with a boxcar averager.
-%------------------------------------------------------------------------------
-%------------------------------------------------------------------------------
-%------------------------------------------------------------------------------
-%------------------------------------------------------------------------------
-%------------------------------------------------------------------------------
-%------------------------------------------------------------------------------

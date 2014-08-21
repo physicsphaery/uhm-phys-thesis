@@ -1,9 +1,0 @@
-%------------------------------------------------------------------------------
-%------------------------------------------------------------------------------
-There are several non-radiative decay mechanisms which can lead to an observed damping of the fluorescence lifetime of a single LIF line. The iodine molecule can disassociate, ionize (once, twice,...), internally decay via a non-optical transition, exchange energy through an inelastic collisions, or de-phase through elastic collisions. In Section \ref{density section} we modeled de-phasing through collisions in a stochastic manner. Here directly measure the observed decay of a LIF line in the ``baked potato'' iodine cell.
-%------------------------------------------------------------------------------
-%------------------------------------------------------------------------------
-%------------------------------------------------------------------------------
-%------------------------------------------------------------------------------
-%------------------------------------------------------------------------------
-%------------------------------------------------------------------------------

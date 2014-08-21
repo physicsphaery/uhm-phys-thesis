@@ -1,9 +1,0 @@
-%----------------------------------------------------------------------------
-\label{Hg pulser and fast PD section}
-%----------------------------------------------------------------------------
-Some of the LED absorption data was taken by pulsing the LED (using an HP model 8015A pulse generator) and averaging the PMT signal with a boxcar averager (PAR, model CW--1). The goal of this experiment is to determine the usability of the donated averager; it is determined that the averager is unusable in its present state. This prompted the purchase of a new boxcar averager system.
-
-To check the performance of a high voltage fast rise time mercury wetted relay (C.P. Clare \& Co., model HGSS 5060, called ``Hg pulser'' hereafter  -- see UH notebook UH--004 pages 49--53) and test the performance of a newly assembled fast photodiode (see UH notebook UH--015 pages 7--48), the LED's used here were connected to the output of the relay and the resulting signal is observed using the fast photodiode. The relay itself is found to perform faster than the scopes available in the lab. The LED tested can take at least 100 V in a 20 ns pulse without damage; however, it is found to have a slower response than the relay output. This may be due to the coupling between the LED and the signal cable.
-
-%----------------------------------------------------------------------------
-%----------------------------------------------------------------------------
